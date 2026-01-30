@@ -10,6 +10,9 @@ Extract every piece of information relevant to STRENDA biocatalysis documentatio
 Be especially attentive to **biocatalysts / enzymes**.  
 Papers may involve:
 - multiple enzymes,
+- multiple substrate,
+- multiple specific activtiys,
+- multiple storage conditions,
 - different expression systems,
 - purchased or non‑purchased catalysts,
 - incomplete or missing information.
@@ -20,7 +23,8 @@ INTERPRETATION RULE:
 - If **no purification methode** has stated, treated it as **crudecellextract**. Else let the JSON output fiel empty. 
 - If **prufication methode** is stated and it is plausible that the enzyme is **self produced** 
 - If a **imobilised methode** has stated the enzyme / biocatalyst is **immonilised**. Else let the JSON output fiel empty. 
-- If no **purification methode** or **cell lysis methode** has stated it is plausible that it is a **WholeCellBiocatalyst**. Else let the JSON output fiel empty. 
+- If no **purification methode** or **cell lysis methode** has stated it is plausible that it is a **WholeCellBiocatalyst**. Else let the JSON output fiel empty.
+- If several storage contitions make sure all conditions will be saved. 
 - If information is missing, return `"unknown"`.
 
 OUTPUT FORMAT:
