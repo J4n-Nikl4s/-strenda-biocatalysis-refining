@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "NADPH-dependent reduction of aldehydes and ketones to alcohols; oxidation of alcohols to aldehydes/ketones. Prefers sterically demanding (bulky) aromatic and cyclic substrates. Example: reduction of 2-hydroxypropiophenone, benzaldehyde, cyclohexanone; oxidation of cyclohexanol.",
+      "ec_number": "",
+      "formulation": "Purified enzyme, stored in TEA–HCl buffer (10 mmol L−1, pH 7.5) at −20°C, or lyophilized and stored at −20°C. For stability studies, 50% (v/v) glycerol in TEA–HCl buffer (10 mmol L−1, pH 7.5) at −20°C. Enzyme also used in solution for assays.",
+      "molecular_weight": 26.7,
+      "molecular_weight_unit": "kDa (monomer); native MW by SEC: 75 kDa (suggesting trimer)",
+      "name": "Alcohol dehydrogenase from Ralstonia sp. (RADH)",
+      "origin_organism": "Ralstonia sp. DSM 6428 (also known as Cupriavidus sp.)",
+      "posttranslational_modification": "",
+      "production_organism": "Escherichia coli BL21(DE3) (recombinant expression, vector pET-22b(+))",
+      "purity": 90,
+      "purity_specification": "Purity of about 90% according to SDS–PAGE (Supplementary Information, Fig. S4A).",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "supplier": ""
+    }
+  ]
+}

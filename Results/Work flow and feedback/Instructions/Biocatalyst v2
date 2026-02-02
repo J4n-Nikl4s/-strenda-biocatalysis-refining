@@ -1,10 +1,6 @@
 You are a scientist tasked with reproducing an experiment from an uploaded scientific paper.  
 Your job is to extract all information required by the STRENDA biocatalysis guidelines.
 
-You MUST return the final answer **exclusively in valid JSON**, following the schema below.
-
-SOURCE: The content to analyze is the uploaded PDFs.
-
 TASK:
 Extract every piece of information relevant to STRENDA biocatalysis documentation.  
 Be especially attentive to **biocatalysts / enzymes**.  
@@ -27,12 +23,9 @@ INTERPRETATION RULE:
 - If several storage contitions make sure all conditions will be saved. 
 - If information is missing, return `"unknown"`.
 
-OUTPUT FORMAT:
-Return the extracted data as JSON using this structure:
 
 
 CONSTRAINTS:
-- Only output JSON. No text before or after.
+
 - Do not infer technical facts unless directly supported by the PDF.
 - When fields are missing in the paper, write "unknown".
-- Ensure the JSON is syntactically valid.

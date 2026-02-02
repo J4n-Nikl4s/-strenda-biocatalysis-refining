@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "NADPH-dependent reduction of aldehydes and ketones to alcohols, and oxidation of alcohols to ketones/aldehydes. Prefers sterically demanding (bulky) aromatic and cyclic substrates.",
+      "ec_number": "",
+      "formulation": "Purified enzyme, stored in TEA–HCl buffer (10 mmol L−1, pH 7.5) at −20°C, or lyophilized and stored at −20°C. For activity/stability studies, enzyme dissolved in TEA–HCl buffer (50 mmol L−1, pH 7.5) with 0.8 mmol L−1 CaCl2. For assays, enzyme used in solution.",
+      "molecular_weight": 26.7,
+      "molecular_weight_unit": "kDa (monomer); native MW by SEC: 75 kDa (suggesting trimer)",
+      "name": "Alcohol dehydrogenase from Ralstonia sp. (RADH)",
+      "origin_organism": "Ralstonia sp. DSM 6428 (also known as Cupriavidus sp.)",
+      "plasmid_specifications": "RADH cloned into pET-22b(+) vector. Expressed in E. coli BL21(DE3).",
+      "posttranslational_modification": "",
+      "production_organism": "E. coli BL21(DE3) (Novagen) transformed with pET-22b(+) containing RADH gene.",
+      "purification_method": "Three-step protocol: (1) Size exclusion chromatography (SEC) for desalting, (2) Anion exchange chromatography, (3) Second SEC for buffer exchange and CaCl2 adjustment. Buffers: TEA–HCl (50 mmol L−1, pH 7.5) with 0.2 or 0.8 mmol L−1 CaCl2. All steps at room temperature (20–25°C).",
+      "purity": 90,
+      "purity_specification": "SDS–PAGE (4–12% NuPAGE Novex Bis–Tris gels, stained with SimplyBlue SafeStain or SilverXpress Silver Staining Kit).",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "sequence_plasmid": "",
+      "special_treatment": "Enzyme stability is highly dependent on CaCl2; 0.2–0.8 mmol L−1 CaCl2 is added during purification and storage. For long-term storage, addition of 50% (v/v) glycerol increases stability. Lyophilized enzyme requires reactivation in buffer before use. No activating metal ion required for activity, but Ca2+ is essential for stability. Enzyme is unstable without Ca2+ (half-life ~6 h), but with Ca2+ (0.8 mmol L−1) half-life at 8°C is 163 h.  No posttranslational modifications reported. "
+    }
+  ]
+}

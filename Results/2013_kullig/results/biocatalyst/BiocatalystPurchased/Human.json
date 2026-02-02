@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "",
+      "ec_number": "",
+      "formulation": "",
+      "molecular_weight": ,
+      "molecular_weight_unit": "",
+      "name": "",
+      "origin_organism": "",
+      "posttranslational_modification": "",
+      "production_organism": "",
+      "purity": 90,
+      "purity_specification": "",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "supplier": ""
+    }
+  ]
+}
