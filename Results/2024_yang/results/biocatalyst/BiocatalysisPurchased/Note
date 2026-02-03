@@ -1,0 +1,61 @@
+02022026. Does not fit schema after testing new insutrctions for biocat
+
+
+Knowledge graph
+
+HHDH (Halohydrin dehalogenase)
+is_a: Enzyme
+source organism: Ilumatobacter coccineus (IcHheG)
+expression system: E. coli BL21
+expression vector: pET28a
+gene source: Enzymaster database
+induction agent: lactose
+induction concentration: 30 g/L lactose
+induction temperature: 30°C
+induction time: 16 h
+culture medium: lysogeny broth-Miller
+antibiotic: kanamycin
+antibiotic concentration: 50 g/mL
+culture temperature: 37°C
+culture volume: 15 L
+harvest method: centrifugation
+centrifugation speed: 6000 rpm
+storage condition: -20°C
+form used in reactions: whole cell
+purification method: crudecellextract
+is_whole_cell_biocatalyst: true
+supplier: unknown
+is_purchased: unknown
+is_immobilized: unknown
+cell lysis method: unknown
+activity screening format: 96-well plate
+screening cell concentration: 50 g/L wet cell
+screening substrate concentration: 10 mM cyclohexene oxide
+screening NaOCN concentration: 20 mM
+screening buffer: PB buffer (50 mM, pH 7.0)
+screening temperature: 35°C
+screening reaction time: 16 h
+substrate: cyclohexene oxide
+co-substrate: NaOCN
+reaction product: trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)
+reaction yield (screening): 42% (IcHheG, best hit)
+reaction yield (scale-up): 95%
+enantioselectivity (ee): 53%
+reaction scale: 1 L and 10 L pilot scale
+reaction temperature (scale-up): 25°C
+reaction time (scale-up): 29 h
+reaction pH (scale-up): 10.5 (self-regulated by ethyl acetate hydrolysis)
+reaction co-solvent: ethyl acetate
+reaction co-solvent concentration: 35% (v/v)
+reaction substrate concentration (scale-up): 200 mM cyclohexene oxide
+reaction NaOCN concentration (scale-up): 400 mM
+biocatalyst loading (scale-up): 50 g/L wet cell (screening), 1.2 kg wet cell (10 L scale)
+post-reaction storage: unknown
+post-reaction processing: extraction with ethyl acetate, crystallization with heptane
+isolated product yield (pilot scale): 87%
+product enantiomeric excess (pilot scale): 53%
+analytical method: GC (achiral and chiral)
+analytical column (achiral): DB-1
+analytical column (chiral): CP7502
+detection method: FID
+carrier gas: hydrogen
