@@ -1,4 +1,5 @@
-02022026. Does not fit schema after testing new insutrctions for biocat
+02022026: Does not fit schema after testing new insutrctions for biocat
+0402206: Does not fit schema after using old biocat instructions. I think it's because it knows that its a wholecell and not purchased 
 
 
 Knowledge graph
