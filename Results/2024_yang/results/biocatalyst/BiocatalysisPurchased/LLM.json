@@ -1,0 +1,16 @@
+{
+  "catalyzed_reaction": "Ring-opening of cyclohexene oxide with NaOCN to produce trans-hexahydro-2(3H)-benzoxazolone (trans-HBC).",
+  "ec_number": "4.5.1.1",
+  "formulation": "Whole cell biocatalyst (E. coli BL21 expressing HheG from Ilumatobacter coccineus); also tested as cell lysate.",
+  "molecular_weight": 32000,
+  "molecular_weight_unit": "Da",
+  "name": "Halohydrin dehalogenase HheG from Ilumatobacter coccineus (IcHheG)",
+  "origin_organism": "Ilumatobacter coccineus",
+  "posttranslational_modification": "",
+  "production_organism": "Escherichia coli BL21 (DE3)",
+  "purity": 0,
+  "purity_specification": "Not specified for whole cell catalyst; lysate used for comparison.",
+  "sequence_DNA": "",
+  "sequence_amino_acid": "UniProt: A0A1Y1ZLJ2 (for HheG from Ilumatobacter coccineus; sequence not given in text, but referenced in PDB: 5O30)",
+  "supplier": "Self-produced by Enzymaster (Ningbo) Bio-engineering Co., Ltd."
+}
