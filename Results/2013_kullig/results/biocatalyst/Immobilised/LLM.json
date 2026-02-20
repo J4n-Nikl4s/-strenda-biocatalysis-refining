@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "biocatalyst": "Alcohol dehydrogenase from Ralstonia sp. (RADH), expressed recombinantly in E. coli BL21(DE3) using pET-22b(+) vector. The enzyme was used as a purified protein for most experiments, but crude cell extract was also mentioned in previous studies.",
+      "carrier_material": "",
+      "concentration": 0.05,
+      "concentration_determination_method": "Protein concentration was determined using the Bradford method (Bradford, 1976) with bovine serum albumin as standard. Enzyme activity was also measured spectrophotometrically (U/mg).",
+      "concentration_unit": "mg/mL (for protein concentration in assays); U/mg (for specific activity)",
+      "immobilisation_chemistry": "",
+      "immobilisation_method": "",
+      "linkers": "",
+      "purification_method": "Three-step purification protocol: (1) Size exclusion chromatography (SEC) for initial desalting of crude cell extracts, (2) anion exchange chromatography, (3) a second SEC to remove sodium chloride and adjust calcium ion concentration. All steps in TEA–HCl buffer (50 mmol/L, pH 7.5) with defined CaCl2 concentrations (0, 0.2, or 0.8 mmol/L). All purification at room temperature (20–25°C).",
+      "special_treatment": "Addition of CaCl2 (0.2–0.8 mmol/L) during or after purification for enzyme stabilization. For storage, enzyme was kept in TEA–HCl buffer (10 mmol/L, pH 7.5) at -20°C, or lyophilized and stored at -20°C, or with 50% (v/v) glycerol at -20°C. Enzyme stability and activity were significantly improved by CaCl2 addition."
+    }
+  ]
+}

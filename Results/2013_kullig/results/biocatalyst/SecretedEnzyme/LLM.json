@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "concentration": 0.05,
+      "concentration_determination_method": "Bradford method (Bradford, 1976) using bovine serum albumin as a standard.",
+      "concentration_unit": "mg/mL",
+      "separation_method": "Purification involved size exclusion chromatography (SEC) for initial desalting, followed by anion exchange chromatography, and a second SEC for buffer exchange and CaCl2 adjustment. Supernatant was separated from cells by cell disruption (method described in Kulig et al., 2012, not detailed here).",
+      "special_treatment": "Purification and storage buffers contained TEA–HCl (10 or 50 mmol/L, pH 7.5) with defined CaCl2 concentrations (0.2 or 0.8 mmol/L). For storage, enzyme was kept at -20°C in buffer or with 50% (v/v) glycerol, or lyophilized. CaCl2 (0.8 mmol/L) was added for stability. Enzyme is unstable without Ca2+; addition of CaCl2 during or after purification is critical for stability. Purity after purification was ~90% (SDS–PAGE). Enzyme is a trimer (native MW ~75 kDa by SEC; subunit MW 26.7 kDa). Lyophilized enzyme requires reactivation in buffer before use. All purification steps at room temperature (20–25°C)."
+    }
+  ]
+}

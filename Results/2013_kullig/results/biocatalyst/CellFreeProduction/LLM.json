@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "concentration": 0.05,
+      "concentration_determination_method": "Bradford method (Bradford, 1976) using bovine serum albumin as a standard.",
+      "concentration_unit": "mg/mL",
+      "source_of_cellfree_extract": "Ralstonia sp. DSM 6428 (also known as Cupriavidus sp.), expressed recombinantly in Escherichia coli BL21(DE3).",
+      "special_treatment": "RADH was cloned into pET-22b(+) and expressed in E. coli BL21(DE3). Purification involved size exclusion chromatography (SEC) and anion exchange chromatography. Buffers were supplemented with CaCl2 (0.2 or 0.8 mmol/L) for stabilization. Purification and storage were performed in TEA–HCl buffer (10 or 50 mmol/L, pH 7.5) with CaCl2. Enzyme was stored at -20°C in buffer or as lyophilized powder. For activity/stability studies, 0.8 mmol/L CaCl2 was added. SDS–PAGE confirmed ~90% purity. Native molecular weight determined by SEC (trimeric, ~75 kDa). Enzyme is unstable without CaCl2; addition of CaCl2 significantly increases stability. Lyophilized enzyme requires reactivation in buffer before use. No activating metal ion required for activity, but Ca2+ is essential for stability. All purification steps at room temperature (20–25°C)."
+    }
+  ]
+}

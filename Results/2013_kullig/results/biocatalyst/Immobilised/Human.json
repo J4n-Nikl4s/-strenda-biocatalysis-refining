@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "biocatalyst": "",
+      "carrier_material": "",
+      "concentration": ,
+      "concentration_determination_method": "",
+      "concentration_unit": "",
+      "immobilisation_chemistry": "",
+      "immobilisation_method": "",
+      "linkers": "",
+      "purification_method": "",
+      "special_treatment": ""
+    }
+  ]
+}

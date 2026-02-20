@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "reactor_type": "Batch mode (discontinuous): All described assays (oxidation and reduction) were performed in semi-micro cuvettes (total volume 1 mL) for 1 min, indicating small-scale, closed, and discontinuous operation. The enzyme was added to the reaction mixture and the reaction was monitored spectrophotometrically, which is typical for batch operation in enzyme kinetics studies."
+    },
+    {
+      "reactor_type": "Combinatorial mode: Multiple buffer systems, pH values, temperatures, and substrate concentrations were systematically varied to explore optimal conditions for activity and stability. This systematic variation of reaction parameters (pH, temperature, buffer, substrate, and cofactor concentrations) represents a combinatorial approach to operation mode, as different conditions were tested in parallel or sequentially to map the enzyme's performance landscape."
+    }
+  ]
+}
