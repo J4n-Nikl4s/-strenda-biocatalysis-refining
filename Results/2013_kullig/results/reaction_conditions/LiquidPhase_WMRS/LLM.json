@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for oxidation assay): 50 mmol/L glycine–NaOH buffer, pH 10.5, including 0.8 mmol/L CaCl2, with 100 mmol/L cyclohexanol and 0.5 mmol/L NADP+",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for reduction assay): 50 mmol/L TEA–HCl buffer, pH 7.5, including 0.8 mmol/L CaCl2, with 10 mmol/L benzaldehyde and 0.2 mmol/L NADPH",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for effect of salts): 50 mmol/L TEA–HCl buffer, pH 7.5, with 1 mmol/L of respective salt (e.g., NaCl, KCl, MgCl2, CaCl2)",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for pH optimum studies): 50 mmol/L buffer (citrate–phosphate pH 4.0–7.0, TEA–HCl pH 7.0–8.0, TRIS–HCl pH 7.0–8.5, glycine–NaOH pH 8.5–12.0), all with 0.8 mmol/L CaCl2",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for temperature optimum studies): 50 mmol/L TEA–HCl buffer, pH 7.5, with 0.8 mmol/L CaCl2",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for substrate range, reduction): 50 mmol/L TEA–HCl buffer, pH 7.5, with 0.8 mmol/L CaCl2, 0.2 mmol/L NADPH, 10 mmol/L substrate (aldehyde or ketone)",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for substrate range, oxidation): 50 mmol/L glycine–NaOH buffer, pH 10.5, with 0.8 mmol/L CaCl2, 0.5 mmol/L NADP+, 10 or 100 mmol/L substrate (alcohol)",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for kinetic parameters, reduction): 50 mmol/L TEA–HCl buffer, pH 7.5, with 0.8 mmol/L CaCl2, 0.2 mmol/L NADPH, variable substrate concentration (e.g., benzaldehyde 0–50 mmol/L, cyclohexanone 0–100 mmol/L, (R)-2-HPP 0–15 mmol/L, (S)-2-HPP 0–20 mmol/L)",
+      "liquid_unit": "mL"
+    },
+    {
+      "liquid_amount": 1,
+      "liquid_type": "Aqueous buffer (for kinetic parameters, oxidation): 50 mmol/L TRIS–HCl buffer, pH 9.0, with 0.8 mmol/L CaCl2, 0.8 mmol/L NADP+, variable substrate concentration (e.g., cyclohexanol 0–200 mmol/L, benzyl alcohol 0–150 mmol/L)",
+      "liquid_unit": "mL"
+    }
+  ]
+}
