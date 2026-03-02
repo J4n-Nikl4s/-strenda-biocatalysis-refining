@@ -1,0 +1,1 @@
+{"error":"Extraction failed: 400 Invalid schema for response_format 'response': In context=('properties', 'storage_start'), reference to component '#/$defs/date' which was not found in the schema."}
