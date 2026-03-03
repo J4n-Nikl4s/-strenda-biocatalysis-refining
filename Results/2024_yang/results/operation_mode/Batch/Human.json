@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "reactor_type": "The initial screening was performed in 96-well plates."
+      "Operation_mode": "Batch",
+    }
+    {
+      "reactor_type": "For whole cell catalysis 5 ml reaction were used - not info about vessel."
+      "Operation_mode": "Batch",
+    }
+    {
+      "reactor_type": "50 L reactor with temperature controller (Dongsen EXDS/JGRL)"
+    }
+  ]
+}
+

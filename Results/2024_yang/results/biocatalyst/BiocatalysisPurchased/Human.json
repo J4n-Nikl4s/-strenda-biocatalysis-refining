@@ -8,9 +8,10 @@
   "origin_organism": "Ilumatobacter coccineus",
   "posttranslational_modification": "Not in paper",
   "production_organism": "Escherichia coli BL21 (DE3)",
-  "purity": "Not in paper or supporting info"
+  "purity": "Not in paper or supporting info",
   "purity_specification": "Not specified for whole cell catalyst; lysate used for comparison.",
   "sequence_DNA": "Not in paper or supporting info",
   "sequence_amino_acid": "UniProt: A0A1Y1ZLJ2 (for HheG from Ilumatobacter coccineus; sequence not given in text, but referenced in PDB: 5O30 (used for docking))",
   "supplier": "Self-produced by Enzymaster (Ningbo) Bio-engineering Co., Ltd."
 }
+
