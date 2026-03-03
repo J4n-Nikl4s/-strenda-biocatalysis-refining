@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "further_additives": "Ethyl acetate (as co-solvent, 35% v/v) was used to increase solubility of cyclohexene oxide. Lysozyme was used for cell lysis in some experiments.",
+      "ionic_strength": 50,
+      "ionic_strength_unit": "mM (for PB buffer in screening); up to 400 mM NaOCN in scale-up reactions",
+      "solvent_description": "Buffered aqueous solution (50 mM PB buffer, pH 7.0) for screening; two-phase system with water and ethyl acetate (35% v/v) for scale-up and pilot reactions. NaOCN is dissolved in water. Ethyl acetate is used as a co-solvent and phase separator.",
+      "special_treatment": "Two-phase system to avoid direct contact of enzyme with hydrophobic substrate. Self-regulated pH control via hydrolysis of ethyl acetate in presence of NaOH. No additional buffer or active pH control needed at scale. Temperature controlled at 25°C during pilot-scale reactions. Post-processing includes extraction with ethyl acetate, phase separation, concentration, and crystallization with heptane."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "event_description": "Pilot-scale manufacturing of trans-hexahydro-2(3H)-benzoxazolone (trans-HBC) using HheG-catalyzed ring-opening of cyclohexene oxide with NaOCN. During the 10 L pilot-scale reaction in a 50 L reactor, an exothermic phenomenon (>35°C) was observed, and a temperature controller was used to maintain the reaction at 25°C.",
+      "special_treatment": "Temperature controller was used to maintain the reaction at 25°C due to exothermic reaction. Cold water was recycled for temperature control.",
+      "temperature_after_event": 25,
+      "temperature_at_XY": 35,
+      "temperature_beginning": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "Pilot-scale reaction duration for achieving 95% conversion.",
+      "special_treatment": "None specified.",
+      "temperature_after_event": 25,
+      "temperature_at_XY": 25,
+      "temperature_beginning": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 29,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "HHDH screening and small-scale reactions (screening and characterization) performed at 35°C.",
+      "special_treatment": "None specified.",
+      "temperature_after_event": 35,
+      "temperature_at_XY": 35,
+      "temperature_beginning": 35,
+      "temperature_unit": "°C",
+      "time_at_XY": 16,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "Two-phase reactions for substrate solubility and enzyme protection, performed at room temperature (approx. 25°C).",
+      "special_treatment": "Use of ethyl acetate as co-solvent for improved yield and pH control.",
+      "temperature_after_event": 25,
+      "temperature_at_XY": 25,
+      "temperature_beginning": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 16,
+      "time_unit": "h"
+    }
+  ]
+}

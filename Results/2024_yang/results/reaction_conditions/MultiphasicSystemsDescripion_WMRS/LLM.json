@@ -1,0 +1,8 @@
+{
+  "items": [
+    {
+      "phases_number": 2,
+      "special_treatment": "A two-phase system was used for the enzymatic ring-opening of cyclohexene oxide with NaOCN, employing ethyl acetate as the organic phase and aqueous buffer as the other phase. This setup was necessary to enhance substrate solubility and prevent direct contact of the hydrophobic and toxic epoxide with the enzyme, which would otherwise cause enzyme inactivation. The system also allowed for self-regulated pH control via hydrolysis of ethyl acetate, maintaining pH at 10.5 without additional buffering agents. The process was scaled from analytical to pilot (10 L) scale, with temperature control to manage exothermicity. Post-processing involved phase separation, extraction, concentration, crystallization with heptane, and filtration."
+    }
+  ]
+}
