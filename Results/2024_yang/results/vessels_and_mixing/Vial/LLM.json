@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "closure_type": "Not specified. For 10 mL glass vials, no explicit closure or seal is mentioned for the two-phase reactions. For 96-well plates, standard plate seals are implied but not specified.",
+      "special_treatment": "For lysate catalysis, 50 g/L whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr before use. For whole cell catalysis, cells were harvested by centrifugation and stored at -20°C before use. For pilot-scale, temperature was controlled at 25°C using a temperature controller. No other vial-specific treatments described.",
+      "vial_material": "Glass (for 10 mL vials); Plastic (implied for 96-well plates, but not explicitly stated)",
+      "vial_size": 10,
+      "vial_size_unit": "mL"
+    },
+    {
+      "closure_type": "Not specified. Standard 96-well plate seals are implied but not described.",
+      "special_treatment": "None described beyond standard screening setup.",
+      "vial_material": "Plastic (implied for 96-well plates, not explicitly stated)",
+      "vial_size": 0.2,
+      "vial_size_unit": "mL"
+    },
+    {
+      "closure_type": "Not specified for 5 mL reactions.",
+      "special_treatment": "None described beyond standard reaction setup.",
+      "vial_material": "Not specified (likely glass or plastic)",
+      "vial_size": 5,
+      "vial_size_unit": "mL"
+    }
+  ]
+}
