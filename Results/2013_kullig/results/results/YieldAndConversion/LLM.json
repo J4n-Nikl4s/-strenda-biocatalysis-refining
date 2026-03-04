@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "c_yield": 0,
+      "conversion": 0,
+      "conversion_unit": "%",
+      "space_time_yield": 0,
+      "space_time_yield_unit": "g/L/h",
+      "special_treatment": "The paper provides detailed specific activities (U mg⁻¹) for a wide range of substrates (alcohols, aldehydes, ketones) with purified RADH, as well as kinetic parameters (Vmax, Km, Ki) for selected substrates. Stereoselectivity is reported for alpha-hydroxy ketones (ee > 99%, de > 99%). No explicit yield or conversion percentages are given for preparative-scale reactions; all data are based on initial rate measurements under defined assay conditions. The results are summarized in Tables II–IV (substrate range, specific activities) and Table V (kinetic parameters).",
+      "yield_unit": "%"
+    }
+  ]
+}

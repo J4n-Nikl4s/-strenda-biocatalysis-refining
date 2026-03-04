@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "catalytic_efficiency": 0,
+      "catalytic_efficiency_unit": "",
+      "dissociation_constant": 0,
+      "dissociation_constant_unit": "",
+      "enzyme_stability": "- RADH is unstable in buffer (half-life ~6 h at room temperature, 9% activity after 1 day at 8°C).\n- Best storage: TEA–HCl buffer (10 mM, pH 7.5) at –20°C (full stability for at least 80 days).\n- Lyophilized enzyme stable for 20 days at –20°C (requires reactivation).\n- Addition of 50% glycerol increases initial activity to 140% after 4 days at –20°C, 120% after 80 days.\n- CaCl2 (0.8 mM) stabilizes enzyme: half-life at 8°C is 163 h (with CaCl2), almost complete deactivation in 24 h without CaCl2.\n- Stability optimum: pH 5.5–8, 8–15°C (half-life 130–138 h at 8–15°C with CaCl2). At 0°C, half-life is 41 h. At 25°C, half-life is 80 h.",
+      "hill_coefficient": 0,
+      "inhibition_constant": 16.4,
+      "inhibition_constant_unit": "mmol L-1 (for (R)-2-HPP substrate inhibition)",
+      "inhibition_type": "Substrate inhibition observed for (R)-2-HPP. NADP+ shows slight surplus inhibition at >0.8 mM.",
+      "maximum_reaction_rate": 486.8,
+      "maximum_reaction_rate_unit": "U mg-1 (for (R)-2-HPP reduction, see Table V)",
+      "michaelis_constant": 1.6,
+      "michaelis_constant_unit": "mmol L-1 (for (R)-2-HPP reduction, see Table V)",
+      "special_treatment": "- All kinetic parameters determined at 30°C, in triplicate, using spectrophotometric assays at 340 nm.\n- Buffers: TEA–HCl (50 mM, pH 7.5) + CaCl2 (0.8 mM) for reduction; TRIS–HCl (50 mM, pH 9.0) + CaCl2 (0.8 mM) for oxidation.\n- Substrate and cofactor concentrations varied as indicated in Table V.\n- Substrate range: RADH prefers aromatic/cyclic substrates, especially alpha-hydroxy ketones (see Tables II–IV).\n- Stereoselectivity: Reductions catalyzed with >99% enantio- and diastereomeric excess for alpha-hydroxy ketones.\n- pH optimum: Reduction pH 6–9.5 (broad), oxidation pH 10–11.5 (sharp).\n- Temperature optimum: Activity increases linearly from 15 to 45°C; stability optimum 8–15°C.\n- Native molecular weight: 75 kDa (trimeric structure suggested).\n- No activating metal ion required for activity; Ca2+ required for stability.",
+      "turnover_number": 0,
+      "turnover_number_unit": ""
+    },
+    {
+      "catalytic_efficiency": 0,
+      "catalytic_efficiency_unit": "",
+      "dissociation_constant": 0,
+      "dissociation_constant_unit": "",
+      "enzyme_stability": "",
+      "hill_coefficient": 0,
+      "inhibition_constant": 0,
+      "inhibition_constant_unit": "",
+      "inhibition_type": "",
+      "maximum_reaction_rate": 12.6,
+      "maximum_reaction_rate_unit": "U mg-1 (for benzaldehyde reduction, Table V, entry 6)",
+      "michaelis_constant": 15.6,
+      "michaelis_constant_unit": "mmol L-1 (for benzaldehyde reduction, Table V, entry 6)",
+      "special_treatment": "measured at 30°C, in triplicate, using spectrophotometric assays at 340 nm.",
+      "turnover_number": 0,
+      "turnover_number_unit": ""
+    }
+  ]
+}

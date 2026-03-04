@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "deflection": 0,
+      "deflection_unit": "",
+      "position": "",
+      "shaking_type": "",
+      "special_treatment": "All activity measurements (oxidation and reduction assays) were performed in semi-micro cuvettes (total volume 1 mL) for 1 min. No explicit mention of mixing or shaking is given for the cuvette-based spectrophotometric assays. For temperature-dependent stability studies, enzyme incubation was performed in a Thermomixer comfort (Eppendorf), which implies controlled mixing, but the speed or type is not specified.",
+      "speed": 0,
+      "speed_unit": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "distance_between_stirrers": 0,
+      "distance_between_stirrers_unit": "",
+      "height_of_stirrer_above_vessel_base": 0,
+      "height_of_stirrer_above_vessel_base_unit": "",
+      "number_of_stirrer_blades": 0,
+      "number_of_stirrers": 0,
+      "power_per_volume": 0,
+      "power_per_volume_unit": "",
+      "special_treatment": "All activity assays (oxidation and reduction) were performed in semi-micro cuvettes with a total volume of 1 mL. The text does not specify any mechanical or magnetic stirring, shaking, or other mixing method for the cuvette-based spectrophotometric assays. There is no mention of vessel geometry, stirrer type, or mixing speed. The only temperature control mentioned is via a temperature-controlled slide in the spectrophotometer and external thermometer. For enzyme incubation (e.g., stability studies), a Thermomixer comfort (Eppendorf) was used, but no shaking or mixing speed is specified.",
+      "speed_unit": "",
+      "stir_bar_shape": "",
+      "stir_bar_size": 0,
+      "stir_bar_size_unit": 0,
+      "stirrer_blade_pitch_angle": 0,
+      "stirrer_blade_size": 0,
+      "stirrer_blade_size_unit": "",
+      "stirrer_geometry": "",
+      "stirrer_material": "",
+      "stirrer_speed": 0,
+      "stirring_type": "",
+      "supplier": ""
+    }
+  ]
+}

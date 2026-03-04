@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "gas_phase": "",
+      "mixing_during_sampling": "",
+      "time": 0,
+      "vessel_opened_for_sampling": "",
+      "volume_per_sample": 0,
+      "volume_per_sample_unit": ""
+    },
+    {
+      "gas_phase": "",
+      "mixing_during_sampling": "",
+      "time": 0,
+      "vessel_opened_for_sampling": "",
+      "volume_per_sample": 0,
+      "volume_per_sample_unit": ""
+    }
+  ]
+}
