@@ -1,0 +1,424 @@
+{
+  "name": "Engineering a Formate Dehydrogenase for NADPH Regeneration - CdFDH-M4 Complete Dataset",
+  "description": "Comprehensive STRENDA entry for the engineering of formate dehydrogenase from Candida dubliniensis (CdFDH) for NADPH regeneration. CdFDH-WT was engineered via three rounds of mutagenesis (CSR-SALAD-guided + semi-rational design) to yield CdFDH-M4 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R/H16L/K159R) with 75-fold improved catalytic efficiency toward NADP+ (kcat/Km = 47 s-1mM-1 vs 0.63 s-1mM-1 for WT). CdFDH-M4 was successfully applied in six diverse asymmetric oxidative/reductive biocatalytic reactions with cofactor TTNs ranging from 135 to 986. Crystal structures were determined for CdFDH-WT/NADH (PDB: 8J3O, 2.65 Å) and CdFDH-M4/NADP+ (PDB: 8J3P, 2.30 Å). MD simulations (3 × 50 ns) revealed improved NADP+ binding stability in M4 vs WT. All reactions were performed in 2 mL Eppendorf tubes at 30°C for 24 h. GC analysis on CP-Chirasil-Dex CB or DB-1701 columns; UPLC on CHIRALPAK IA-U column for substrate 1f.",
+  "biocatalyst": [
+    {
+      "identity": {
+        "name": "CdFDH-WT (Formate Dehydrogenase wild-type from Candida dubliniensis)",
+        "ec_number": ["not in the publication"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NAD+ to NADH; low NADP+ activity"],
+        "sequences": {"sequence_amino_acid": ["GenBank Accession No. XP_002420645.1"]},
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)"],
+          "purification_method": [
+            "Ni2+-affinity chromatography (Ni SepharoseTM 6 Fast Flow, 4 mL, GE Healthcare)",
+            "Size-exclusion chromatography on Superdex 75 pre-packed column (4°C, 120 mL, GE Healthcare); eluted with NaCl 0.2 M, DTT 1 mM, potassium phosphate 20 mM pH 7.2; concentrated to 15 mg/mL"
+          ],
+          "formulation": "solution"
+        }
+      },
+      "application": {
+        "application_type": "purified",
+        "concentration": [{"value": 15.0, "unit": "mg/mL", "determination_method": "UV absorbance at 280 nm; extinction coefficient 1.05 M-1cm-1 (ExPASy ProtParam)"}],
+        "activity": []
+      }, 
+      "storage": {
+        "temperature": -80.0,
+        "temperature_unit": "°C",
+        "additives": ["glycerol 40% v/v", "NaCl 0.2 M", "potassium phosphate 20 mM pH 7.4"]
+      },
+      "notes": "CdFDH-WT crystal structure (PDB: 8J3O) determined at 2.65 Å resolution; space group P1, 4 asymmetric units per cell; homodimer; NADH cofactor buried in Rossmann fold; active site residues Asp197, Tyr198, Gln199 interact with 2'-OH of adenosine ribose. Kinetics: NAD+ kcat=30.7±0.7 s-1, Km=0.07±0.007 mM, kcat/Km=439 s-1mM-1; NADP+ kcat=3.4±0.4 s-1, Km=5.4±1.4 mM, kcat/Km=0.63 s-1mM-1."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M1 (D197Q/Y198R/Q199N) - first-round cofactor switching mutant",
+        "ec_number": ["not in the publication"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH; triple mutant from CSR-SALAD screening"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)"],
+          "purification_method": ["Ni2+-affinity chromatography", "Size-exclusion chromatography on Superdex 75"],
+          "formulation": "solution"
+        }
+      },
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 0.5, "unit": "U/mg", "determination_method": "Absorbance at 340 nm, 30°C, 1 min; 1 U = 1 μmol NAD(P)H formed/min"}]
+      },
+      "notes": "Kinetics NAD+: kcat=2.5±0.2 s-1, Km=5.1±1.2 mM, kcat/Km=0.48 s-1mM-1. Kinetics NADP+: kcat=3.5±0.2 s-1, Km=0.30±0.07 mM, kcat/Km=12 s-1mM-1. Same mutations as CboFDH for cofactor switching; kcat unchanged vs WT, Km(NADP+) decreased from 5.4 to 0.30 mM."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M1I (D197Q/Y198R/Q199N/A372S)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "purification_method": ["Ni2+-affinity chromatography"],
+          "formulation": "solution"
+        }
+      },
+      "notes": "Kinetics NAD+: kcat=3.7±0.3 s-1, Km=4.2±1.0 mM, kcat/Km=0.90 s-1mM-1. Kinetics NADP+: kcat=7.2±0.2 s-1, Km=0.60±0.06 mM, kcat/Km=12 s-1mM-1. A372S identified by site-saturation mutagenesis of 8 residues ≤4 Å from cofactor binding site; ~1.5-fold increase in specific activity."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M1II (D197Q/Y198R/Q199N/A372S/K371T)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "purification_method": ["Ni2+-affinity chromatography"],
+          "formulation": "solution"
+        }
+      },
+      "notes": "Kinetics NAD+: kcat=4.1±0.2 s-1, Km=3.8±0.7 mM, kcat/Km=1.1 s-1mM-1. Kinetics NADP+: kcat=9.7±0.4 s-1, Km=0.55±0.09 mM, kcat/Km=18 s-1mM-1. K371T identified by site-saturation mutagenesis of C-terminal residues Ala369-Lys379."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M1III (D197Q/Y198R/Q199N/A372S/ΔQ375)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "purification_method": ["Ni2+-affinity chromatography"],
+          "formulation": "solution"
+        }
+      },
+      "notes": "Kinetics NAD+: kcat=3.0±0.2 s-1, Km=6.1±1.1 mM, kcat/Km=0.49 s-1mM-1. Kinetics NADP+: kcat=11.3±0.5 s-1, Km=0.90±0.13 mM, kcat/Km=13 s-1mM-1. ΔQ375 = truncation of Q375 identified in C-terminal saturation mutagenesis."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M2 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "purification_method": ["Ni2+-affinity chromatography"],
+          "formulation": "solution"
+        }
+      },
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 1.5, "unit": "U/mg", "determination_method": "Absorbance at 340 nm toward NADP+"}]
+      },
+      "notes": "Kinetics NAD+: kcat=4.5±0.2 s-1, Km=0.21±0.05 mM, kcat/Km=21 s-1mM-1. Kinetics NADP+: kcat=14.7±0.3 s-1, Km=0.69±0.05 mM, kcat/Km=21 s-1mM-1. K371T + ΔQ375 combination restored NAD+ reactivity; specific activity toward NADP+ 1.5 U/mg ≈ WT toward NAD+ (6 U/mg)."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M3 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "purification_method": ["Ni2+-affinity chromatography"],
+          "formulation": "solution"
+        }
+      },
+      "notes": "Kinetics NAD+: kcat=6.7±0.3 s-1, Km=4.9±0.61 mM, kcat/Km=1.37 s-1mM-1. Kinetics NADP+: kcat=28.3±0.44 s-1, Km=0.76±0.04 mM, kcat/Km=37 s-1mM-1. K167R from third-round dimer-interface mutagenesis; surface residue far from cofactor site; kcat increased 1.9-fold vs M2."
+    },
+    {
+      "identity": {
+        "name": "CdFDH-M4 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R/H16L/K159R)",
+        "ec_number": ["1.2.1.2"],
+        "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH; 75-fold improved kcat/Km toward NADP+ vs WT"],
+        "sequences": {"sequence_amino_acid": ["GenBank Accession No. XP_002420645.1 with mutations D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R/H16L/K159R"]},
+        "origin_organism": "Candida dubliniensis",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)-CdFDH-M4; expression in E. coli BL21(DE3); induction 0.2 mM IPTG at 16°C for 20-24 h; cells grown in LB (tryptone 1% w/v, yeast extract 0.5% w/v, NaCl 1% w/v) with ampicillin 50 μg/mL"],
+          "purification_method": [
+            "Ni2+-affinity chromatography: Ni SepharoseTM 6 Fast Flow 4 mL (GE Healthcare); equilibrated with buffer A (imidazole 10 mM, NaCl 0.5 M, β-mercaptoethanol 5 mM, potassium phosphate 20 mM pH 7.4); washed 20 CV + 10 mM imidazole; eluted 10-300 mM imidazole; concentrated and desalted 3x Amicon Ultra-15 MWCO 10 kDa into NaCl 0.2 M, potassium phosphate 20 mM pH 7.4",
+            "Size-exclusion chromatography on Superdex 75 (4°C, 120 mL, GE Healthcare); NaCl 0.2 M, DTT 1 mM, potassium phosphate 20 mM pH 7.2; concentrated to 15 mg/mL"
+          ],
+          "formulation": "solution"
+        }
+      },
+      "application": {
+        "application_type": "purified",
+        "concentration": [{"value": 15.0, "unit": "mg/mL", "determination_method": "UV absorbance at 280 nm; extinction coefficient 1.05 M-1cm-1 (ExPASy ProtParam)"}],
+        "activity": [{"value": 3.2, "unit": "U/mg", "determination_method": "Absorbance at 340 nm (UV-1900, Shimadzu); 30°C; 1 U = 1 μmol NAD(P)H formed/min; potassium phosphate 100 mM pH 7.5, sodium formate 500 mM, NADP+ 0.5 mM"}]
+      },
+      "storage": {
+        "temperature": -80.0,
+        "temperature_unit": "°C",
+        "additives": ["glycerol 40% v/v", "NaCl 0.2 M", "potassium phosphate 20 mM pH 7.4"]
+      },
+      "notes": "Crystal structure PDB: 8J3P; space group C2221; 2.30 Å resolution; 3 molecules per asymmetric unit, 2 forming homodimer; RMSD vs WT <0.40 Å (Cα dimers). New H-bonds near 2'-O-phosphate of NADP+: Gln197, Arg198, Asn199, A372S; inter-subunit polar contact from Lys3 of partner chain (Fig S5). MD simulation: Amber 20, ff14SB force field, GAFF for NADP+/formate, RESP charges, TIP3P water, 3×50 ns. WT Arg176 blocks 2'-O-phosphate; PRS state WT 2% vs M4 0.07%. Kinetics NADP+: kcat=33.6±0.34 s-1, Km=0.71±0.03 mM, kcat/Km=47 s-1mM-1. Kinetics NAD+: kcat=7.3±0.5 s-1, Km=8.0±1.5 mM, kcat/Km=0.91 s-1mM-1."
+    },
+    {
+      "identity": {
+        "name": "ScIR-R3-V4 (NADPH-dependent Imine Reductase mutant from Streptomyces clavuligerus)",
+        "ec_number": ["1.5.1.34"],
+        "catalyzed_reaction": ["Asymmetric reduction of 2-(2,5-difluorophenyl)pyrrolidine to (R)-2-(2,5-difluorophenyl)pyrrolidine using NADPH"],
+        "origin_organism": "Streptomyces clavuligerus"
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 12.0, "unit": "U", "determination_method": "Units loaded per reaction"}]
+      },
+      "notes": "Strict NADPH-dependent IRED. Chen et al., ACS Catal. 2022, 12, 14795-14803. 90% conversion 1a→(R)-2a with CdFDH-M4 (24 h); 6% with WT. GC: CP-Chirasil-Dex CB; 120°C 22 min. Peaks: 1a rt=12.982/13.031 min, (R)-2a rt=16.460/16.536 min. CdFDH-M4 areas: 29902 (1a) / 89907 (2a). TTN CdFDH-M4: 754±4; TTN BmGDH-M6: 995±1."
+    },
+    {
+      "identity": {
+        "name": "PcIR-M3 (Imine Reductase mutant from Penicillium camemberti)",
+        "ec_number": ["1.5.1.34"],
+        "catalyzed_reaction": ["Asymmetric reductive amination of 3-(3-(trifluoromethyl)phenyl)propanal with (R)-1-(naphthalen-1-yl)ethan-1-amine to (R)-2b using NADPH"],
+        "origin_organism": "Penicillium camemberti"
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 2.0, "unit": "U", "determination_method": "Units loaded per reaction"}]
+      },
+      "notes": "Chen et al., JACS 2023, 145, 4015-4025. CdFDH-M4: 55% conversion, TTN 601±60. BmGDH-M6: 63% conversion, TTN 589±1. GC DB-1701; 120°C 0 min, 20°C/min to 260°C, hold 16 min. Peaks (CdFDH-M4): amine rt=7.340 area 32999, (R)-2b rt=16.471 area 55697."
+    },
+    {
+      "identity": {
+        "name": "CgKR1F92C/F94W (Carbonyl Reductase double mutant from Candida glabrata)",
+        "ec_number": ["1.1.1.184"],
+        "catalyzed_reaction": ["Asymmetric reduction of ketone substrates 1c and 1d using NADPH"],
+        "origin_organism": "Candida glabrata"
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 100.0, "unit": "U", "determination_method": "Units loaded per reaction"}]
+      },
+      "notes": "Zheng et al., ACS Catal. 2017, 7, 7174-7181. 1c: CdFDH-M4 >99% conv TTN 911±8; BmGDH-M6 45% TTN 429±3. GC CP-Chirasil-Dex CB 160°C 15 min; peaks: 1c rt=8.859 min, product rt=11.002 min. 1d: CdFDH-M4 99% conv TTN 986±1; BmGDH-M6 63% TTN 627±1. GC: 150°C 5 min, 10°C/min to 170°C, hold 5 min; 1d rt=7.816 min, (S)-2d rt=9.420 min."
+    },
+    {
+      "identity": {
+        "name": "CHMOAcineto (Cyclohexanone Monooxygenase from Acinetobacter sp.)",
+        "ec_number": ["1.14.13.22"],
+        "catalyzed_reaction": ["Baeyer-Villiger oxidation of cyclohexanone to caprolactone using NADPH and O2"],
+        "origin_organism": "Acinetobacter sp."
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 1.3, "unit": "U", "determination_method": "Units loaded per reaction"}]
+      },
+      "notes": "Donoghue et al. 1976; Ren et al., Biotechnol. Bioeng. 2021. CdFDH-M4 TTN 359±2; BmGDH-M6 TTN 238±12. GC: CP-Chirasil-Dex CB; 50°C 1 min, 20°C/min to 120°C 2 min, 20°C/min to 180°C 2 min. 1e rt=6.136/5.447 min; 2e rt=9.580/9.146 min. Peak areas CdFDH-M4: 84374 (1e) / 212409 (2e)."
+    },
+    {
+      "identity": {
+        "name": "AcPSMO (Asymmetric Sulfide Monooxygenase from Arthrobacter citreus)",
+        "ec_number": ["1.14.13.-"],
+        "catalyzed_reaction": ["Asymmetric Kagan sulfoxidation of pyrmetazole to (S)-pyrmetazole sulfoxide using NADPH and O2"],
+        "origin_organism": "Arthrobacter citreus"
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 20.0, "unit": "mU", "determination_method": "Units loaded per reaction"}]
+      },
+      "notes": "Ren et al., Biotechnol. Bioeng. 2021. CdFDH-M4 TTN 135±1; BmGDH-M6 TTN 65±1. UPLC: CHIRALPAK IA-U (1.6 μm, 3.0×50 mm, Daicel); 40°C; heptane/EtOH 70:30; 0.6 mL/min; 300 nm. 1f rt=0.826 min area 21152340; (S)-2f rt=1.502 min area 7924925. BmGDH: 1f area 20795673, (S)-2f area 5867911."
+    },
+    {
+      "identity": {
+        "name": "BmGDH-M6 (Glucose Dehydrogenase mutant from Bacillus megaterium)",
+        "ec_number": ["1.1.1.47"],
+        "catalyzed_reaction": ["Oxidation of glucose to gluconolactone with reduction of NADP+ to NADPH; benchmark cofactor regeneration system"],
+        "origin_organism": "Bacillus megaterium"
+      },
+      "source_type": "self_produced",
+      "application": {
+        "application_type": "purified",
+        "activity": [{"value": 1.8, "unit": "U", "determination_method": "Same activity loading as CdFDH-M4 for direct comparison"}]
+      },
+      "notes": "Qian et al., ChemBioChem 2020, 21, 2680-2688. Produces stoichiometric gluconic acid → acidification without pH control. TTNs: 1a 995±1, 1b 589±1, 1c 429±3, 1d 627±1, 1e 238±12, 1f 65±1. GDH reactions terminated at 22-63% conversion due to system acidification."
+    }
+  ],
+  "reaction_components": [
+    {
+      "identity": {"name": "2-(2,5-difluorophenyl)pyrrolidine (1a)", "smiles": "Fc1ccc(N2CCCC2)c(F)c1"},
+      "role": "substrate",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "ScIR-R3-V4 substrate. GC: 1a rt=12.982 min, (R)-2a rt=16.460 min. CdFDH-M4 areas: 29902/89907. Conversion 90% (24 h). TTN CdFDH-M4: 754±4; BmGDH-M6: 995±1."
+    },
+    {
+      "identity": {"name": "3-(3-(trifluoromethyl)phenyl)propanal (1b)", "smiles": "O=CCCc1cccc(C(F)(F)F)c1"},
+      "role": "substrate",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "PcIR-M3 substrate. Co-substrate: (R)-1-(naphthalen-1-yl)ethan-1-amine 100 mM. GC: 1b-amine rt=7.344, aldehyde rt=4.607, (R)-2b rt=16.451 min. CdFDH-M4: 55% conv, TTN 601±60. BmGDH-M6: 63% conv, TTN 589±1."
+    },
+    {
+      "identity": {"name": "Ethyl 2-oxo-4-phenylbutanoate (1c)", "smiles": "O=C(OCC)C(=O)CCc1ccccc1"},
+      "role": "substrate",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "CgKR1F92C/F94W substrate. GC: 1c rt=8.859, rac-2c rt=11.048/11.353, product rt=11.002 min. CdFDH-M4: >99% conv, TTN 911±8. BmGDH-M6: 45% conv, TTN 429±3."
+    },
+    {
+      "identity": {"name": "tert-Butyl 3-oxopiperidine-1-carboxylate (1d)", "smiles": "O=C1CCCN(C(=O)OC(C)(C)C)C1"},
+      "role": "substrate",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "CgKR1F92C/F94W substrate giving (S)-2d. GC: 1d rt=7.816, (S)-2d rt=9.462 min. CdFDH-M4: 99% conv, TTN 986±1. BmGDH-M6: 63% conv, TTN 627±1."
+    },
+    {
+      "identity": {"name": "Cyclohexanone (1e)", "smiles": "O=C1CCCCC1", "identifiers": ["CAS 108-94-1"]},
+      "role": "substrate",
+      "amount": {"value": 50.0, "unit": "mM"},
+      "notes": "CHMOAcineto substrate for Baeyer-Villiger oxidation to caprolactone. 0.1 mM NADP+; 2% v/v EtOH; pH 7.0; 75 mM formate. CdFDH-M4: TTN 359±2. BmGDH-M6: TTN 238±12."
+    },
+    {
+      "identity": {"name": "Pyrmetazole (1f)", "smiles": "COc1cnc(N2CCCS2(=O))nc1OC"},
+      "role": "substrate",
+      "amount": {"value": 30.0, "unit": "mM"},
+      "notes": "AcPSMO substrate for Kagan sulfoxidation to (S)-2f. 0.1 mM NADP+; 10% MeOH; pH 8.0; 45 mM formate. CdFDH-M4: TTN 135±1. BmGDH-M6: TTN 65±1. UPLC: IA-U; heptane/EtOH 70:30; 40°C; 0.6 mL/min; 300 nm."
+    },
+    {
+      "identity": {"name": "NADP+", "identifiers": ["CAS 53-84-9"]},
+      "role": "cofactor",
+      "amount": {"value": 0.1, "unit": "mM"},
+      "notes": "Catalytic cofactor (0.1 mM all reactions). Kinetics: varied 0.1–10 mM with 500 mM formate in 100 mM KPO4 pH 7.5. Screening: 2 mM initial, decreased to 0.5 mM as mutants improved."
+    },
+    {
+      "identity": {"name": "Sodium formate", "identifiers": ["CAS 141-53-7"]},
+      "role": "cosubstrate",
+      "amount": {"value": 150.0, "unit": "mM"},
+      "notes": "Hydride donor oxidized to CO2. 150 mM (1a–1d), 75 mM (1e), 45 mM (1f). Km determination: varied 10–800 mM with 1 mM NAD(P)+."
+    },
+    {
+      "identity": {"name": "Potassium phosphate buffer", "formulation": "solution"},
+      "role": "buffer",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "pH 6.0 (1a–1d), pH 7.0 (1e), pH 8.0 (1f). Kinetics assay: 100 mM pH 7.5."
+    },
+    {
+      "identity": {"name": "DMSO", "formulation": "liquid"},
+      "role": "solvent",
+      "amount": {"value": 1.0, "unit": "% v/v"},
+      "notes": "1% v/v for 1a; 15% v/v for 1b; 5% v/v EtOH for 1c/1d; 2% v/v EtOH for 1e; 10% v/v MeOH for 1f."
+    },
+    {
+      "identity": {"name": "(R)-1-(naphthalen-1-yl)ethan-1-amine", "smiles": "[C@@H](c1cccc2ccccc12)(N)C"},
+      "role": "cosubstrate",
+      "amount": {"value": 100.0, "unit": "mM"},
+      "notes": "Amine donor for reductive amination of 1b by PcIR-M3."
+    },
+    {
+      "identity": {"name": "Glucose", "identifiers": ["CAS 50-99-7"]},
+      "role": "cosubstrate",
+      "amount": {"value": 150.0, "unit": "mM"},
+      "notes": "Cosubstrate for BmGDH-M6 benchmark reactions. Produces gluconic acid → pH drop → acidification without pH control."
+    }
+  ],
+  "operation_mode": [
+    {"mode": "batch", "reactor_type": "well_mixed", "feeding": {"feeding_type": "none"}}
+  ],
+  "reaction_conditions": {
+    "reactor": {"reactor_type": "well_mixed"},
+    "system": {
+      "system_type": "monoliquid",
+      "monoliquid": {
+        "solvent_description": "Aqueous potassium phosphate buffer 100 mM with co-solvents (DMSO 1-15%, EtOH 2-5%, or MeOH 10% depending on substrate)",
+        "notes": "No pH control applied; GDH coupled reactions suffered acidification from gluconic acid formation"
+      }
+    },
+    "temperature": {
+      "profile_type": "constant",
+      "temperature_unit": "°C",
+      "constant_temperature": 30.0,
+      "notes": "All biocatalytic reactions and kinetics at 30°C. Crystallization 18°C. Expression 16°C. Storage -80°C."
+    },
+    "pH": {
+      "profile_type": "constant",
+      "constant_pH": 6.0,
+      "notes": "pH 6.0 for 1a-1d; pH 7.0 for 1e; pH 8.0 for 1f. No pH control. Kinetics assay pH 7.5."
+    }
+  },
+  "results": [
+    {
+      "kinetics": {
+        "michaelis_constant": 0.71,
+        "turnover_number": 33.6,
+        "catalytic_efficiency": 47.0,
+        "notes": "CdFDH-M4 NADP+: kcat=33.6±0.34 s-1, Km=0.71±0.03 mM, kcat/Km=47. NAD+: kcat=7.3±0.5, Km=8.0±1.5, kcat/Km=0.91. 75-fold improvement vs WT (kcat/Km=0.63). Full series kcat/Km (s-1mM-1): WT NAD+ 439/NADP+ 0.63; M1 0.48/12; M1I 0.90/12; M1II 1.1/18; M1III 0.49/13; M2 21/21; M3 1.37/37; M4 0.91/47. Assay: Δabs340nm, UV-1900 Shimadzu, 1.4 mL quartz cuvette, 30°C, 1 min."
+      },
+      "yield_and_conversion": {
+        "notes": "1a: CdFDH-M4 90% conv TTN 754±4, BmGDH-M6 TTN 995±1. 1b: CdFDH-M4 55% TTN 601±60, BmGDH-M6 63% TTN 589±1. 1c: CdFDH-M4 >99% TTN 911±8, BmGDH-M6 45% TTN 429±3. 1d: CdFDH-M4 99% TTN 986±1, BmGDH-M6 63% TTN 627±1. 1e: CdFDH-M4 TTN 359±2, BmGDH-M6 TTN 238±12. 1f: CdFDH-M4 TTN 135±1, BmGDH-M6 TTN 65±1. FDH outperformed GDH in all reactions except 1a; GDH terminated 22-63% due to acidification."
+      },
+      "activity": {
+        "specific_activity": 3.2,
+        "notes": "CdFDH-M4 NADP+: 3.2 U/mg. WT NAD+: 6 U/mg. M1 NADP+: 0.5 U/mg. M2 NADP+: 1.5 U/mg. 1 mL assay, 1.4 mL cuvette, 30°C, Δabs340nm 1 min."
+      },
+      "selectivity": {
+        "notes": "High enantioselectivity inferred from chiral GC/UPLC. 1a→(R)-2a (ScIR-R3-V4); 1b→(R)-2b (PcIR-M3); 1c→(S)-2c; 1d→(S)-2d (CgKR1F92C/F94W); 1e→caprolactone (achiral); 1f→(S)-sulfoxide (AcPSMO Kagan oxidation). Quantitative ee values not reported."
+      }
+    }
+  ],
+  "sampling": [
+    {
+      "sampling_applied": true,
+      "samples": [
+        {
+          "time": 24.0,
+          "time_unit": "h",
+          "phase": "liquid",
+          "preprocessing": {
+            "treatment_procedure": "1a/1b/1e: extract 1 mL MTBE; dry Na2SO4; GC-FID (SHIMADZU GC-2014). 1c/1d: extract 1 mL EtOAc; dry Na2SO4; chiral GC. 1f: extract 1 mL EtOAc; dry Na2SO4; chiral UPLC (LC-2010, CHIRALPAK IA-U, Daicel). Time-course for 1a: 0, 6, 12, 18, 24 h."
+          },
+          "notes": "GC programs: 1a - CP-Chirasil-Dex CB, 120°C 22 min; 1b - DB-1701, 120°C→260°C at 20°C/min 16 min; 1c - CP-Chirasil-Dex CB, 160°C 15 min; 1d - CP-Chirasil-Dex CB, 150°C 5 min + 170°C 5 min; 1e - CP-Chirasil-Dex CB, 50→120→180°C; 1f - UPLC IA-U, heptane/EtOH 70:30, 40°C, 0.6 mL/min, 300 nm. All: Inj. 280°C, Det. 280°C."
+        }
+      ]
+    }
+  ],
+  "vessels_and_mixing": [
+    {
+      "vessel": {
+        "vessel_type": "vial",
+        "material": "polypropylene",
+        "size": 2.0,
+        "size_unit": "mL",
+        "notes": "2 mL Eppendorf tubes, 1 mL reaction volume. Kinetics: 1.4 mL quartz cuvette. Screening: 96-deep-well plates (300 μL primary / 430 μL secondary / 200 μL lysis). Crystallization: 96-well sitting drop plates at 18°C."
+      },
+      "mixing": {
+        "mixing_type": "shaking",
+        "shaking": {
+          "shaking_type": "orbital",
+          "notes": "Reactions agitated 30°C, 24 h. Expression: 200 rpm. Library screening: 800 rpm. RPM for biocatalytic reactions not specified."
+        }
+      }
+    }
+  ]
+}
