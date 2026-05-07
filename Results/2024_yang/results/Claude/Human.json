@@ -1,0 +1,178 @@
+{
+  "name": "HheG-catalyzed ring-opening of cyclohexene oxide with NaOCN",
+  "description": "Whole-cell biocatalytic ring-opening of cyclohexene oxide using halohydrin dehalogenase (IcHheG) from Ilumatobacter coccineus with sodium cyanate (NaOCN) as non-natural nucleophile in a two-phase system (ethyl acetate/water), scaled from analytical to pilot (10 L) scale. The reaction produces trans-hexahydro-2(3H)-benzoxazolone (trans-HBC).",
+  "biocatalyst": [
+    {
+      "identity": {
+        "name": "Halohydrin dehalogenase G (IcHheG)",
+        "ec_number": ["3.8.1.2"], # Not in paper or supporting info
+        "catalyzed_reaction": ["SN2 ring-opening of cyclohexene oxide with NaOCN to form trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)"],
+        "origin_organism": "Ilumatobacter coccineus",
+        "production_organism": "Escherichia coli BL21",
+        "sequences": {
+          "sequence_amino_acid": ["MSNAENRPVALITMATGYVGPALARTMADRGFDLVLHGTAGDGTMVGVEESFDSQIADLAKRGADVLTISDVDLTTRTGNQSMIERVLERFGRLDSACLVTGLIVTGKFLDMTDDQWAKVKATNLDMVFHGLQAVLPPMVAAGAGQCVVFTSATGGRPDPMVSIYGGTRAGANGIVRAVGLEHARHGVQVNAIGTNYMDFPGFLKASRADGDPERRAMIEAQVPLRRLGTMDELSSVTAGLLDGSNRFQTGQFFDFSGGWGA"]
+        }
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "plasmid_specifications": ["pET28a"],
+          "formulation": "other"
+        }
+      },
+      "application": {
+        "application_type": "whole_cell",
+        "concentration": [{"value": 50.0, "unit": "g/L wet cell"}], # Should this maybe be a part of reaction conditions? 
+        "workflow_details": {
+          "harvesting_method": "Centrifugation at 6000 rpm"
+        }
+      },
+      "storage": {
+        "temperature": -20.0,
+        "temperature_unit": "°C"
+      }
+    }
+  ],
+  "reaction_components": [
+    {
+      "identity": {"name": "Cyclohexene oxide", "identifiers": ["CAS:286-20-4"]}, # CAS number correct, but not in paper
+      "role": "substrate",
+      "amount": {"value": 200.0, "unit": "mM"},
+      "notes": "Screening: 20 mM; scale-up target: 200 mM (10x increase). Pilot scale: 0.48 kg in 50 L reactor."
+    },
+    {
+      "identity": {"name": "Sodium cyanate", "identifiers": ["CAS:917-61-3"]}, # CAS number correct, but not in paper
+      "role": "cosubstrate",
+      "amount": {"value": 400.0, "unit": "mM"},
+      "notes": "2 equivalents relative to cyclohexene oxide. Non-natural nucleophile for ring-opening."
+    },
+    {
+      "identity": {"name": "trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)", "identifiers": ["CAS:17539-96-7"]}, # CAS number correct, but not in paper
+      "role": "other",
+      "notes": "Main product. Isolated as white crystals after extraction with ethyl acetate and crystallization with heptane."
+    },
+    {
+      "identity": {"name": "Ethyl acetate", "identifiers": ["CAS:141-78-6"]}, # CAS number correct, but not in paper
+      "role": "solvent",
+      "amount": {"value": 35.0, "unit": "% v/v"},
+      "notes": "Co-solvent for two-phase reaction. Hydrolyzes in presence of NaOH, providing self-pH control at ~10.5. Also used for product extraction."
+    },
+    {
+      "identity": {"name": "Phosphate buffer"},
+      "role": "buffer",
+      "amount": {"value": 50.0, "unit": "mM"},
+      "notes": "PB buffer, pH 7.0. Used in screening assay. Not needed in pilot-scale due to self-pH control by ethyl acetate hydrolysis."
+    }
+  ],
+  "operation_mode": [
+    {
+      "mode": "batch",
+      "reactor_type": "well_mixed",
+      "notes": "Batch reactions run for 16 hrs (screening/optimization) or 29 hrs (pilot scale) until target conversion reached."
+    }
+  ],
+  "reaction_conditions": {
+    "reactor": {
+      "reactor_type": "well_mixed",
+      "notes": "Screening: 96-well plates, 200 µL. Optimization: 10 mL glass vials, 5 mL reactions. Pilot: 50 L stirred tank reactor (Dongsen EXDS/JGRL), 10 L reaction volume."
+    },
+    "system": {
+      "system_type": "multiphasic",
+      "multiphasic": {
+        "phases_number": 2,
+        "notes": "Two-phase system: aqueous phase (NaOCN, buffer/water, whole cells) + organic phase (ethyl acetate as co-solvent, 35% v/v). Two-phase system used to avoid direct contact of biocatalyst with hydrophobic/toxic cyclohexene oxide."
+      }
+    },
+    "temperature": {
+      "profile_type": "constant",
+      "temperature_unit": "°C",
+      "constant_temperature": 25.0,
+      "notes": "Screening performed at 35°C. Scale-up and pilot at 25°C. Pilot scale showed exothermic phenomenon (>35°C); temperature controller used."
+    },
+    "pH": {
+      "profile_type": "constant",
+      "constant_pH": 10.5,
+      "notes": "Self-regulated pH via hydrolysis of ethyl acetate converting NaOH by-product to ethanol and sodium acetate. Starting pH 7.0; endpoint 10.5 with ethyl acetate co-solvent. HheG active pH 7-11."
+    }
+  },
+  "results": [
+    {
+      "yield_and_conversion": {
+        "product_yield": [42.0, 95.0, 87.0],
+        "conversion": 95.0,
+        "notes": "Screening hit (IcHheG): 42% yield at 20 mM cyclohexene oxide. Optimization (5 mL, 200 mM, ethyl acetate co-solvent): 95% yield. Pilot scale (10 L): 95% conversion, 87% isolated yield. Cell lysate showed 93% yield, comparable to whole cells."
+      },
+      "selectivity": {
+        "enantiomeric_excess": 53.0,
+        "stereoselectivity": "trans-selective; nucleophile attacks back side of epoxide (SN2), leading to inversion at one carbon; symmetric substrate gives both (3R,7R)- and (3S,7S)-HBC enantiomers.",
+        "regioselectivity": "SN2 attack preferentially on tertiary carbons (C1 and C2) of cyclohexene oxide. Cyanate COM distances: 3.5 Å (C1) and 3.6 Å (C2).",
+        "notes": "ee = 53% at both 5 mL and 10 L scale. Previous literature reported ee 52% at 20 mM scale."
+      },
+      "notes": "Space-time yield improved from <2 g/L/24h (previous literature) to 25 g/L/24h."
+    }
+  ],
+  "sampling": [
+    {
+      "sampling_applied": true,
+      "samples": [
+        {
+          "time": 16.0,
+          "time_unit": "h",
+          "amount": 600.0,
+          "amount_unit": "µL",
+          "phase": "liquid",
+          "preprocessing": {
+            "treatment_procedure": "Extraction with 600 µL ethyl acetate (screening) or 10 mL ethyl acetate (optimization). Organic phase diluted to 0-7 mM for GC analysis."
+          },
+          "notes": "Screening and optimization timepoint"
+        },
+        {
+          "time": 29.0,
+          "time_unit": "h",
+          "phase": "liquid",
+          "notes": "Pilot-scale endpoint; 95% conversion reached"
+        }
+      ],
+      "notes": "Reaction mixture extracted with ethyl acetate. Organic phase analyzed by achiral GC (DB-1 column) and chiral GC (CP7502 column) on Agilent GC-6890N."
+    }
+  ],
+  "vessels_and_mixing": [
+    {
+      "vessel": {
+        "vessel_type": "plate",
+        "size": 0.2,
+        "size_unit": "mL",
+        "notes": "96-well plate for HHDH screening"
+      }
+    },
+    {
+      "vessel": {
+        "vessel_type": "vial",
+        "material": "glass",
+        "size": 10.0,
+        "size_unit": "mL",
+        "notes": "10 mL glass vials for co-solvent screening and optimization"
+      }
+    },
+    {
+      "vessel": {
+        "vessel_type": "stirred_tank",
+        "size": 50.0,
+        "size_unit": "L",
+        "supplier": "Dongsen EXDS/JGRL",
+        "reactor_specifics": {
+          "temperature_control": "Cold water recycling"
+        },
+        "notes": "Pilot-scale reactor; 10 L reaction volume. Temperature controlled by recycling cold water."
+      },
+      "mixing": {
+        "mixing_type": "mechanical",
+        "mechanical": {
+          "stirring_type": "overhead",
+          "stirrer_speed": 200.0
+        }
+      }
+    }
+  ]
+}

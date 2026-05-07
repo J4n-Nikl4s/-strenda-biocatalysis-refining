@@ -1,0 +1,191 @@
+{
+    "name": "Biocatalysis with In-Situ Product Removal for p-Coumaric Acid Production",
+    "description": "Two-stage bioprocess for p-coumaric acid (pCA) production using immobilized whole-cell tyrosine ammonia lyase (FjTAL) biocatalyst with in-situ product removal via an aqueous two-phase system (ATPS). Published by Virklund et al. in ChemBioChem 2024, 25, e202400178.",
+    "biocatalyst": [
+      {
+        "identity": {
+          "name": "Tyrosine ammonia lyase (FjTAL)",
+          "ec_number": ["4.3.1.23"], # Not in paper or supporting info. also incorrect
+          "catalyzed_reaction": ["Deamination of L-tyrosine to p-coumaric acid and ammonia"],
+          "origin_organism": "Flavobacterium johnsoniae",
+          "production_organism": "Escherichia coli",
+          "posttranslational_modification": []
+        },
+        "source_type": "self_produced",
+        "source": {
+          "source_type": "self_produced",
+          "self_produced_details": {
+            "sequence_plasmid": [],
+            "plasmid_specifications": ["Arabinose inducible promoter on a plasmid"],
+            "purification_method": []
+          }
+        },
+        "application": {
+          "application_type": "whole_cell",
+          "concentration": [
+            {"value": 14.0, "unit": "g wet cells", "determination_method": "Wet weight (first experiment)"},
+            {"value": 17.0, "unit": "g wet cells", "determination_method": "Wet weight (second experiment)"}
+          ],
+          "activity": [
+            {"value": 65.0, "unit": "U/g", "determination_method": "UV-vis absorbance at 325 nm, 2 mM tyrosine, pH 10, 30°C, 50 mM CAPS buffer"}
+          ],
+          "workflow_details": {
+            "cell_disruption_process": "Cells permeabilized (not fully disrupted)",
+            "harvesting_method": "Fed-batch fermentation, harvested as described in Supporting Information 7"
+          }
+        },
+        "immobilization": {
+          "immobilized": true,
+          "immobilisation_chemistry": ["Entrapment in hydrogel, cross-linked with potassium chloride"],
+          "carrier_material": ["k-carrageenan/locust bean gum hydrogel (2:1 ratio, 2% w/v)"],
+          "linkers": [],
+          "immobilisation_method": ["Wet cells resuspended in 20 mL saline, mixed with 80 mL of ~50°C warm 1.33% w/v k-carrageenan 0.66% w/v locust bean gum 0.9% NaCl solution, extruded through 9-needle die (1 mm ID) at 33 mL/min, dropped ~20 cm into 2% w/v KCl solution at ~37°C, crosslinked 30 min"],
+          "purification_method": ["Drained and stored overnight at 4°C"],
+          "loading": {"value": 14.0, "unit": "g wet cells per 100 mL hydrogel", "determination_method": "Wet weight"},
+          "notes": "Produced ~100 g beads per batch. k-carrageenan beads stable for 23 hours in 25% w/w potassium carbonate at pH 9.9, 40°C, 300 rpm. Superior to calcium-alginate beads under alkaline conditions."
+        },
+        "storage": {
+          "temperature": 4.0,
+          "temperature_unit": "°C",
+          "notes": "Immobilized beads stored overnight at 4°C"
+        },
+        "notes": "FjTAL has high substrate specificity towards tyrosine and relatively low affinity towards the product pCA. Competitive product inhibition reduces catalytic rate."
+      }
+    ],
+    "reaction_components": [
+      {
+        "identity": {"name": "L-Tyrosine", "identifiers": ["CAS 60-18-4"], "formulation": "powder"},
+        "role": "substrate",
+        "amount": {"value": 50.0, "unit": "g (in ~850 mL total volume)"},
+        "notes": "Low solubility even at moderately alkaline pH. Loaded as a slurry."
+      },
+      {
+        "identity": {"name": "p-Coumaric acid (pCA)", "identifiers": ["CAS 501-98-4"]},
+        "role": "substrate",
+        "notes": "Product of the TAL-catalyzed deamination of tyrosine. Has antioxidant and antimicrobial properties. Precursor to poly(4-vinylphenol)."
+      },
+      {
+        "identity": {"name": "Potassium phosphate tribasic (K3PO4)", "identifiers": [], "formulation": "solution"},
+        "role": "buffer",
+        "amount": {"value": 10.0, "unit": "g (initial); 50% w/v solution for pH control"},
+        "notes": "Used for pH adjustment to ~10 and automatic pH control"
+      },
+      {
+        "identity": {"name": "Dipotassium hydrogen phosphate (K2HPO4)", "identifiers": [], "formulation": "powder"},
+        "role": "salt",
+        "amount": {"value": 30.0, "unit": "g"},
+        "notes": "Used in the ATPS experiment to form the salt phase (5% w/w potassium phosphate final)"
+      },
+      {
+        "identity": {"name": "Poly(ethylene glycol-ran-propylene glycol) (PEGRPG), Mw ~2500", "identifiers": [], "formulation": "liquid"},
+        "role": "other",
+        "amount": {"value": 120.0, "unit": "mL"},
+        "provenance": {"supplier": "Sigma-Aldrich"},
+        "notes": "Polymer phase of the ATPS for in-situ product removal. Liquid at room temperature. 12.5% w/w in final ATPS system."
+      },
+      {
+        "identity": {"name": "Deionized water", "identifiers": []},
+        "role": "solvent",
+        "amount": {"value": 730.0, "unit": "mL"},
+        "notes": "730 mL for ATPS experiment, 850 mL for control without ATPS"
+      }
+    ],
+    "operation_mode": [
+      {
+        "mode": "batch",
+        "feeding": {
+          "feeding_type": "none",
+          "description": "Batch mode with all substrates loaded at start. pH controlled automatically with K3PO4 solution addition."
+        },
+        "notes": "Single batch conversion. ~22-23 hours reaction time."
+      }
+    ],
+    "reaction_conditions": {
+      "reactor": {"reactor_type": "well_mixed"},
+      "system": {
+        "system_type": "multiphasic",
+        "multiphasic": {
+          "phases_number": 3,
+          "notes": "Aqueous two-phase system (ATPS): salt-rich aqueous phase, polymer-rich aqueous phase, and solid immobilized biocatalyst beads. Control experiments used monoliquid system."
+        }
+      },
+      "phases": [
+        {"phase_type": "liquid", "material_description": "Salt-rich aqueous phase (potassium phosphate)", "amount": 550.0, "amount_unit": "mL", "notes": "Contains dissolved tyrosine substrate and pCA product. Biocatalyst beads reside in this phase."},
+        {"phase_type": "liquid", "material_description": "Polymer-rich phase (PEGRPG 2500)", "amount": 325.0, "amount_unit": "mL", "notes": "Extracts pCA from salt phase. Final pCA concentration 47.58 g/L in experiment 2."},
+        {"phase_type": "solid", "material_description": "Immobilized whole-cell biocatalyst in k-carrageenan/LBG hydrogel beads", "amount": 100.0, "amount_unit": "g", "notes": "~100 g beads loaded into rotating bed reactor basket"}
+      ],
+      "temperature": {
+        "profile_type": "constant",
+        "temperature_unit": "°C",
+        "constant_temperature": 40.0
+      },
+      "pH": {
+        "profile_type": "constant",
+        "constant_pH": 10.0,
+        "detection": {
+          "detected_how": "pH electrode with automatic pH control",
+          "temperature": 40.0,
+          "temperature_unit": "°C"
+        },
+        "notes": "pH controlled automatically at setpoint 9.9-10.11 with 50% w/v K3PO4 solution. pH measurements in PEGRPG 2500 solution were offset and corrected."
+      },
+      "notes": "Reaction duration ~22-23 hours. Final volume slightly larger in second experiment due to base addition for pH control."
+    },
+    "results": [
+      {
+        "kinetics": {
+          "inhibition": {"inhibition_type": "competitive"},
+          "enzyme_stability": "Immobilized enzyme stability higher than purified enzyme at same pH and temperature. k-carrageenan-LBG hydrogels stable for 23 hours in alkaline 4-6% potassium phosphate at 40°C with 200 rpm stirring.",
+          "notes": "FjTAL activity decreased by 19% in 10% salt, 37% in 15% salt, >50% in 20% salt. Product inhibition (competitive) by pCA reduces catalytic rate."
+        },
+        "yield_and_conversion": {
+          "product_yield": [0.238, 0.724],
+          "notes": "Experiment 1 (lower activity cells): yield 0.238 g_pCA/g_tyrosine, overall concentration 11.9 g/L with ATPS. Experiment 2 (higher activity cells): yield 0.724 g_pCA/g_tyrosine, overall concentration 33.1 g/L with ATPS (1.9-fold improvement vs 17.7 g/L without ATPS). Partition coefficient of pCA between polymer and salt phase was 1.94 in experiment 2."
+        },
+        "activity": {
+          "specific_activity": 65.0,
+          "notes": "Specific activity of purified FjTAL in 50 mM CAPS buffer: ~65 U/g. Activity reduced in salt solutions: 19% loss at 10% salt, 37% loss at 15% salt, >50% loss at 20% salt (both potassium phosphate and carbonate tested)."
+        },
+        "notes": "Key result: ATPS with ISPR almost doubled pCA titer (33.3 g/L vs 17.7 g/L) and yield in experiment 2. Partition coefficient for pCA dropped from ~20 (initial PEG:Dextran test) to ~2 under actual bioreactor conditions. Polymer cost ~30% of product value, indicating polymer recycle is needed for economic feasibility."
+      }
+    ],
+    "sampling": [
+      {
+        "sampling_applied": true,
+        "strategy": {
+          "strategy_type": "specialised",
+          "notes": "Reactor sampled every hour initially, then again after 21 h. After 22 h, RBR removed from vessel, ATPS allowed to settle, both salt and polymer phases sampled separately. Contents drained into preheated measuring cylinder for phase volume determination."
+        },
+        "samples": [
+          {
+            "preprocessing": {
+              "quenching_method": "Equal volume of 1 M NaOH",
+              "quenching_ratio": 1.0,
+              "treatment_procedure": "Stored in dark at 4°C, diluted 20-fold in 50 mM CAPS buffer pH 10 at 30°C for UV-vis measurement at 385 nm"
+            },
+            "notes": "Samples quenched with equal volume of 1 M NaOH, stored in dark at 4°C. Absorbance spectra measured, absorbance at 385 nm compared to pCA standard curve (diluted 20-fold in 50 mM CAPS buffer pH 10 at 30°C)."
+          }
+        ]
+      }
+    ],
+    "vessels_and_mixing": [
+      {
+        "vessel": {
+          "vessel_type": "stirred_tank",
+          "size": 1.0,
+          "size_unit": "L",
+          "supplier": "Spinchem",
+          "notes": "1 L Rotating Bed Reactor (RBR) by Spinchem. Immobilized beads loaded into the RBR basket."
+        },
+        "mixing": {
+          "mixing_type": "mechanical",
+          "mechanical": {
+            "stirring_type": "Rotating bed reactor",
+            "supplier": "Spinchem",
+            "stirrer_speed": 200.0,
+            "notes": "RBR rotated at 200 rpm"
+          }
+        }
+      }
+    ]
+  }

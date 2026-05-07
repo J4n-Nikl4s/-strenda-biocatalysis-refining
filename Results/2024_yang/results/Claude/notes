@@ -1,0 +1,11 @@
+Biocatalysis: 
+
+"Self-produced" repeated
+"concentration": [{"value": 50.0, "unit": "g/L wet cell"}] - should this maybe be a part of reaction conditions? 
+
+Operation mode: 
+
+ "reactor_type": "well_mixed" - repeated
+
+reaction_conditions: 
+ Appears two places, both under "operation mode" and then again later
