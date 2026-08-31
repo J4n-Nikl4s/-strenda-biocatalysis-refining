@@ -87,7 +87,7 @@
       {
         "identity": { "name": "L-Tyrosine", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "substrate",
-        "amount": { "value": 50, "unit": "g per RBR batch (~980-970 mL total working volume); 2 mM in the activity assay" },
+        "amount": { "value": [50, 2], "unit": "g per RBR batch (~980-970 mL total working volume); 2 mM in the activity assay" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Described qualitatively as having 'low solubility... even at moderately alkaline pH'; no numeric solubility limit given."
@@ -103,7 +103,7 @@
       {
         "identity": { "name": "Potassium phosphate (K3PO4 / K2HPO4 mixture)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": null, "unit": "5% w/w in final ATPS ISPR formulation; 10-20% w/w tested for FjTAL activity impact (Figure 2); 30 g K2HPO4 + ~10 g K3PO4 used in the ATPS RBR run; ~10 g K3PO4 used for pH control in the non-ATPS RBR run" },
+        "amount": { "value": [10, 15, 20], "unit": "w/w" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Also used as the pH-stat titrant (50% w/V K3PO4 solution) to hold pH at setpoint automatically during the RBR reactions."
@@ -111,7 +111,7 @@
       {
         "identity": { "name": "Potassium carbonate (K2CO3 / KHCO3 mixture)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": null, "unit": "10-20% w/w tested for activity impact; cloud point 5-5.7% w/w (Table 1)" },
+        "amount": { "value": [10, 15, 20], "unit": "w/w" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Alternative alkaline salt screened; not used in the final selected ATPS (phosphate system chosen instead)."
@@ -119,7 +119,7 @@
       {
         "identity": { "name": "Poly(ethylene glycol-ran-propylene glycol) (PEGRPG), Mw ~2500", "smiles": null, "identifiers": null, "purity": null, "formulation": "liquid" },
         "role": "other",
-        "amount": { "value": null, "unit": "12.5% w/w in the final selected ATPS; 120 mL used in the ATPS RBR run" },
+        "amount": { "value": [12.5, 120], "unit": "w/w, mL"},
         "provenance": { "supplier": "Sigma-Aldrich" },
         "solubility": { "value": null, "unit": null },
         "notes": "ATPS phase-forming polymer selected for the final ISPR system (liquid at RT, lower cloud point than PEG 8000). Average molecular mass separately reported in the Discussion as '127.5 kDa' (as stated in the text; inconsistent with the Mw~2500 label used elsewhere in the paper - reproduced here as written, not corrected)."
@@ -127,7 +127,7 @@
       {
         "identity": { "name": "Poly(ethylene glycol) (PEG), Mw ~8000", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": null, "unit": "9.5% w/w cloud point (Table 1); tested at 15-20% w/w in screening" },
+        "amount": { "value": [9.5, 15-20], "unit": "% w/w" },
         "provenance": { "supplier": null },
         "notes": "Comparator polymer; performed similarly to PEGRPG 2500 but rejected in favor of PEGRPG 2500 for practical (solid powder vs liquid) reasons."
       },
@@ -146,30 +146,30 @@
       {
         "identity": { "name": "Dextran (high Mw)", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "other",
-        "amount": { "value": 15, "unit": "% w/w (initial PEG 8000:Dextran ATPS screen)" },
+        "amount": { "value": 15, "unit": "% w/w" },
         "notes": "Used only in the initial ATPS screen (PEG 8000:Dextran, partition coefficient ~20); rejected for downstream use due to high cost and incompatibility with hydrogel immobilization."
       },
       {
         "identity": { "name": "kappa-Carrageenan", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": 1.33, "unit": "% w/v (in immobilization hydrogel mix)" },
+        "amount": { "value": 1.33, "unit": "% w/v" },
         "notes": "Primary hydrogel-forming carrier for whole-cell immobilization; see biocatalyst.immobilization."
       },
       {
         "identity": { "name": "Locust bean gum (LBG)", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": 0.66, "unit": "% w/v (in immobilization hydrogel mix)" },
+        "amount": { "value": 0.66, "unit": "% w/v" },
         "provenance": { "supplier": "Sigma-Aldrich" },
         "notes": "Co-gelling agent with kappa-carrageenan, improves mechanical strength."
       },
       {
         "identity": { "name": "Potassium chloride (KCl)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": 2, "unit": "% w/V (cross-linking bath)" },
+        "amount": { "value": 2, "unit": "% w/V" },
         "notes": "Cross-linking bath for bead formation."
       },
       {
-        "identity": { "name": "Calcium alginate", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
+        "identity": { "name": "Calcium alginate beads", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "other",
         "amount": { "value": null, "unit": null },
         "notes": "Comparator immobilization hydrogel; found unstable in the salt phase (Ca2+/K+ ion exchange, precipitation of insoluble Ca-phosphate/carbonate). Not used in the final process."
@@ -177,20 +177,20 @@
       {
         "identity": { "name": "CAPS buffer", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "buffer",
-        "amount": { "value": 50, "unit": "mM (standard activity-assay buffer, pH adjusted to 10 with NaOH)" },
-        "notes": null
+        "amount": { "value": 50, "unit": "mM" },
+        "notes": "(standard activity-assay buffer, pH adjusted to 10 with NaOH)"
       },
       {
         "identity": { "name": "Sodium hydroxide (NaOH)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "other",
-        "amount": { "value": 1, "unit": "M (used 1:1 v/v to quench reaction samples); also used to pH-adjust CAPS buffer" },
-        "notes": null
+        "amount": { "value": 1, "unit": "M" },
+        "notes": "(used 1:1 v/v to quench reaction samples); also used to pH-adjust CAPS buffer"
       },
       {
         "identity": { "name": "Sodium chloride (NaCl)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "other",
-        "amount": { "value": 0.9, "unit": "% (saline used to resuspend cells; also 0.9% component of hydrogel mix)" },
-        "notes": null
+        "amount": { "value": 0.9, "unit": "%" },
+        "notes": "(saline used to resuspend cells; also 0.9% component of hydrogel mix)"
       }
     ],
   
@@ -224,7 +224,7 @@
   
     "experiments": [
       {
-        "label": "Experiment 1 - without ATPS (control, monophase)",
+        "label": "Control run paired with Experiment 1 - without ATPS (monophase), first cell batch, Figure 4A",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -235,9 +235,19 @@
           "reactor": { "reactor_type": "other", "notes": "1 L RBR" },
           "system": { "system_type": "monoliquid", "monoliquid": { "solvent_description": "Aqueous slurry: 850 mL deionized water + 50 g tyrosine", "ionic_strength": null, "further_additives": "K3PO4 (~10 g) for pH adjustment" } },
           "phases": [
-            { "phase_type": "liquid", "material_description": "Aqueous tyrosine slurry (850 mL DI water, 50 g tyrosine, ~10 g K3PO4)", "amount": 850, "amount_unit": "mL" },
-            { "phase_type": "solid", "material_description": "~100 g immobilized FjTAL whole-cell kappa-carrageenan/LBG beads", "amount": 100, "amount_unit": "g" }
-          ],
+           "phases": [
+          {
+            "phase_type": "liquid",
+            "material_description": "Aqueous tyrosine slurry (850 mL DI water, 50 g tyrosine, ~10 g K3PO4)",
+            "amount": 850,
+            "amount_unit": "mL"
+          },
+          {
+            "phase_type": "solid",
+            "material_description": "~100 g immobilized FjTAL whole-cell kappa-carrageenan/LBG beads",
+            "amount": 100,
+            "amount_unit": "g"
+          }],
           "temperature": { "profile_type": "constant", "temperature_unit": "°C", "constant_temperature": 40 },
           "pH": { "profile_type": "constant", "constant_pH": 9.9, "detection": { "detected_how": "Automatic pH control/titration with K3PO4" }, "notes": "pH 9.9 +/- 0.05" }
         },
@@ -252,7 +262,7 @@
         }
       },
       {
-        "label": "Experiment 1 - with ATPS-ISPR",
+        "label": "Experiment 1 (paper's own Table 2 label) - with ATPS-ISPR, first cell batch",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -284,7 +294,7 @@
         }
       },
       {
-        "label": "Experiment 2 - without ATPS (control, monophase)",
+        "label": "Control run paired with Experiment 2 - without ATPS (monophase), second cell batch, Figure 4B",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
