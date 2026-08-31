@@ -5,7 +5,7 @@
       {
         "identity": {
           "name": "Tyrosine ammonia lyase (FjTAL)",
-          "ec_number": ["4.3.1.23"], # Not in paper or supporting info. also incorrect
+          "ec_number": ["4.3.1.23"],  # Not in paper or supporting info. also incorrect
           "catalyzed_reaction": ["Deamination of L-tyrosine to p-coumaric acid and ammonia"],
           "origin_organism": "Flavobacterium johnsoniae",
           "production_organism": "Escherichia coli",

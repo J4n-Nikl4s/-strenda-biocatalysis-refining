@@ -1,0 +1,82 @@
+Not all acivity values were found. The listed activity is only the first data point. But it dose say, see figure 2 for full dataset. 
+
+},
+        "activity": {
+          "value": 74,
+          "unit": "U/g (µmol pCA min^-1 g^-1 TAL)",
+          "determination_method": "Specific activity of purified FjTAL in standard 50 mM CAPS buffer pH 10, 30°C, 2 mM tyrosine, UV-vis (325 nm); see characterization_data.activity_vs_salt for the full salt-dependence dataset (Figure 2)."
+        },
+
+The stroage branch should be further specified, is it storage of the biocatalyst or material. Here it is used for the beads. 
+
+},
+      "storage": {
+        "temperature": 4,
+        "temperature_unit": "°C",
+        "storage_start": null,
+        "additives": null,
+        "drying_method": null,
+        "notes": "Immobilized bead storage only ('stored overnight at 4°C'); no separate storage protocol given for free enzyme or cell stocks."
+      },
+      "notes": null
+    },
+
+Same problem as above: diffuculty extracting several data points. Value: 50 Unit 
+
+"identity": { "name": "L-Tyrosine", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
+        "role": "substrate",
+        "amount": { "value": 50, "unit": "g per RBR batch (~980-970 mL total working volume); 2 mM in the activity assay" },
+
+Same problem for reaction coumpound: 
+ "amount": { "value": [10, 15, 20], "unit": "w/w" },
+
+ Text added in "unit" 
+  "unit": "10-20% w/w tested for activity impact; cloud point 5-5.7% w/w (Table 1)" }
+
+  Puts value and text in "unit". Text moved to note string
+  "amount": { "value": null, "unit": "12.5% w/w in the final selected ATPS; 120 mL used in the ATPS RBR run" },
+
+  Gives experiments labels?
+  "experiments":{[
+        "label": "Experiment 1 - without ATPS (control, monophase)",]}
+  - A bit confusing, as the paper talks about first and second experiment, and then two others called experiment 1 and 2. 
+Added: 
+ "phases": [
+          {
+            "phase_type": "liquid",
+            "material_description": "Aqueous tyrosine slurry (850 mL DI water, 50 g tyrosine, ~10 g K3PO4)",
+            "amount": 850,
+            "amount_unit": "mL"
+          },
+          {
+            "phase_type": "solid",
+            "material_description": "~100 g immobilized FjTAL whole-cell kappa-carrageenan/LBG beads",
+            "amount": 100,
+            "amount_unit": "g"
+          }],
+
+Phase type and description works super well. 
+
+Add yield in description rather than as value:
+"results": {
+          "yield_and_conversion": {
+            "product_yield": null,
+            "conversion": null,
+            "notes": "Overall pCA concentration 11.9 g/L; yield 0.238 +/- 0.053 g pCA / g tyrosine (Table 2, Experiment 1)."
+          },
+          "notes": "Salt-phase volume 500 mL, concentration 8.2 +/- 1.9 g/L; polymer-phase volume 300 mL, concentration 18.0 +/- 1.9 g/L; partition coefficient (polymer/salt) = 2.19 (Table 2). Initial rate slightly lower than the no-ATPS control but final titer similar - authors note titers were likely too low in this experiment for product inhibition to be significant."
+        }
+
+From Claude (Sonnet 5.0)
+
+One note up front: the dedicated Extract_Strenda_Biocatalysis tool on the MCP server is currently broken server-side (its schema rejects molecular_weight.minimum as not being a number), so I pulled the full data model via the compliance tool instead and did the extraction manually against it — same schema, just hand-populated rather than auto-filled.
+
+What's in the file:
+
+Biocatalyst: FjTAL (tyrosine ammonia lyase from Flavobacterium johnsoniae), recombinantly produced in E. coli, applied both as whole cells (preparative biocatalysis) and purified enzyme (activity assay). Full immobilization protocol captured — κ-carrageenan/locust bean gum hydrogel, extrusion/cross-linking parameters, bead loading, and stability data.
+Reaction components: tyrosine, pCA, phosphate/carbonate salts, four ATPS polymers (PEGRPG 2500, PEG 8000, PPG 1000, PEGRPG 12000 — including which were excluded and why), carrageenan/LBG, KCl, CAPS buffer, etc.
+Four experimental runs: Experiments 1 & 2, each with/without ATPS-ISPR, with reactor setup (1 L RBR, Spinchem), operation mode, temperature/pH profiles, sampling, and full results (titers, phase concentrations, partition coefficients, yields — e.g. the headline 33.1 g/L pCA at 0.724 g/g yield).
+Supporting screening data that doesn't map to core schema fields but is in the paper: the Figure 2 activity-vs-salt dataset, Table 1/Figure 3 ATPS cloud-point and partition-coefficient screens, and the process economics discussion.
+Explicit gaps: an not_covered_by_this_paper list flagging what the model asks for that this text simply doesn't report (Km/kcat/Ki values, EC number, sequences, thermodynamics, etc.) — those live in a companion paper (ref. [6]) or the Supporting Information, which wasn't available to me.
+
+No values were invented — anything not stated in the main text is null with a note.
