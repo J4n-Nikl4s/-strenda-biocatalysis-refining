@@ -17,7 +17,7 @@
           "plasmid_specifications": ["pET-21a(+)"],
           "purification_method": [
             "Ni2+-affinity chromatography (Ni SepharoseTM 6 Fast Flow, 4 mL, GE Healthcare)",
-            "Size-exclusion chromatography on Superdex 75 pre-packed column (4°C, 120 mL, GE Healthcare); eluted with NaCl 0.2 M, DTT 1 mM, potassium phosphate 20 mM pH 7.2; concentrated to 15 mg/mL"
+            "Size-exclusion chromatography on Superdex 75 pre-packed column (4°C, 120 mL, GE Healthcare); eluted with NaCl 0.2 M, DTT 1 mM, potassium phosphate 20 mM pH 7.2"
           ],
           "formulation": "solution"
         }
@@ -42,7 +42,6 @@
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {

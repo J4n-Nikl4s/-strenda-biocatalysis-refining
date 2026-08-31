@@ -1,0 +1,411 @@
+{
+  "source_publication": {
+    "citation": "Boverio, A.; van Beek, H. L.; Savino, S.; Ranoux, A.; Huijgen, W. J. J.; Raaijmakers, H. W. C.; Fraaije, M. W.; Loncar, N. Biochemical and Structural Characterization of a Uronic Acid Oxidase from Citrus sinensis. ChemCatChem 2023, 15, e202300847.",
+    "doi": "10.1002/cctc.202300847",
+    "license": "CC BY (open access)",
+    "includes_supporting_information": true
+  },
+  "extraction_metadata": {
+    "schema": "StrendaBiocatalysis (retrieved live from the STRENDA-Biocat MCP connector)",
+    "biocatalyst_extracted": "URAOCs3",
+    "biocatalyst_accession": "XP_006468446.1",
+    "identity_note": "The paper characterizes four candidate uronic acid oxidases from C. sinensis (URAOCs1-Cs4), but performs full kinetic, thermostability, structural and applied characterization only on URAOCs3 (XP_006468446.1). URAOCs1 (accession KDO75192.1, 570 aa, calculated 63678 Da) is a different protein, independently identified by proteomics from native orange-peel extract (Figure S2), used only in the initial screening comparison. This extraction treats URAOCs3 as 'the biocatalyst' and never merges data from the two.",
+    "flag_convention": "Fields with \"stated_in_paper\": false contain information not explicitly written in the source text; each carries its own \"basis\" citation and is not presented as a finding of the paper."
+  },
+  "biocatalyst": {
+    "identity": {
+      "name": "URAOCs3 (uronic acid oxidase, Citrus sinensis)",
+      "ec_number": null,
+      "ec_number_note": {
+        "stated_in_paper": false,
+        "value": "Likely EC 1.1.3.- (oxidoreductase acting on CH-OH with O2 as acceptor), by analogy to other VAO-family carbohydrate oxidases",
+        "basis": "General EC nomenclature (IUBMB/ExplorEnz, https://www.enzyme-database.org); not assigned by the authors"
+      },
+      "molecular_weight": 70,
+      "molecular_weight_unit": "kDa",
+      "molecular_weight_basis": "apparent mass on SDS-PAGE, single band, enzyme is glycosylated (p.3; Figure S3)",
+      "catalyzed_reaction": "Oxidation of uronic acids (D-galacturonic acid, D-glucuronic acid) with concomitant H2O2 formation; selective oxidation of D-galacturonic acid to galactaric acid demonstrated in pure solution and in complex carbohydrate mixtures",
+      "sequences": {
+        "sequence_amino_acid": null,
+        "sequence_dna": null,
+        "note": "Full sequence not printed in paper or SI for URAOCs3; available only via external accession XP_006468446.1 (NCBI). Not reproduced here because it is not text present in the source document."
+      },
+      "origin_organism": "Citrus sinensis (sweet orange)",
+      "production_organism": ["Escherichia coli (strain ORIGAMI2)", "Pichia pastoris (strain X-33)"],
+      "posttranslational_modification": "Bicovalent FAD attachment (8α-N1-histidyl to His89; 6-S-cysteinyl to Cys151); N-linked glycosylation (single N-linked GlcNAc modeled at Asn49); intramolecular disulfide bridge Cys12-Cys74",
+      "notes": "Accession identifiers given in paper: URAOCs1 = KDO75192.1, URAOCs2 = KDO48902.1, URAOCs3 = XP_006468446.1, URAOCs4 = KDO77595.1; the four share >82% pairwise sequence identity (p.3)."
+    },
+    "source_type": "self_produced",
+    "source": {
+      "e_coli_route": {
+        "purpose": "kinetics, substrate scope, thermostability, activity assays",
+        "self_produced_details": {
+          "sequence_plasmid": null,
+          "plasmid_specifications": "pBAD-His-SUMO vector, N-terminal His-SUMO fusion, arabinose-inducible (araBAD promoter); synthetic gene E. coli codon-optimized with BsaI sites",
+          "host_strains": "Expression: E. coli ORIGAMI2",
+          "culture_conditions": "Pre-inoculum 5 mL LB + 50 µg/mL ampicillin overnight 30°C; then 2 L baffled flask, 400 mL Terrific Broth + 50 µg/mL ampicillin + 0.02% L-arabinose, 17°C for 72 h",
+          "harvesting_method": "Centrifugation 4950 x g, 20 min, 4°C; pellets flash-frozen at -20°C",
+          "cell_disruption_process": "Resuspension in buffer A (50 mM KPi, 150 mM NaCl, pH 7.7) with 0.10 mM PMSF, 0.5 mg/mL lysozyme, 1 mg/mL DNase; sonication 5 s on/5 s off, 70% amplitude, 15 min total; clarified 19800 x g, 1 h, 4°C",
+          "purification_method": "IMAC on TALON (Co2+) resin via His-SUMO tag; wash with buffer A then buffer B (+5 mM imidazole); elution with buffer C (+150 mM imidazole); all buffers 50 mM KPi/150 mM NaCl pH 7.7; single-step",
+          "purity": null,
+          "purity_specification": "Single band on SDS-PAGE (~70 kDa); no numeric % purity reported",
+          "formulation": "dissolved",
+          "storage_buffer": "50 mM KPi, 150 mM NaCl, 10% glycerol, pH 7.7",
+          "yield": "~20 mg purified URAOCs3 per 1 L culture broth after single IMAC step"
+        }
+      },
+      "pichia_pastoris_route": {
+        "purpose": "crystallography / higher-yield alternative",
+        "self_produced_details": {
+          "sequence_plasmid": null,
+          "plasmid_specifications": "pPICZα vector with export/secretion tag; synthetic DNA (Twist Bioscience), P. pastoris codon-optimized, Gibson-cloned; primers in Table S1",
+          "host_strain": "P. pastoris X-33, transformed by electroporation (Bio-Rad MicroPulser) of SacI-linearized vector",
+          "selection": "YPDS-agar with increasing zeocin (100, 200, 500 µg/mL); 16 colonies screened; 2 transformants showed ~30 mU/mL galacturonic acid oxidase activity in culture filtrate",
+          "induction": "Rich medium (YPD) 48 h at 28°C; then 1% methanol induction (2% methanol solution in YP, doubling culture volume), further 1% methanol at 56, 72, 80 h; harvested at 96 h (4950 x g, 20 min, 4°C)",
+          "purification_method": "Size-exclusion chromatography, Superdex200 10/300 (Cytiva), ÄKTA pure, monitored at A280/A450; peak fractions pooled and concentrated to 18 mg/mL",
+          "formulation": "dissolved"
+        }
+      }
+    },
+    "application": [
+      {
+        "context": "Substrate screening (Table 1)",
+        "application_type": "purified",
+        "concentration": {"value": 0.10, "unit": "µM"},
+        "reaction_substrate_concentration": {"value": 20, "unit": "mM"},
+        "temperature_c": 24,
+        "pH": 6.5
+      },
+      {
+        "context": "pH / salt profiling (Fig. 2)",
+        "application_type": "purified",
+        "concentration": {"value": 0.10, "unit": "µM"},
+        "reaction_substrate_concentration": {"value": 20, "unit": "mM galacturonic acid"},
+        "temperature_c": 25
+      },
+      {
+        "context": "Steady-state kinetics (Table 2)",
+        "application_type": "purified",
+        "temperature_c": 25,
+        "buffer": "50 mM KPi, pH 7.0"
+      },
+      {
+        "context": "Selective conversion, pure galacturonic acid (Fig. 4B)",
+        "application_type": "purified",
+        "activity": {"value": 10.1, "unit": "U/mL", "volume_added_uL": 131},
+        "catalase_added": {"value": 135, "unit": "kU/mL", "volume_added_uL": 1.0}
+      },
+      {
+        "context": "Selective conversion, pectin hydrolysate (Fig. 4A)",
+        "application_type": "purified",
+        "activity": {"value": 10.1, "unit": "U/mL", "volume_added_uL": 131},
+        "catalase_added": {"value": 135, "unit": "kU/mL", "volume_added_uL": 1.0}
+      }
+    ],
+    "activity_determination_method": "Hydrogen peroxide release measured via HRP-coupled chromogenic assay (AAP/DCHBS substrates), absorbance at 515 nm (epsilon515 = 26 mM^-1 cm^-1), Biotek Synergy H1 microplate reader",
+    "concentration_determination_method": "Extinction coefficient of covalently (6-S-cysteinyl) bound flavin, epsilon445 = 11.6 mM^-1 cm^-1 (as reported by the authors)",
+    "immobilization": {
+      "immobilized": false,
+      "notes": "Only free (non-immobilized), purified soluble enzyme used in all reported experiments; no immobilization data given."
+    },
+    "storage": {
+      "additives": "50 mM KPi, 150 mM NaCl, 10% glycerol, pH 7.7",
+      "temperature": null,
+      "storage_start": null,
+      "notes": "Storage temperature/duration and activity-retention-over-storage are not reported. Thermal-stability (Tm) data describe assay-condition conformational stability, not storage stability."
+    }
+  },
+  "reaction_components": {
+    "substrates_screened_table1": {
+      "conditions": "20 mM substrate, pH 6.5, 24°C, HRP-coupled assay",
+      "results": [
+        {"substrate": "D-glucuronic acid", "relative_activity_percent": 100.0},
+        {"substrate": "D-galacturonic acid", "relative_activity_percent": 59.1},
+        {"substrate": "polygalacturonic acid", "relative_activity_percent": 4.2, "note": "attributed by authors to trace short oligomers/monomers"},
+        {"substrate": "D-melibiose", "relative_activity_percent": 1.0},
+        {"substrate": "D-galactose", "relative_activity_percent": 0.3},
+        {"substrate": "D-glucosamine", "relative_activity_percent": 0.3},
+        {"substrate": "D-mannose", "relative_activity_percent": 0.2},
+        {"substrate": "D-melezitose", "relative_activity_percent": 0.2},
+        {"substrate": "L-arabinose", "relative_activity_percent": 0.1},
+        {"substrate": "rhamnose", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "D-glucose", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "D-xylose", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "fructose", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "L-fucose", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "N-acetyl-D-galactosamine", "relative_activity_percent": 0, "note": "no activity detected"},
+        {"substrate": "D-maltose", "relative_activity_percent": 0, "note": "no activity detected"}
+      ],
+      "note": "A separate, earlier 16-sugar screen (10 mM substrate) on the native peel-isolated enzyme is described qualitatively only (p.2) and not tabulated with numeric values."
+    },
+    "substrates_kinetic_and_applied": [
+      {
+        "component": "D-galacturonic acid",
+        "role": "substrate",
+        "amount_used": [
+          {"context": "kinetics", "range": "0-4 mM", "source": "Fig. S4"},
+          {"context": "thermostability solubility study", "range": "0-1.0 M"},
+          {"context": "selective conversion (pure)", "value": "0.35 wt% (~20 mM)"},
+          {"context": "selective conversion (sugar beet pulp hydrolysate)", "value": "0.36 wt%"}
+        ]
+      },
+      {
+        "component": "D-glucuronic acid",
+        "role": "substrate",
+        "amount_used": [{"context": "kinetics", "range": "0-500 µM", "source": "Fig. S4"}]
+      },
+      {
+        "component": "hydrolyzed pectin syrup (galacturonic acid-rich)",
+        "role": "substrate",
+        "type": "complex mixture",
+        "amount": "1 g syrup (19.4% w/w GalA, 52.6 Bx) diluted in 54.4 mL water -> target 0.35 wt% GalA",
+        "composition_ratios": {"GalA_to_glucose": "32:1", "GalA_to_arabinose_galactose_glucose_sum": "2.9:1"},
+        "source": "SI Methods p.7-8"
+      },
+      {
+        "component": "sugar beet pulp hydrolysate",
+        "role": "substrate",
+        "type": "complex mixture",
+        "amount": "11.4 wt% GalA (total dry matter), diluted to 0.36 wt%",
+        "note": "Result described qualitatively only; no numeric table/figure given"
+      },
+      {
+        "component": "O2 (dissolved, from air)",
+        "role": "cosubstrate",
+        "amount": null,
+        "stated_in_paper": false,
+        "basis": "FAD-dependent oxidases of the VAO family require O2 as terminal electron acceptor, generating H2O2 (standard flavo-oxidase mechanism; refs [15]-[17] cited in the paper; general background: Fraaije & van Berkel, J. Biotechnol. 2000). Not explicitly named or quantified in this paper."
+      }
+    ],
+    "products": [
+      {
+        "component": "galactaric acid (mucic acid)",
+        "role": "product",
+        "evidence": "Quantified by HPLC (Ionpak KC-811, PDA 210 nm) as product of D-galacturonic acid oxidation, in pure solution (Fig. 4B) and pectin hydrolysate (Fig. 4A); up to 0.364 wt% measured after 24 h from pectin hydrolysate feed"
+      },
+      {
+        "component": "hydrogen peroxide (H2O2)",
+        "role": "product (co-product)",
+        "evidence": "Basis of all activity assays (HRP-coupled chromogenic detection); removed in conversion experiments by co-added catalase"
+      },
+      {
+        "component": "glucaric acid",
+        "role": "product",
+        "stated_in_paper": false,
+        "note": "Expected by analogy from D-glucuronic acid oxidation but not chemically confirmed or named as a product anywhere in the paper; only galactaric acid is verified."
+      }
+    ],
+    "other_components": [
+      {"component": "sodium citrate buffer", "role": "buffer", "amount": "used pH ~3-6", "context": "pH-activity and pH-thermostability profiling"},
+      {"component": "potassium phosphate (KPi) buffer", "role": "buffer", "amount": "50 mM, pH ~6-8 (assays) / pH 7.0 (kinetics)", "context": "kinetics, thermostability, conversion reactions"},
+      {"component": "Tris-HCl buffer", "role": "buffer", "amount": "used pH ~8-9", "context": "pH-activity profiling"},
+      {"component": "NaCl", "role": "salt", "amount": "0-500 mM tested", "effect": "inhibitory; 500 mM -> 50% residual activity; no effect on Tm"},
+      {"component": "KCl", "role": "salt", "amount": "0-500 mM tested", "effect": "inhibitory (chloride)"},
+      {"component": "MgCl2", "role": "salt", "amount": "0-500 mM tested", "effect": "inhibitory (chloride)"},
+      {"component": "CaCl2", "role": "salt", "amount": "0-500 mM tested", "effect": "inhibitory (chloride)"},
+      {"component": "NH4Cl", "role": "salt", "amount": "0-500 mM tested", "effect": "inhibitory (chloride)"},
+      {"component": "Na2SO4", "role": "salt", "amount": "0-500 mM tested", "effect": "activity-boosting"},
+      {"component": "K2SO4", "role": "salt", "amount": "0-500 mM tested", "effect": "activity-boosting"},
+      {"component": "MgSO4", "role": "salt", "amount": "0-500 mM tested", "effect": "activity-boosting"},
+      {"component": "(NH4)2SO4", "role": "salt", "amount": "0-500 mM tested", "effect": "activity-boosting"},
+      {"component": "KH2PO4", "role": "salt/buffer ion", "amount": "0-500 mM tested", "effect": "included in same salt screen"},
+      {"component": "catalase", "role": "other (auxiliary enzyme, H2O2 scavenger)", "amount": "135 kU/mL stock, 1.0 µL per 25-26 mL reaction", "context": "added in both selective-conversion experiments"},
+      {"component": "glycerol", "role": "other (storage/extraction additive)", "amount": "10% (storage buffer); 5% (peel-isolation homogenization buffer)"},
+      {"component": "imidazole", "role": "other (IMAC elution agent)", "amount": "5 mM (wash) / 150 mM (elution)"},
+      {"component": "PMSF, lysozyme, DNase", "role": "other (cell lysis aids)", "amount": "0.10 mM / 0.5 mg/mL / 1 mg/mL"},
+      {"component": "sodium iodide, PEG3350", "role": "other (crystallization agents)", "amount": "0.20 M NaI, 20% PEG3350", "note": "Not a catalytic reaction component; listed for completeness"}
+    ]
+  },
+  "operation_mode": {
+    "mode": "batch",
+    "reactor_type": "well_mixed",
+    "feeding": {"feeding_type": "none"},
+    "notes": "All reported reactions (assays, kinetics, both selective-conversion experiments) are single-batch; no continuous or fed-batch operation described."
+  },
+  "reaction_conditions": {
+    "system": {"system_type": "monoliquid", "notes": "Single aqueous phase in every experiment; no multiphasic/biphasic or gas-fed system described."},
+    "temperature": [
+      {"experiment": "Substrate screening (Table 1)", "profile_type": "constant", "value_c": 24},
+      {"experiment": "pH-, salt-activity profiling; kinetics (Fig. 2, Table 2)", "profile_type": "constant", "value_c": 25},
+      {"experiment": "Thermostability scan (ThermoFluor/DSF, Fig. 3)", "profile_type": "gradient", "value": "+0.5°C every 30 s"},
+      {"experiment": "Selective conversion reactions (Fig. 4A, 4B)", "profile_type": "constant", "value_c": 30, "notes": "shaking water bath, 110 rpm"},
+      {"experiment": "Sample deactivation (all conversion experiments)", "profile_type": "event_based", "value_c": 95, "duration_min": 10}
+    ],
+    "pH": [
+      {"experiment": "Substrate screening (Table 1)", "profile_type": "constant", "value": 6.5},
+      {"experiment": "pH-activity profile (Fig. 2A)", "profile_type": "multipoint", "range": "3.0-9.0", "optimum": 7.0, "buffers": "citrate ~pH3-6, KPi ~pH6-8, Tris/Cl ~pH8-9", "note": "no activity at pH 3.0"},
+      {"experiment": "Kinetics (Table 2)", "profile_type": "constant", "value": 7.0, "buffer": "50 mM KPi"},
+      {"experiment": "Thermostability vs pH (Fig. 3A)", "profile_type": "multipoint", "range": "5.0-8.0", "buffers": "citrate pH5-6, KPi pH6-8"},
+      {"experiment": "Selective conversion reactions", "profile_type": "constant (actively maintained)", "value": 6.0, "adjusted_with": "NaOH"}
+    ],
+    "pH_detection_method": null,
+    "pH_detection_note": "Not specified in the paper (no electrode model, calibration, or measurement temperature given)."
+  },
+  "vessels_and_mixing": [
+    {
+      "experiment": "HRP-coupled activity assays / kinetics",
+      "vessel": {"vessel_type": "plate", "notes": "read on Biotek Synergy H1 microplate reader"},
+      "mixing": null
+    },
+    {
+      "experiment": "ThermoFluor/DSF thermostability",
+      "vessel": {"vessel_type": "plate", "stated_in_paper": false, "basis": "25 µL total reaction volume and CFX96 RT-PCR instrument with FRET filter are consistent with a standard 96-well qPCR plate (typical ThermoFluor/DSF protocol, ref. [30]); plate format not stated outright in the text"},
+      "mixing": {"mixing_type": "none", "notes": "static thermal ramp"}
+    },
+    {
+      "experiment": "Selective conversion reactions",
+      "vessel": {"vessel_type": null, "notes": "described only as 'a 25 mL solution' in a shaking water bath; exact vessel not specified"},
+      "mixing": {"mixing_type": "shaking", "shaking": {"speed": 110, "speed_unit": "rpm", "shaking_type": null}}
+    },
+    {
+      "experiment": "Native enzyme isolation homogenization",
+      "vessel": null,
+      "mixing": {"mixing_type": "mechanical", "mechanical": {"equipment": "blender, then UltraTurrax rotor-stator homogenizer", "stirrer_speed": 14000, "stirrer_speed_unit": "rpm"}}
+    }
+  ],
+  "sampling": {
+    "sampling_applied": true,
+    "context": "Two selective-conversion experiments (pure galacturonic acid; pectin hydrolysate)",
+    "strategy": {"strategy_type": "default", "notes": "fixed time points, no event-triggered/specialised sampling described"},
+    "samples": [
+      {"time": 3, "time_unit": "h"},
+      {"time": 6, "time_unit": "h"},
+      {"time": 24, "time_unit": "h"}
+    ],
+    "phase": "liquid",
+    "vessel_opened": null,
+    "vessel_opened_note": "Not explicitly stated; implied yes (aliquots withdrawn manually)",
+    "preprocessing": {
+      "quenching_method": "heat inactivation, 95°C for 10 min, per sample",
+      "treatment_procedure": "HPLC (Ionpak KC-811 column, 85°C, 3 mM H2SO4 eluent, PDA detection 210 nm) and HPAEC-PAD (Carbopac PA-1 column, 30°C, water/0.25 M NaOH/0.65 M NaOAc eluent gradient, pulsed amperometric detection)"
+    },
+    "notes": "Organic acids below 0.001 wt% (HPLC) and carbohydrates below 0.01% w/w (HPAEC-PAD) treated as below detection limit by the authors."
+  },
+  "results": {
+    "kinetics": {
+      "conditions": "25°C, 50 mM KPi, pH 7.0; Michaelis-Menten fit; initial rates in triplicate (Fig. S4)",
+      "parameters": [
+        {"substrate": "D-galacturonic acid", "michaelis_constant_uM": 35.5, "michaelis_constant_error": 0.6, "turnover_number_s-1": 4.2, "turnover_number_error": 0.1, "catalytic_efficiency_mM-1s-1": 120},
+        {"substrate": "D-glucuronic acid", "michaelis_constant_uM": 160, "michaelis_constant_error": 20, "turnover_number_s-1": 8.9, "turnover_number_error": 0.5, "catalytic_efficiency_mM-1s-1": 55}
+      ],
+      "not_reported": ["Vmax (absolute)", "dissociation_constant (Kd)", "inhibition_constant (Ki)", "hill_coefficient"]
+    },
+    "activity": {
+      "specific_activity_U_per_mg": null,
+      "note": "Not reported; enzyme dosing in conversion experiments given only as volumetric activity (U/mL, see biocatalyst.application). Relative-activity substrate scope reported instead (see reaction_components.substrates_screened_table1)."
+    },
+    "yield_and_conversion": [
+      {
+        "experiment": "Pure D-galacturonic acid (0.35 wt%), Fig. 4B",
+        "result": "Near-complete conversion to galactaric acid within 24 h (curves cross ~5-10 h); no other organic acids above 0.001 wt% detected"
+      },
+      {
+        "experiment": "Pectin hydrolysate (Fig. 4A)",
+        "result": "Selective, essentially complete oxidation of GalA fraction (0.32 wt% -> trace) to galactaric acid (up to 0.364 wt% at 24 h); glucose, arabinose, galactose (combined 0.11 wt%) unconverted throughout",
+        "minor_side_products_24h": {"acetic_acid_wt_percent": 0.015, "tartronic_acid_wt_percent": 0.009, "oxalic_acid_wt_percent": 0.01}
+      },
+      {
+        "experiment": "Sugar beet pulp hydrolysate (0.36 wt% GalA)",
+        "result": "Selective and nearly complete conversion of galacturonic acid into galactaric acid (reported qualitatively; data described as 'not shown')"
+      }
+    ],
+    "space_time_yield": null,
+    "selectivity": {
+      "chemoselectivity": "Demonstrated (not numerically scored): URAOCs3 oxidizes only the uronic-acid component (D-galacturonic acid) of complex sugar mixtures while leaving D-glucose, L-arabinose, D-galactose fully unconverted (Fig. 4A); Table 1 shows <1.1% relative activity on any tested neutral sugar or amino-sugar",
+      "enantioselectivity": null,
+      "diastereomeric_excess": null,
+      "regioselectivity": null,
+      "note": "Not applicable/not reported: galacturonic/glucuronic acid oxidation as studied here is not a stereocenter-forming reaction."
+    },
+    "thermodynamics": {
+      "gibbs_free_energy_change": null,
+      "enthalpy_change": null,
+      "entropy_change": null,
+      "note": "Not reported in the paper."
+    },
+    "thermal_stability": {
+      "method": "ThermoFluor/differential scanning fluorimetry (SYPRO orange dye, FRET filter, CFX96 RT-PCR instrument), temperature ramp 0.5°C/30s. ThermoFAD method could not be used because the flavin is covalently bound.",
+      "measurements": [
+        {"condition_varied": "pH 5.0-8.0, 50 mM buffer, no added NaCl", "result": "Tm 80-84°C across the range; lowest (~80°C) at pH 8; highest ~82-84°C around pH 6-7 (values read from plotted curve, Fig. 3A; exact per-pH numbers not tabulated in text)"},
+        {"condition_varied": "NaCl 0-500 mM, pH 7.0", "result": "No significant effect on Tm despite NaCl reducing activity up to 50% at 500 mM"},
+        {"condition_varied": "D-galacturonic acid 0-1.0 M, 50 mM KPi, pH 7.0", "result": "Tm increased by ~5°C at 1.0 M substrate (~82.5°C at 0 M to ~89°C at 1.0 M, read from Fig. 3B)"}
+      ],
+      "schema_note": "No dedicated Tm/thermostability field exists in the current StrendaBiocatalysis model; mapped here and to KineticResults.enzyme_stability."
+    }
+  },
+  "out_of_schema_data": {
+    "note": "The following are reported in the paper but have no corresponding field in the StrendaBiocatalysis schema as currently defined; listed for completeness, not a compliance gap of the paper.",
+    "crystal_structure": {
+      "pdb_code": "8ATE",
+      "resolution_angstrom": 1.9,
+      "space_group": "P3(2)21",
+      "unit_cell_angstrom": [101.65, 101.65, 108.75],
+      "unit_cell_angles_deg": [90, 90, 120],
+      "R_merge": "0.082 (2.769 outer shell)",
+      "R_pim": "0.030 (1.1017 outer shell)",
+      "CC_half": "0.999 (0.628 outer shell)",
+      "completeness_percent": "90.0 (99.4 outer shell)",
+      "multiplicity": "15.8 (16.2 outer shell)",
+      "mean_I_over_sigma": "16.9 (1.2 outer shell)",
+      "protein_residues": 502,
+      "FAD_molecules": 1,
+      "water_molecules": 84,
+      "R_factor_percent": 20.02,
+      "R_free_percent": 24.31,
+      "rms_bond_length_angstrom": 0.0115,
+      "rms_bond_angle_deg": 1.56,
+      "ramachandran_outliers_percent": 0.0,
+      "crystallization_condition": "20% PEG3350, 0.20 M sodium iodide",
+      "data_collection": "ESRF MASSIF-1 beamline",
+      "software": ["XDS", "Phaser", "Buccaneer", "COOT", "REFMAC5 (CCP4)"]
+    },
+    "active_site_architecture": "Two-domain VAO fold: F-domain (N-term-228 + 454-C-term), S-domain (229-453); bicovalent FAD via His89/Cys151; bound chloride ion near Tyr91-OH (3.2 A) and Arg351-NH2 (3.5 A); active-site residues Tyr91, Tyr165, Arg265, Arg351, Asn383, Lys408, Gln410, Tyr452",
+    "substrate_docking": {
+      "software": "AutoDock Vina / Yasara",
+      "force_field": "AMBER IPQ",
+      "grid": "20x20x20 angstrom",
+      "runs": 100,
+      "result": "Docked galacturonic acid places C6-carboxylate near Arg351 (3.1 A) and C1-OH near Tyr452 (3.0 A), suggesting Tyr452 as catalytic base for hydride transfer to FAD-N5"
+    },
+    "comparative_structural_analysis": {
+      "vs_AtBBE15_PDB_4UD8": {"rmsd_calpha_angstrom": 0.7, "sequence_identity_percent": 51},
+      "vs_GOOX_PDB_2AXR": {"rmsd_calpha_angstrom": 1.4, "sequence_identity_percent": 26},
+      "note": "Conserved Lys-Arg-Lys (K-R-K) motif present in C. sinensis homologs but not in GOOX (Ala instead of Arg)"
+    },
+    "bioinformatic_discovery_pipeline": "PHI-BLAST of GOOX (Acremonium strictum, UniProt Q6PW77) against predicted C. sinensis proteome, filtered for conserved flavinylation Cys/His and a positively charged residue (Arg/Lys) near the position equivalent to Ala351 in GOOX (based on structural inspection of GOOX:substrate-analog complex, PDB 2AXR)",
+    "native_source_isolation": "2 kg oranges -> 470 g peel, homogenized (blender + UltraTurrax 14000 rpm) in 50 mM Tris-HCl/150 mM NaCl/5% glycerol pH 7.5; clarified 3430 x g 1 h; Phenyl-Sepharose HIC to remove pigments; concentrated by 30 kDa-cutoff ultrafiltration; identified as KDO75192.1 (URAOCs1) by in-gel flavin fluorescence + tryptic-peptide MS/MS (29 unique peptides, Fig. S2)"
+  },
+  "strenda_compliance_report": {
+    "framing": "Assesses how fully the paper's text covers the StrendaBiocatalysis data model, not how well the model fits the paper.",
+    "well_covered": [
+      "Biocatalyst identity (name, origin/production organism, cofactor PTM)",
+      "Source and production route for both expression hosts (cloning vectors, purification)",
+      "Reaction components: 16-sugar substrate panel with quantified relative activities",
+      "Two kinetically characterized substrates with Km, kcat, kcat/Km and fit method",
+      "Reaction conditions: temperature and pH, with explicit optimum and full pH-activity/pH-stability scans",
+      "Applied yield/conversion/selectivity in pure solution and two independent complex mixtures"
+    ],
+    "gaps": [
+      {"model_area": "BiocatalystIdentity.ec_number", "gap": "No EC number assigned anywhere in the paper."},
+      {"model_area": "BiocatalystIdentity.sequences", "gap": "No full amino-acid or DNA sequence for URAOCs3 printed in main text or SI; only external accession given."},
+      {"model_area": "Reagent purity/supplier", "gap": "Purity/grade and supplier not stated for substrates (galacturonic acid, glucuronic acid, screening sugars)."},
+      {"model_area": "StorageConditions.temperature / storage_start", "gap": "Storage buffer given but no storage temperature, duration, or activity-retention data."},
+      {"model_area": "Vessel (VesselAndMixing.vessel)", "gap": "Vessel material, size, geometry, supplier never specified for assays, kinetics, or conversion reactions."},
+      {"model_area": "Mixing", "gap": "Shaking type and vessel position not given for 110 rpm water-bath incubations; no mixing parameters for microplate assays."},
+      {"model_area": "PHDetection", "gap": "No pH electrode/instrument, calibration standards, or measurement temperature given."},
+      {"model_area": "Sampling.vessel_opened / gas_phase", "gap": "Not stated whether/how vessel was opened for sampling, or headspace gas handling (relevant since O2 is a cosubstrate)."},
+      {"model_area": "ActivityResults.specific_activity", "gap": "Enzyme dosing reported only volumetrically (U/mL); no U/mg specific activity given."},
+      {"model_area": "ThermodynamicResults", "gap": "No delta-G/delta-H/delta-S reported."},
+      {"model_area": "KineticResults.hill_coefficient / dissociation_constant / inhibition_constant", "gap": "No cooperativity or formal Ki analysis; salt inhibition shown only qualitatively (Fig. 2B)."},
+      {"model_area": "ReactorSetup.flow / continuous or fed-batch parameters", "gap": "All reactions are batch; no flow-rate or feeding-strategy data exist."}
+    ],
+    "optional_additions": [
+      "Deposit the URAOCs3 amino-acid/DNA sequence directly in the paper or SI, and add a UniProt/GenBank cross-reference table for all four URAOCs1-4 sequences.",
+      "Report specific activity (U/mg) alongside volumetric activity (U/mL), using the enzyme concentration already determined by epsilon445.",
+      "State vessel type/material/volume for the water-bath conversion experiments.",
+      "Fit the salt-inhibition data (Fig. 2B) to an explicit inhibition model (type + Ki).",
+      "Note storage temperature/duration and any activity loss observed between purification and use."
+    ],
+    "integrity_note": "Every gap above is a genuine absence in the published text/SI, not a modeling artifact. This extraction did not fill any gap with an assumed number; the only non-stated additions (O2 as cosubstrate, general EC-classification context, unverified glucaric-acid product) are each marked stated_in_paper: false with their own basis, distinct from the paper's own data."
+  }
+}
