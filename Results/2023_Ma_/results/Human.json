@@ -36,7 +36,7 @@
     },
     {
       "identity": {
-        "name": "CdFDH-M1 (D197Q/Y198R/Q199N) - first-round cofactor switching mutant",
+        "name": "CdFDH-M1 (D197Q/Y198R/Q199N)",
         "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH; triple mutant from CSR-SALAD screening"],
         "origin_organism": "Candida dubliniensis",
@@ -59,16 +59,16 @@
     {
       "identity": {
         "name": "CdFDH-M1I (D197Q/Y198R/Q199N/A372S)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
-          "purification_method": ["Ni2+-affinity chromatography"],
+          "plasmid_specifications": ["pET-21a(+)"],
+          "purification_method": ["Ni2+-affinity chromatography", "Size-exclusion chromatography on Superdex 75"],
           "formulation": "solution"
         }
       },
@@ -77,16 +77,16 @@
     {
       "identity": {
         "name": "CdFDH-M1II (D197Q/Y198R/Q199N/A372S/K371T)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
-          "purification_method": ["Ni2+-affinity chromatography"],
+          "plasmid_specifications": ["pET-21a(+)"],
+          "purification_method": ["Ni2+-affinity chromatography", "Size-exclusion chromatography on Superdex 75"],
           "formulation": "solution"
         }
       },
@@ -95,15 +95,15 @@
     {
       "identity": {
         "name": "CdFDH-M1III (D197Q/Y198R/Q199N/A372S/ΔQ375)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)"],
           "purification_method": ["Ni2+-affinity chromatography"],
           "formulation": "solution"
         }
@@ -113,15 +113,15 @@
     {
       "identity": {
         "name": "CdFDH-M2 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)"],
           "purification_method": ["Ni2+-affinity chromatography"],
           "formulation": "solution"
         }
@@ -135,7 +135,7 @@
     {
       "identity": {
         "name": "CdFDH-M3 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH"],
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
@@ -144,6 +144,7 @@
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
+          "plasmid_specifications": ["pET-21a(+)"],
           "purification_method": ["Ni2+-affinity chromatography"],
           "formulation": "solution"
         }
@@ -153,17 +154,16 @@
     {
       "identity": {
         "name": "CdFDH-M4 (D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R/H16L/K159R)",
-        "ec_number": ["1.2.1.2"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Oxidation of formate to CO2 with reduction of NADP+ to NADPH; 75-fold improved kcat/Km toward NADP+ vs WT"],
         "sequences": {"sequence_amino_acid": ["GenBank Accession No. XP_002420645.1 with mutations D197Q/Y198R/Q199N/A372S/K371T/ΔQ375/K167R/H16L/K159R"]},
         "origin_organism": "Candida dubliniensis",
         "production_organism": "Escherichia coli BL21(DE3)"
       },
-      "source_type": "self_produced",
       "source": {
         "source_type": "self_produced",
         "self_produced_details": {
-          "plasmid_specifications": ["pET-21a(+)-CdFDH-M4; expression in E. coli BL21(DE3); induction 0.2 mM IPTG at 16°C for 20-24 h; cells grown in LB (tryptone 1% w/v, yeast extract 0.5% w/v, NaCl 1% w/v) with ampicillin 50 μg/mL"],
+          "plasmid_specifications": ["pET-21a(+)-CdFDH-M4"],
           "purification_method": [
             "Ni2+-affinity chromatography: Ni SepharoseTM 6 Fast Flow 4 mL (GE Healthcare); equilibrated with buffer A (imidazole 10 mM, NaCl 0.5 M, β-mercaptoethanol 5 mM, potassium phosphate 20 mM pH 7.4); washed 20 CV + 10 mM imidazole; eluted 10-300 mM imidazole; concentrated and desalted 3x Amicon Ultra-15 MWCO 10 kDa into NaCl 0.2 M, potassium phosphate 20 mM pH 7.4",
             "Size-exclusion chromatography on Superdex 75 (4°C, 120 mL, GE Healthcare); NaCl 0.2 M, DTT 1 mM, potassium phosphate 20 mM pH 7.2; concentrated to 15 mg/mL"
@@ -186,10 +186,11 @@
     {
       "identity": {
         "name": "ScIR-R3-V4 (NADPH-dependent Imine Reductase mutant from Streptomyces clavuligerus)",
-        "ec_number": ["1.5.1.34"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Asymmetric reduction of 2-(2,5-difluorophenyl)pyrrolidine to (R)-2-(2,5-difluorophenyl)pyrrolidine using NADPH"],
         "origin_organism": "Streptomyces clavuligerus"
       },
+      
       "source_type": "self_produced",
       "application": {
         "application_type": "purified",
@@ -200,13 +201,13 @@
     {
       "identity": {
         "name": "PcIR-M3 (Imine Reductase mutant from Penicillium camemberti)",
-        "ec_number": ["1.5.1.34"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Asymmetric reductive amination of 3-(3-(trifluoromethyl)phenyl)propanal with (R)-1-(naphthalen-1-yl)ethan-1-amine to (R)-2b using NADPH"],
         "origin_organism": "Penicillium camemberti"
       },
-      "source_type": "self_produced",
+      "source_type": "hallucinating",
       "application": {
-        "application_type": "purified",
+        "application_type": "hallucinating",
         "activity": [{"value": 2.0, "unit": "U", "determination_method": "Units loaded per reaction"}]
       },
       "notes": "Chen et al., JACS 2023, 145, 4015-4025. CdFDH-M4: 55% conversion, TTN 601±60. BmGDH-M6: 63% conversion, TTN 589±1. GC DB-1701; 120°C 0 min, 20°C/min to 260°C, hold 16 min. Peaks (CdFDH-M4): amine rt=7.340 area 32999, (R)-2b rt=16.471 area 55697."
@@ -214,7 +215,7 @@
     {
       "identity": {
         "name": "CgKR1F92C/F94W (Carbonyl Reductase double mutant from Candida glabrata)",
-        "ec_number": ["1.1.1.184"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Asymmetric reduction of ketone substrates 1c and 1d using NADPH"],
         "origin_organism": "Candida glabrata"
       },
@@ -228,7 +229,7 @@
     {
       "identity": {
         "name": "CHMOAcineto (Cyclohexanone Monooxygenase from Acinetobacter sp.)",
-        "ec_number": ["1.14.13.22"],
+        "ec_number": ["not in the publication"],
         "catalyzed_reaction": ["Baeyer-Villiger oxidation of cyclohexanone to caprolactone using NADPH and O2"],
         "origin_organism": "Acinetobacter sp."
       },
@@ -270,37 +271,37 @@
   ],
   "reaction_components": [
     {
-      "identity": {"name": "2-(2,5-difluorophenyl)pyrrolidine (1a)", "smiles": "Fc1ccc(N2CCCC2)c(F)c1"},
+      "identity": {"name": "2-(2,5-difluorophenyl)pyrrolidine (1a)", "smiles": "not in the publication and wrong"},
       "role": "substrate",
       "amount": {"value": 100.0, "unit": "mM"},
       "notes": "ScIR-R3-V4 substrate. GC: 1a rt=12.982 min, (R)-2a rt=16.460 min. CdFDH-M4 areas: 29902/89907. Conversion 90% (24 h). TTN CdFDH-M4: 754±4; BmGDH-M6: 995±1."
     },
     {
-      "identity": {"name": "3-(3-(trifluoromethyl)phenyl)propanal (1b)", "smiles": "O=CCCc1cccc(C(F)(F)F)c1"},
+      "identity": {"name": "3-(3-(trifluoromethyl)phenyl)propanal (1b)", "smiles": "not in the publication"},
       "role": "substrate",
       "amount": {"value": 100.0, "unit": "mM"},
       "notes": "PcIR-M3 substrate. Co-substrate: (R)-1-(naphthalen-1-yl)ethan-1-amine 100 mM. GC: 1b-amine rt=7.344, aldehyde rt=4.607, (R)-2b rt=16.451 min. CdFDH-M4: 55% conv, TTN 601±60. BmGDH-M6: 63% conv, TTN 589±1."
     },
     {
-      "identity": {"name": "Ethyl 2-oxo-4-phenylbutanoate (1c)", "smiles": "O=C(OCC)C(=O)CCc1ccccc1"},
+      "identity": {"name": "Ethyl 2-oxo-4-phenylbutanoate (1c)", "smiles": "not in the publication"},
       "role": "substrate",
       "amount": {"value": 100.0, "unit": "mM"},
       "notes": "CgKR1F92C/F94W substrate. GC: 1c rt=8.859, rac-2c rt=11.048/11.353, product rt=11.002 min. CdFDH-M4: >99% conv, TTN 911±8. BmGDH-M6: 45% conv, TTN 429±3."
     },
     {
-      "identity": {"name": "tert-Butyl 3-oxopiperidine-1-carboxylate (1d)", "smiles": "O=C1CCCN(C(=O)OC(C)(C)C)C1"},
+      "identity": {"name": "tert-Butyl 3-oxopiperidine-1-carboxylate (1d)", "smiles": "not in the publication"},
       "role": "substrate",
       "amount": {"value": 100.0, "unit": "mM"},
       "notes": "CgKR1F92C/F94W substrate giving (S)-2d. GC: 1d rt=7.816, (S)-2d rt=9.462 min. CdFDH-M4: 99% conv, TTN 986±1. BmGDH-M6: 63% conv, TTN 627±1."
     },
     {
-      "identity": {"name": "Cyclohexanone (1e)", "smiles": "O=C1CCCCC1", "identifiers": ["CAS 108-94-1"]},
+      "identity": {"name": "Cyclohexanone (1e)", "smiles": "not in the publication", "identifiers": ["not in the publication"]},
       "role": "substrate",
       "amount": {"value": 50.0, "unit": "mM"},
       "notes": "CHMOAcineto substrate for Baeyer-Villiger oxidation to caprolactone. 0.1 mM NADP+; 2% v/v EtOH; pH 7.0; 75 mM formate. CdFDH-M4: TTN 359±2. BmGDH-M6: TTN 238±12."
     },
     {
-      "identity": {"name": "Pyrmetazole (1f)", "smiles": "COc1cnc(N2CCCS2(=O))nc1OC"},
+      "identity": {"name": "Pyrmetazole (1f)", "smiles": "not in the publication"},
       "role": "substrate",
       "amount": {"value": 30.0, "unit": "mM"},
       "notes": "AcPSMO substrate for Kagan sulfoxidation to (S)-2f. 0.1 mM NADP+; 10% MeOH; pH 8.0; 45 mM formate. CdFDH-M4: TTN 135±1. BmGDH-M6: TTN 65±1. UPLC: IA-U; heptane/EtOH 70:30; 40°C; 0.6 mL/min; 300 nm."
@@ -330,13 +331,13 @@
       "notes": "1% v/v for 1a; 15% v/v for 1b; 5% v/v EtOH for 1c/1d; 2% v/v EtOH for 1e; 10% v/v MeOH for 1f."
     },
     {
-      "identity": {"name": "(R)-1-(naphthalen-1-yl)ethan-1-amine", "smiles": "[C@@H](c1cccc2ccccc12)(N)C"},
+      "identity": {"name": "(R)-1-(naphthalen-1-yl)ethan-1-amine", "smiles": "not in the publication"},
       "role": "cosubstrate",
       "amount": {"value": 100.0, "unit": "mM"},
       "notes": "Amine donor for reductive amination of 1b by PcIR-M3."
     },
     {
-      "identity": {"name": "Glucose", "identifiers": ["CAS 50-99-7"]},
+      "identity": {"name": "Glucose", "identifiers": ["not in the publication"]},
       "role": "cosubstrate",
       "amount": {"value": 150.0, "unit": "mM"},
       "notes": "Cosubstrate for BmGDH-M6 benchmark reactions. Produces gluconic acid → pH drop → acidification without pH control."
