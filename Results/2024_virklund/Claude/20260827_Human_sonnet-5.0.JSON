@@ -321,7 +321,7 @@
         }
       },
       {
-        "label": "Experiment 2 - with ATPS-ISPR",
+        "label": "Experiment 2 (paper's own Table 2 label) - with ATPS-ISPR, second (higher-activity) cell batch",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",

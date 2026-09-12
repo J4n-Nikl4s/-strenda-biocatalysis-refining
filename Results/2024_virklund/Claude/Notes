@@ -67,6 +67,24 @@ Add yield in description rather than as value:
           "notes": "Salt-phase volume 500 mL, concentration 8.2 +/- 1.9 g/L; polymer-phase volume 300 mL, concentration 18.0 +/- 1.9 g/L; partition coefficient (polymer/salt) = 2.19 (Table 2). Initial rate slightly lower than the no-ATPS control but final titer similar - authors note titers were likely too low in this experiment for product inhibition to be significant."
         }
 
+Claude says that "characterization_data_not_in_core_schema" is data from the paper, but not covered by the guidelines. 
+But the activity is covered by the guidelines, I think this is a model thing. We can ask Claude for suggestions to improve the model. 
+
+   "characterization_data_not_in_core_schema": {
+      "activity_vs_salt_Figure2": {
+        "description": "Specific activity of purified FjTAL (µmol pCA min^-1 g^-1 TAL, i.e. U/g) measured in buffer vs. increasing potassium carbonate (CO3) or potassium phosphate (PO4) concentration. Assay: 1 µg purified FjTAL, 2 mM tyrosine, pH 10, 30°C, monitored at 325 nm. Means of duplicates; error bars = 95% CI from pooled SD.",
+        "data": [
+          { "condition": "50 mM CAPS (control buffer)", "activity_U_per_g": 74 },
+          { "condition": "10% w/w K2CO3/KHCO3", "activity_U_per_g": 60, "percent_change_vs_control": null },
+          { "condition": "15% w/w K2CO3/KHCO3", "activity_U_per_g": 46 },
+          { "condition": "20% w/w K2CO3/KHCO3", "activity_U_per_g": 30, "note": "text states >50% activity loss" },
+          { "condition": "10% w/w K3PO4/K2HPO4", "activity_U_per_g": 61, "percent_change_vs_control": "-19% (as stated in text)" },
+          { "condition": "15% w/w K3PO4/K2HPO4", "activity_U_per_g": 46, "percent_change_vs_control": "-37% (as stated in text)" },
+          { "condition": "20% w/w K3PO4/K2HPO4", "activity_U_per_g": 35 }
+        ],
+        "note_on_values": "Numeric activity values were read approximately from Figure 2 bar chart (paper does not tabulate them); the -19%/-37% figures for phosphate are given exactly in the main text."
+      },
+
 From Claude (Sonnet 5.0)
 
 One note up front: the dedicated Extract_Strenda_Biocatalysis tool on the MCP server is currently broken server-side (its schema rejects molecular_weight.minimum as not being a number), so I pulled the full data model via the compliance tool instead and did the extraction manually against it — same schema, just hand-populated rather than auto-filled.
