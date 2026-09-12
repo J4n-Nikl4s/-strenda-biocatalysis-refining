@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "biocatalyst_in_phase": "The enzyme used in the assays is purified RADH (alcohol dehydrogenase from Ralstonia sp.), stabilized with CaCl2. There is no indication of contamination with other (bio)catalysts in the described results, as purified enzyme was used for all activity and kinetic measurements.",
+      "phase": "All assays were performed in homogeneous aqueous buffer solutions. No biphasic or heterogeneous systems are described for the results tables (Tables II–IV, V).",
+      "special_treatment": "For all activity and kinetic measurements, the enzyme was stabilized with CaCl2 (0.8 mmol L^-1) and stored/handled as described in the methods. Lyophilized enzyme was reactivated by equilibration in buffer prior to use. All assays were performed in triplicate, and specific buffer, pH, and temperature conditions are detailed for each assay type (see below)."
+    }
+  ]
+}

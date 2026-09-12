@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "event_description": "Standard reduction assay for measuring initial rate activities of RADH (alcohol dehydrogenase from Ralstonia sp.) for reduction reactions.",
+      "special_treatment": "Assay performed in semi-micro cuvettes (total volume 1 mL) for 1 min. All activity measurements performed in triplicate. CaCl2 is added for enzyme stabilization. TEA–HCl buffer is used due to its compatibility with nicotineamide cofactors. Enzyme concentration for stability studies: 0.5 mg/mL in 200 μL stock solution. For substrate range studies, 0.05 mg/mL RADH is used.",
+      "temperature_after_event": 30,
+      "temperature_at_XY": 30,
+      "temperature_beginning": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 1,
+      "time_unit": "min"
+    },
+    {
+      "event_description": "Standard oxidation assay for measuring initial rate activities of RADH for oxidation reactions.",
+      "special_treatment": "Assay performed in semi-micro cuvettes (total volume 1 mL) for 1 min. All activity measurements performed in triplicate. Glycine–NaOH buffer is used for its broad pH range. CaCl2 is added for enzyme stabilization. For substrate range studies, 0.05 mg/mL RADH is used.",
+      "temperature_after_event": 30,
+      "temperature_at_XY": 30,
+      "temperature_beginning": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 1,
+      "time_unit": "min"
+    },
+    {
+      "event_description": "pH optimum determination for reduction and oxidation reactions.",
+      "special_treatment": "Reduction: TEA–HCl buffer (50 mmol/L, pH 7–8) + CaCl2 (0.8 mmol/L); Oxidation: Glycine–NaOH buffer (50 mmol/L, pH 8.5–12) + CaCl2 (0.8 mmol/L). Other buffers used for pH range: citrate–phosphate (pH 4–7), TRIS–HCl (pH 7–8.5).",
+      "temperature_after_event": 25,
+      "temperature_at_XY": 25,
+      "temperature_beginning": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "Temperature optimum determination for reduction of benzaldehyde.",
+      "special_treatment": "Substrate solution preheated in temperature-controlled spectrophotometer slide. Temperature additionally controlled with external thermocoupled thermometer. pH shift due to temperature increase (from 15 to 60°C) is 0.9 units in TEA–HCl buffer. Assay performed in TEA–HCl buffer (50 mmol/L) + CaCl2 (0.8 mmol/L), pH 7.5.",
+      "temperature_after_event": 45,
+      "temperature_at_XY": 45,
+      "temperature_beginning": 15,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "Temperature stability determination for reduction of benzaldehyde.",
+      "special_treatment": "Enzyme (0.5 mg/mL in 200 μL stock) incubated in reduction buffer [TEA–HCl (50 mmol/L) + CaCl2 (0.8 mmol/L), pH 7.5] in a temperature range from 0 to 40°C (Thermomixer comfort, Eppendorf). Residual activity followed using reduction assay until 50% deactivation observed at respective temperature.",
+      "temperature_after_event": 40,
+      "temperature_at_XY": 40,
+      "temperature_beginning": 0,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "h"
+    },
+    {
+      "event_description": "Substrate range and kinetic parameter determination for reduction and oxidation reactions.",
+      "special_treatment": "Reduction: 10 mmol/L substrate (aldehyde or ketone), 0.2 mmol/L NADPH, TEA–HCl buffer (50 mmol/L, pH 7.5) + CaCl2 (0.8 mmol/L), 0.05 mg/mL RADH, 30°C. Oxidation: 10–100 mmol/L alcohol, 0.5 mmol/L NADP+, glycine–NaOH buffer (50 mmol/L, pH 10.5) + CaCl2 (0.8 mmol/L), 0.05 mg/mL RADH, 30°C. For kinetic studies, substrate and cofactor concentrations varied as specified in Table V.",
+      "temperature_after_event": 30,
+      "temperature_at_XY": 30,
+      "temperature_beginning": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "h"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "solid_amount": 0.05,
+      "solid_type": "RADH (alcohol dehydrogenase from Ralstonia sp.)",
+      "solid_unit": "mg"
+    },
+    {
+      "solid_amount": 0.2,
+      "solid_type": "NADPH (for reduction assays)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 0.8,
+      "solid_type": "CaCl2 (for stability and activity studies)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 10,
+      "solid_type": "benzaldehyde (for standard reduction assay)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 50,
+      "solid_type": "TEA–HCl buffer (for reduction assays, pH 7.5)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 0.5,
+      "solid_type": "NADP+ (for oxidation assays)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 100,
+      "solid_type": "cyclohexanol (for standard oxidation assay)",
+      "solid_unit": "mmol L-1"
+    },
+    {
+      "solid_amount": 50,
+      "solid_type": "glycine–NaOH buffer (for oxidation assays, pH 10.5)",
+      "solid_unit": "mmol L-1"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH was controlled by using defined buffer systems (citrate–phosphate, TEA–HCl, TRIS–HCl, glycine–NaOH) at specified pH values. No explicit mention of pH electrode calibration.",
+      "detected_when": "pH was measured/set before the reaction by preparing the buffer at the desired pH. All components were present during the reaction.",
+      "pH_value": 7.5,
+      "special_treatment": "For reduction assays, TEA–HCl buffer (50 mmol L⁻¹) with CaCl₂ (0.8 mmol L⁻¹) was used at pH 7.5. For oxidation assays, glycine–NaOH buffer (50 mmol L⁻¹) with CaCl₂ (0.8 mmol L⁻¹) at pH 10.5 was used. Buffers for pH stability studies included citrate–phosphate (pH 4.0–7.0), TEA–HCl (pH 7.0–8.0), TRIS–HCl (pH 7.0–8.5), glycine–NaOH (pH 8.5–12.0), all with CaCl₂ (0.8 mmol L⁻¹).",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    },
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH was controlled by using defined buffer systems (citrate–phosphate, TEA–HCl, TRIS–HCl, glycine–NaOH) at specified pH values. No explicit mention of pH electrode calibration.",
+      "detected_when": "pH was measured/set before the reaction by preparing the buffer at the desired pH. All components were present during the reaction.",
+      "pH_value": 10.5,
+      "special_treatment": "For oxidation assays, glycine–NaOH buffer (50 mmol L⁻¹) with CaCl₂ (0.8 mmol L⁻¹) at pH 10.5 was used. For pH stability studies, a range of buffers and pH values were used as above.",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    },
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH was controlled by using defined buffer systems (citrate–phosphate, TEA–HCl, TRIS–HCl, glycine–NaOH) at specified pH values. No explicit mention of pH electrode calibration.",
+      "detected_when": "pH was measured/set before the reaction by preparing the buffer at the desired pH. All components were present during the reaction.",
+      "pH_value": 9,
+      "special_treatment": "For kinetic measurements of cyclohexanol oxidation, TRIS–HCl buffer (50 mmol L⁻¹) with CaCl₂ (0.8 mmol L⁻¹) at pH 9.0 was used.",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    }
+  ]
+}

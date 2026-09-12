@@ -1,0 +1,1495 @@
+{
+  "_extraction_metadata": {
+    "extracted_with": "Manual mapping to the STRENDA-Biocatalysis data model (MD-Models schema, via the STRENDA_Biocat MCP connector's Data_Model_Suggestion_Guidelines / Check_Compliance_Strenda_Biocatalysis tools). The connector's automatic 'Extract_Strenda_Biocatalysis' tool was unavailable in this session (excluded due to an internal schema-validation issue: 'biocatalyst/items/properties/identity/properties/molecular_weight/minimum must be number'), so extraction was performed by hand against the same schema.",
+    "source_publication": "Milić, M., Byström, E., Domínguez de María, P., Kara, S. (2024). Selective Oxidation of 5-Hydroxymethylfurfural to 2,5-Diformylfuran in Biphasic Media using Immobilized Galactose Oxidase: Proof of Concept and Limitations. ChemCatChem, 16, e202301384. https://doi.org/10.1002/cctc.202301384 (incl. Supporting Information).",
+    "source_files": [
+      "Main article PDF",
+      "Supporting Information PDF"
+    ],
+    "extraction_date": "2026-08-31",
+    "policy": "Every field is either taken directly from the publication text/tables/figures, or explicitly marked None/with a '_note' explaining why it is not stated. Any information NOT found in the publication that was added for context is labeled '<field>_note' and cites its external source; it is never written into the primary schema field itself."
+  },
+  "strenda_biocatalysis_records": [
+    {
+      "name": "GalOx-ECR8215F catalyzed oxidation of HMF to DFF in 50% v/v H2O(NaPi buffer):EtOAc (3 mL scale)",
+      "description": "Baseline biphasic oxidation of HMF to DFF using covalently immobilized galactose oxidase on Purolite Lifetech ECR8215F (epoxy carrier), in a 50:50 (v/v) 0.1 M NaPi buffer (pH 7.4) / ethyl acetate biphasic system. Reaction conditions and DFF yield reproduced in Figure S1 and as batch 1 of Figure 3.",
+      "biocatalyst": {
+        "identity": {
+          "name": "Galactose oxidase (GalOx)",
+          "ec_number": null,
+          "ec_number_note": "Not stated in the publication. For reference only (NOT from this paper): galactose oxidase is classified as EC 1.1.3.9 per the ExPASy/IUBMB enzyme nomenclature database, https://enzyme.expasy.org/EC/1.1.3.9.",
+          "molecular_weight": null,
+          "molecular_weight_unit": null,
+          "catalyzed_reaction": "Oxygen-dependent oxidation of primary alcohols (e.g. D-galactose, 5-hydroxymethylfurfural/HMF) to the corresponding aldehydes (e.g. D-galacto-hexodialdose, 2,5-diformylfuran/DFF), with concomitant reduction of O2 to H2O2 (paper Introduction and Figure S3).",
+          "sequences": {
+            "sequence_amino_acid": null,
+            "sequence_dna": null
+          },
+          "origin_organism": null,
+          "origin_organism_note": "Not stated in the publication (source organism of the commercial GalOx preparation is not given).",
+          "production_organism": null,
+          "posttranslational_modification": null
+        },
+        "source_type": "purchased",
+        "source": {
+          "source_type": "purchased",
+          "supplier": null,
+          "supplier_note": "Not explicitly stated for GalOx itself in the Materials section. The Lifetech(TM) enzyme carriers were supplied by Purolite Ltd. (United Kingdom); GalOx is described only as 'a commercial preparation' without naming the vendor.",
+          "purchased_details": {
+            "reference": null,
+            "purity": null,
+            "purity_specification": null,
+            "formulation": "dissolved",
+            "formulation_note": "Used/handled as a liquid enzyme solution (2 mg/mL) during immobilization; exact commercial formulation not stated."
+          }
+        },
+        "application": {
+          "application_type": "purified",
+          "application_type_note": "Enum approximation — paper states 'commercial preparation of galactose oxidase', purity not specified; closest available enum value chosen, not a verified claim of purified enzyme.",
+          "concentration": {
+            "value": 0.25,
+            "unit": "g GalOx-ECR8215F per 3 mL reaction volume",
+            "determination_method": "Fixed mass of immobilized biocatalyst dosed per reaction."
+          },
+          "activity": {
+            "value": 1.0,
+            "unit": "U/mg_enzyme",
+            "determination_method": "ABTS-HRP assay (see activity_assay_note); specific activity of GalOx-ECR8215F = 1.0 ± 0.1 U/mg enzyme (Table 1)."
+          },
+          "workflow_details": null
+        },
+        "immobilization": {
+          "immobilized": true,
+          "biocatalyst_state": "Commercial enzyme preparation, liquid solution (2 mg/mL) at the point of immobilization.",
+          "immobilisation_chemistry": "Covalent, multipoint attachment: surface amino groups of GalOx perform a nucleophilic ring-opening attack on the carrier's epoxy groups, forming a covalent bond; no activation step or crosslinker required for epoxy carriers (main text, 'Carrier screening for immobilization').",
+          "carrier_material": "Purolite® Lifetech(TM) ECR8215F — epoxy-functionalized methacrylate macroporous resin, particle size 150-300 µm, pore diameter 1200-1800 Å.",
+          "linkers": "None (epoxy carriers require no crosslinker/activation, unlike amino carriers which need glutaraldehyde).",
+          "immobilisation_method": "Carrier washed in 0.1 M NaPi buffer pH 7.4 (1:1 w:v) for 5 min, liquid removed by vacuum filtration. Washed carrier mixed with 2 mg/mL GalOx solution for 18 h at room temperature and 60 rpm. Mixture vacuum filtered and washed twice. Immobilized enzyme stored at 4°C (Experimental Section, 'Enzyme immobilization procedure'; manufacturer protocol ref. [48]).",
+          "purification_method": "Vacuum filtration and two washing steps after immobilization.",
+          "loading": {
+            "value": 3.8,
+            "unit": "mg enzyme/g wet carrier",
+            "determination_method": "Protein loading = (offered enzyme (mg) - total enzyme in supernatants (mg)) / wet carrier (g); measured via Bradford assay (Table 1; error ±0.5)."
+          },
+          "notes": "ECR8215F (epoxy) was selected for all downstream oxidation experiments as the optimal carrier: highest activity yield (28.3 ± 0.6%) among epoxy carriers plus high absolute activity retained after 4 weeks of storage (47.5 ± 4.9% of initial activity), even though ECR8285 (butyl/epoxy) showed better *relative* storage stability (65.2 ± 12.9% after 4 weeks)."
+        },
+        "storage": {
+          "temperature": 4,
+          "temperature_unit": "°C",
+          "storage_start": null,
+          "additives": null,
+          "drying_method": null,
+          "notes": "Immobilized enzyme stored at 4°C after washing (Experimental Section, 'Enzyme immobilization procedure')."
+        },
+        "notes": null
+      },
+      "reaction_components": [
+        {
+          "identity": {
+            "name": "5-Hydroxymethylfurfural (HMF)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "substrate",
+          "amount": {
+            "value": 50,
+            "unit": "mM"
+          },
+          "provenance": {
+            "supplier": "Sigma-Aldrich (Germany) [inferred: 'all other chemicals' not individually listed were purchased from Sigma-Aldrich and used as received] — not individually named for HMF in the Materials list."
+          },
+          "solubility": {
+            "value": null,
+            "unit": null
+          },
+          "storage": null,
+          "notes": "Non-natural substrate for wild-type GalOx (Conclusions). Adsorbs to ECR8215F carrier: ~15% bound in NaPi buffer after 72 h; negligible adsorption in EtOAc (Figure 2)."
+        },
+        {
+          "identity": {
+            "name": "Sodium phosphate (NaPi) buffer",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "buffer",
+          "amount": {
+            "value": 0.1,
+            "unit": "M"
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "pH 7.4 throughout (Experimental Section)."
+        },
+        {
+          "identity": {
+            "name": "Ethyl acetate (EtOAc)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "liquid"
+          },
+          "role": "solvent",
+          "amount": {
+            "value": null,
+            "unit": null,
+            "note": "Variable v/v fraction depending on experiment (see reaction_conditions)."
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "Organic co-solvent/phase; log P < 2 (high water-stripping capacity, refs. [42-44])."
+        }
+      ],
+      "operation_mode": {
+        "mode": "batch",
+        "reactor_type": "well_mixed",
+        "feeding": {
+          "feeding_type": "none",
+          "description": "Single substrate charge at t=0; no feeding during the reaction."
+        },
+        "notes": "All oxidation reactions were run as closed-vial batch reactions (Experimental Section)."
+      },
+      "reaction_conditions": {
+        "reactor": {
+          "reactor_type": "well_mixed",
+          "flow": null,
+          "notes": "Closed 30 mL glass reaction vial, orbitally shaken."
+        },
+        "system": {
+          "system_type": "multiphasic",
+          "monoliquid": null,
+          "multiphasic": {
+            "phases_number": 2,
+            "notes": "Aqueous NaPi buffer phase (pH 7.4) + ethyl acetate organic phase, 50:50 v/v."
+          },
+          "notes": null
+        },
+        "phases": [
+          {
+            "phase_type": "liquid",
+            "material_description": "0.1 M NaPi buffer, pH 7.4 (aqueous phase); immobilized biocatalyst partitions here.",
+            "amount": 1.5,
+            "amount_unit": "mL",
+            "notes": "50% of 3 mL total liquid volume."
+          },
+          {
+            "phase_type": "liquid",
+            "material_description": "Ethyl acetate (organic phase); dissolves HMF/DFF.",
+            "amount": 1.5,
+            "amount_unit": "mL",
+            "notes": "50% of 3 mL total liquid volume."
+          }
+        ],
+        "temperature": {
+          "profile_type": "constant",
+          "temperature_unit": "°C",
+          "constant_temperature": 25,
+          "profile_points": null,
+          "gradient": null,
+          "notes": null
+        },
+        "pH": {
+          "profile_type": "constant",
+          "constant_pH": 7.4,
+          "profile_points": null,
+          "gradient": null,
+          "detection": {
+            "detected_when": "Not specified (buffer prepared at pH 7.4; not stated whether monitored during reaction).",
+            "detected_how": null,
+            "temperature": null,
+            "temperature_unit": null,
+            "calibration_pH_electrode": null
+          },
+          "notes": "pH of the aqueous (NaPi buffer) phase only; pH of the biphasic/organic system as a whole not reported."
+        },
+        "notes": "50 mM HMF; 3 mL total liquid volume in 30 mL reaction vials; 25°C; 170 rpm; 72 h reaction time (main text, 'Oxidation of HMF to DFF...' and Table 2 legend)."
+      },
+      "results": {
+        "kinetics": {
+          "michaelis_constant": null,
+          "maximum_reaction_rate": null,
+          "turnover_number": null,
+          "catalytic_efficiency": null,
+          "dissociation_constant": null,
+          "inhibition": null,
+          "hill_coefficient": null,
+          "enzyme_stability": "Immobilized biocatalyst loses activity with reuse: in 50% v/v H2O-EtOAc, yield in batch 2 was <=50% of batch 1; over 5 consecutive 72 h batches (4 recycles) total product-formation loss was 80% (Figure 3).",
+          "notes": null
+        },
+        "yield_and_conversion": {
+          "product_yield": 2.9,
+          "space_time_yield": null,
+          "conversion": null,
+          "notes": "DFF yield 2.9 ± 0.4% after 72 h (main text and Table 2 baseline comparison; consistent with the 50% v/v H2O point at t=72h in Figure S1)."
+        },
+        "activity": null,
+        "selectivity": null,
+        "thermodynamics": null,
+        "notes": "Reaction plateaued around 48 h in most water-content conditions tested (Figure S1). Authors note actual DFF formed may be ~1.67x higher than the reported/measured yield once adsorptive loss of DFF onto the carrier (~40% in aqueous phase) is accounted for."
+      },
+      "sampling": {
+        "sampling_applied": true,
+        "strategy": {
+          "strategy_type": "default",
+          "mixing_during_sampling": "Not specified.",
+          "vessel_opened": true,
+          "vessel_opened_note": "Vials were opened to withdraw liquid aliquots for HPLC analysis (implicit; not explicitly described).",
+          "gas_phase": "Not specified.",
+          "notes": null
+        },
+        "samples": [
+          {
+            "time": 24,
+            "time_unit": "h",
+            "amount": 1,
+            "amount_unit": "mL (implied, not explicitly stated for this experiment)",
+            "phase": "liquid",
+            "biocatalyst_in_sample": "Not present in HPLC sample (biocatalyst remains on solid support / separated before HPLC injection — not explicitly described).",
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "Analyzed by HPLC (see HPLC method note).",
+              "notes": null
+            },
+            "notes": null
+          },
+          {
+            "time": 48,
+            "time_unit": "h",
+            "amount": 1,
+            "amount_unit": "mL (implied, not explicitly stated for this experiment)",
+            "phase": "liquid",
+            "biocatalyst_in_sample": "Not present in HPLC sample (biocatalyst remains on solid support / separated before HPLC injection — not explicitly described).",
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "Analyzed by HPLC (see HPLC method note).",
+              "notes": null
+            },
+            "notes": null
+          },
+          {
+            "time": 72,
+            "time_unit": "h",
+            "amount": 1,
+            "amount_unit": "mL (implied, not explicitly stated for this experiment)",
+            "phase": "liquid",
+            "biocatalyst_in_sample": "Not present in HPLC sample (biocatalyst remains on solid support / separated before HPLC injection — not explicitly described).",
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "Analyzed by HPLC (see HPLC method note).",
+              "notes": null
+            },
+            "notes": null
+          }
+        ],
+        "notes": "Sampling time points reconstructed from Figure S1 (24, 48, 72, 96, 120, 144 h for the two-cycle experiment); this record covers only the first 72 h cycle. HPLC analysis: Agilent Technologies 1260 Infinity II HPLC with diode-array detector (DAD); Rezex(TM) ROA Organic Acid H+ column (8%), 300x7.8 mm (Phenomenex); isocratic elution with 0.005 N H2SO4 in Milli-Q water, flow rate 0.75 mL/min, column temperature 50°C, total runtime 42 min; injection volume 10 µL; HMF and DFF detected at 280.4 nm (Experimental Section, 'HPLC analysis'; ref. [51])."
+      },
+      "vessels_and_mixing": {
+        "vessel": {
+          "vessel_type": "vial",
+          "material": "Glass (implied by 'reaction vials'; not explicitly stated).",
+          "size": 30,
+          "size_unit": "mL",
+          "geometry": "Headspace-to-liquid volume ratio kept at 9:1 for the 30 mL scale-up vessels (Table 2 legend); vessel shape for standard 30 mL vials not further described.",
+          "closure": {
+            "closure_type": null,
+            "sealing_material": null,
+            "notes": "Not specified in the publication."
+          },
+          "supplier": null,
+          "lot_number": null,
+          "reactor_specifics": null,
+          "notes": "Total liquid reaction volume 3 mL in a 30 mL reaction vial."
+        },
+        "mixing": {
+          "mixing_type": "shaking",
+          "shaking": {
+            "shaking_type": "orbital (implied; not explicitly stated)",
+            "deflection": null,
+            "speed": 170,
+            "vessel_position": null,
+            "notes": "170 rpm used for most oxidation reactions; 150 rpm used for the 5-batch recycling study (Figure 3) and the catalyst-replacement study (Figure 4)."
+          },
+          "mechanical": null,
+          "fluid": null,
+          "notes": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "name": "Semi-preparative scale-up of GalOx-ECR8215F catalyzed HMF oxidation (50 mL reaction volume)",
+      "description": "Stepwise scale-up of the 50% v/v H2O-EtOAc biphasic oxidation of HMF to DFF using GalOx-ECR8215F, at 10, 25, and 50 mL total reaction volume, keeping a constant 9:1 headspace-to-liquid ratio (Table 2).",
+      "biocatalyst": {
+        "identity": {
+          "name": "Galactose oxidase (GalOx)",
+          "ec_number": null,
+          "ec_number_note": "Not stated in the publication. For reference only (NOT from this paper): galactose oxidase is classified as EC 1.1.3.9 per the ExPASy/IUBMB enzyme nomenclature database, https://enzyme.expasy.org/EC/1.1.3.9.",
+          "molecular_weight": null,
+          "molecular_weight_unit": null,
+          "catalyzed_reaction": "Oxygen-dependent oxidation of primary alcohols (e.g. D-galactose, 5-hydroxymethylfurfural/HMF) to the corresponding aldehydes (e.g. D-galacto-hexodialdose, 2,5-diformylfuran/DFF), with concomitant reduction of O2 to H2O2 (paper Introduction and Figure S3).",
+          "sequences": {
+            "sequence_amino_acid": null,
+            "sequence_dna": null
+          },
+          "origin_organism": null,
+          "origin_organism_note": "Not stated in the publication (source organism of the commercial GalOx preparation is not given).",
+          "production_organism": null,
+          "posttranslational_modification": null
+        },
+        "source_type": "purchased",
+        "source": {
+          "source_type": "purchased",
+          "supplier": null,
+          "supplier_note": "Not explicitly stated for GalOx itself in the Materials section. The Lifetech(TM) enzyme carriers were supplied by Purolite Ltd. (United Kingdom); GalOx is described only as 'a commercial preparation' without naming the vendor.",
+          "purchased_details": {
+            "reference": null,
+            "purity": null,
+            "purity_specification": null,
+            "formulation": "dissolved",
+            "formulation_note": "Used/handled as a liquid enzyme solution (2 mg/mL) during immobilization; exact commercial formulation not stated."
+          }
+        },
+        "application": {
+          "application_type": "purified",
+          "application_type_note": "See note in Record 1 — enum approximation, purity not stated.",
+          "concentration": {
+            "value": 4.167,
+            "unit": "g GalOx-ECR8215F per 50 mL total reaction volume",
+            "determination_method": "Biocatalyst loading scaled proportionally with reaction volume (Table 2: 0.833 g/10 mL, 2.083 g/25 mL, 4.167 g/50 mL)."
+          },
+          "activity": {
+            "value": 1.0,
+            "unit": "U/mg_enzyme",
+            "determination_method": "ABTS-HRP assay; specific activity of GalOx-ECR8215F (Table 1)."
+          },
+          "workflow_details": null
+        },
+        "immobilization": {
+          "immobilized": true,
+          "biocatalyst_state": "Commercial enzyme preparation, liquid solution (2 mg/mL) at the point of immobilization.",
+          "immobilisation_chemistry": "Covalent, multipoint attachment: surface amino groups of GalOx perform a nucleophilic ring-opening attack on the carrier's epoxy groups, forming a covalent bond; no activation step or crosslinker required for epoxy carriers (main text, 'Carrier screening for immobilization').",
+          "carrier_material": "Purolite® Lifetech(TM) ECR8215F — epoxy-functionalized methacrylate macroporous resin, particle size 150-300 µm, pore diameter 1200-1800 Å.",
+          "linkers": "None (epoxy carriers require no crosslinker/activation, unlike amino carriers which need glutaraldehyde).",
+          "immobilisation_method": "Carrier washed in 0.1 M NaPi buffer pH 7.4 (1:1 w:v) for 5 min, liquid removed by vacuum filtration. Washed carrier mixed with 2 mg/mL GalOx solution for 18 h at room temperature and 60 rpm. Mixture vacuum filtered and washed twice. Immobilized enzyme stored at 4°C (Experimental Section, 'Enzyme immobilization procedure'; manufacturer protocol ref. [48]).",
+          "purification_method": "Vacuum filtration and two washing steps after immobilization.",
+          "loading": {
+            "value": 3.8,
+            "unit": "mg enzyme/g wet carrier",
+            "determination_method": "Protein loading = (offered enzyme (mg) - total enzyme in supernatants (mg)) / wet carrier (g); measured via Bradford assay (Table 1; error ±0.5)."
+          },
+          "notes": "ECR8215F (epoxy) was selected for all downstream oxidation experiments as the optimal carrier: highest activity yield (28.3 ± 0.6%) among epoxy carriers plus high absolute activity retained after 4 weeks of storage (47.5 ± 4.9% of initial activity), even though ECR8285 (butyl/epoxy) showed better *relative* storage stability (65.2 ± 12.9% after 4 weeks)."
+        },
+        "storage": {
+          "temperature": 4,
+          "temperature_unit": "°C",
+          "storage_start": null,
+          "additives": null,
+          "drying_method": null,
+          "notes": "Immobilized enzyme stored at 4°C after washing (Experimental Section, 'Enzyme immobilization procedure')."
+        },
+        "notes": null
+      },
+      "reaction_components": [
+        {
+          "identity": {
+            "name": "5-Hydroxymethylfurfural (HMF)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "substrate",
+          "amount": {
+            "value": 50,
+            "unit": "mM"
+          },
+          "provenance": {
+            "supplier": "Sigma-Aldrich (Germany) [inferred: 'all other chemicals' not individually listed were purchased from Sigma-Aldrich and used as received] — not individually named for HMF in the Materials list."
+          },
+          "solubility": {
+            "value": null,
+            "unit": null
+          },
+          "storage": null,
+          "notes": "Non-natural substrate for wild-type GalOx (Conclusions). Adsorbs to ECR8215F carrier: ~15% bound in NaPi buffer after 72 h; negligible adsorption in EtOAc (Figure 2)."
+        },
+        {
+          "identity": {
+            "name": "Sodium phosphate (NaPi) buffer",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "buffer",
+          "amount": {
+            "value": 0.1,
+            "unit": "M"
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "pH 7.4 throughout (Experimental Section)."
+        },
+        {
+          "identity": {
+            "name": "Ethyl acetate (EtOAc)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "liquid"
+          },
+          "role": "solvent",
+          "amount": {
+            "value": null,
+            "unit": null,
+            "note": "Variable v/v fraction depending on experiment (see reaction_conditions)."
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "Organic co-solvent/phase; log P < 2 (high water-stripping capacity, refs. [42-44])."
+        }
+      ],
+      "operation_mode": {
+        "mode": "batch",
+        "reactor_type": "well_mixed",
+        "feeding": {
+          "feeding_type": "none",
+          "description": "Single substrate charge at t=0; no feeding during the reaction."
+        },
+        "notes": "All oxidation reactions were run as closed-vial batch reactions (Experimental Section)."
+      },
+      "reaction_conditions": {
+        "reactor": {
+          "reactor_type": "well_mixed",
+          "flow": null,
+          "notes": "Three vessel scales of identical geometry/shape used for reproducibility (main text)."
+        },
+        "system": {
+          "system_type": "multiphasic",
+          "monoliquid": null,
+          "multiphasic": {
+            "phases_number": 2,
+            "notes": "50:50 v/v aqueous NaPi buffer (pH 7.4) / EtOAc."
+          },
+          "notes": null
+        },
+        "phases": [
+          {
+            "phase_type": "liquid",
+            "material_description": "0.1 M NaPi buffer, pH 7.4",
+            "amount": null,
+            "amount_unit": "mL",
+            "notes": "50% v/v of total reaction (liquid) volume."
+          },
+          {
+            "phase_type": "liquid",
+            "material_description": "Ethyl acetate",
+            "amount": null,
+            "amount_unit": "mL",
+            "notes": "50% v/v of total reaction (liquid) volume."
+          }
+        ],
+        "temperature": {
+          "profile_type": "constant",
+          "temperature_unit": "°C",
+          "constant_temperature": 25,
+          "profile_points": null,
+          "gradient": null,
+          "notes": null
+        },
+        "pH": {
+          "profile_type": "constant",
+          "constant_pH": 7.4,
+          "profile_points": null,
+          "gradient": null,
+          "detection": {
+            "detected_when": "Not specified (buffer prepared at pH 7.4; not stated whether monitored during reaction).",
+            "detected_how": null,
+            "temperature": null,
+            "temperature_unit": null,
+            "calibration_pH_electrode": null
+          },
+          "notes": "pH of the aqueous (NaPi buffer) phase only; pH of the biphasic/organic system as a whole not reported."
+        },
+        "notes": "50 mM HMF; 25°C, 170 rpm, 72 h; headspace:liquid ratio fixed at 9:1 across all three scales (Table 2 legend)."
+      },
+      "results": {
+        "kinetics": null,
+        "yield_and_conversion": {
+          "product_yield": null,
+          "space_time_yield": null,
+          "conversion": null,
+          "notes": "Scale-dependent DFF yields after 72 h, all biological triplicates (Table 2): 10 mL total reaction volume (100 mL reactor, 0.833 g biocatalyst) -> 4.6 ± 0.1% ; 25 mL total reaction volume (250 mL reactor, 2.083 g biocatalyst) -> 4.8 ± 0.3% ; 50 mL total reaction volume (500 mL reactor, 4.167 g biocatalyst) -> 4.8 ± 0.1%. All values higher than the 2.9 ± 0.4% obtained in the smaller 3 mL/30 mL vial format under otherwise identical conditions, attributed to more favorable vessel geometry/mixing."
+        },
+        "activity": null,
+        "selectivity": null,
+        "thermodynamics": null,
+        "notes": "See supplementary_data_tables.table_2_semipreparative_scale for the full machine-readable table."
+      },
+      "sampling": {
+        "sampling_applied": true,
+        "strategy": {
+          "strategy_type": "default",
+          "mixing_during_sampling": "Not specified.",
+          "vessel_opened": true,
+          "vessel_opened_note": "Vials were opened to withdraw liquid aliquots for HPLC analysis (implicit; not explicitly described).",
+          "gas_phase": "Not specified.",
+          "notes": null
+        },
+        "samples": null,
+        "notes": "Single HPLC endpoint measurement at 72 h per scale, biological triplicates. HPLC analysis: Agilent Technologies 1260 Infinity II HPLC with diode-array detector (DAD); Rezex(TM) ROA Organic Acid H+ column (8%), 300x7.8 mm (Phenomenex); isocratic elution with 0.005 N H2SO4 in Milli-Q water, flow rate 0.75 mL/min, column temperature 50°C, total runtime 42 min; injection volume 10 µL; HMF and DFF detected at 280.4 nm (Experimental Section, 'HPLC analysis'; ref. [51])."
+      },
+      "vessels_and_mixing": {
+        "vessel": {
+          "vessel_type": "vial",
+          "material": "Not specified (glass implied).",
+          "size": null,
+          "size_unit": "mL",
+          "geometry": "9:1 headspace-to-liquid volume ratio maintained at all 3 scales (10/25/50 mL liquid in 100/250/500 mL vessels respectively).",
+          "closure": null,
+          "supplier": null,
+          "lot_number": null,
+          "reactor_specifics": null,
+          "notes": "See supplementary table for the three individual vessel/liquid volume pairs."
+        },
+        "mixing": {
+          "mixing_type": "shaking",
+          "shaking": {
+            "shaking_type": null,
+            "deflection": null,
+            "speed": 170,
+            "vessel_position": null,
+            "notes": null
+          },
+          "mechanical": null,
+          "fluid": null,
+          "notes": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "name": "GalOx-ECR8215F catalyzed HMF oxidation with catalyst replaced every 24 h (Figure 4)",
+      "description": "50% v/v H2O(buffer):EtOAc oxidation of HMF to DFF in which the immobilized GalOx-ECR8215F batch was replaced with a freshly immobilized batch every 24 h over a total 72 h reaction time, to counter biocatalyst deactivation.",
+      "biocatalyst": {
+        "identity": {
+          "name": "Galactose oxidase (GalOx)",
+          "ec_number": null,
+          "ec_number_note": "Not stated in the publication. For reference only (NOT from this paper): galactose oxidase is classified as EC 1.1.3.9 per the ExPASy/IUBMB enzyme nomenclature database, https://enzyme.expasy.org/EC/1.1.3.9.",
+          "molecular_weight": null,
+          "molecular_weight_unit": null,
+          "catalyzed_reaction": "Oxygen-dependent oxidation of primary alcohols (e.g. D-galactose, 5-hydroxymethylfurfural/HMF) to the corresponding aldehydes (e.g. D-galacto-hexodialdose, 2,5-diformylfuran/DFF), with concomitant reduction of O2 to H2O2 (paper Introduction and Figure S3).",
+          "sequences": {
+            "sequence_amino_acid": null,
+            "sequence_dna": null
+          },
+          "origin_organism": null,
+          "origin_organism_note": "Not stated in the publication (source organism of the commercial GalOx preparation is not given).",
+          "production_organism": null,
+          "posttranslational_modification": null
+        },
+        "source_type": "purchased",
+        "source": {
+          "source_type": "purchased",
+          "supplier": null,
+          "supplier_note": "Not explicitly stated for GalOx itself in the Materials section. The Lifetech(TM) enzyme carriers were supplied by Purolite Ltd. (United Kingdom); GalOx is described only as 'a commercial preparation' without naming the vendor.",
+          "purchased_details": {
+            "reference": null,
+            "purity": null,
+            "purity_specification": null,
+            "formulation": "dissolved",
+            "formulation_note": "Used/handled as a liquid enzyme solution (2 mg/mL) during immobilization; exact commercial formulation not stated."
+          }
+        },
+        "application": {
+          "application_type": "purified",
+          "application_type_note": "See note in Record 1.",
+          "concentration": {
+            "value": 0.25,
+            "unit": "g GalOx-ECR8215F per 3 mL reaction volume (per 24 h batch)",
+            "determination_method": "Fixed mass; replaced with a freshly immobilized 0.250 g batch every 24 h."
+          },
+          "activity": {
+            "value": 1.0,
+            "unit": "U/mg_enzyme",
+            "determination_method": "ABTS-HRP assay (Table 1)."
+          },
+          "workflow_details": null
+        },
+        "immobilization": {
+          "immobilized": true,
+          "biocatalyst_state": "Commercial enzyme preparation, liquid solution (2 mg/mL) at the point of immobilization.",
+          "immobilisation_chemistry": "Covalent, multipoint attachment: surface amino groups of GalOx perform a nucleophilic ring-opening attack on the carrier's epoxy groups, forming a covalent bond; no activation step or crosslinker required for epoxy carriers (main text, 'Carrier screening for immobilization').",
+          "carrier_material": "Purolite® Lifetech(TM) ECR8215F — epoxy-functionalized methacrylate macroporous resin, particle size 150-300 µm, pore diameter 1200-1800 Å.",
+          "linkers": "None (epoxy carriers require no crosslinker/activation, unlike amino carriers which need glutaraldehyde).",
+          "immobilisation_method": "Carrier washed in 0.1 M NaPi buffer pH 7.4 (1:1 w:v) for 5 min, liquid removed by vacuum filtration. Washed carrier mixed with 2 mg/mL GalOx solution for 18 h at room temperature and 60 rpm. Mixture vacuum filtered and washed twice. Immobilized enzyme stored at 4°C (Experimental Section, 'Enzyme immobilization procedure'; manufacturer protocol ref. [48]).",
+          "purification_method": "Vacuum filtration and two washing steps after immobilization.",
+          "loading": {
+            "value": 3.8,
+            "unit": "mg enzyme/g wet carrier",
+            "determination_method": "Protein loading = (offered enzyme (mg) - total enzyme in supernatants (mg)) / wet carrier (g); measured via Bradford assay (Table 1; error ±0.5)."
+          },
+          "notes": "ECR8215F (epoxy) was selected for all downstream oxidation experiments as the optimal carrier: highest activity yield (28.3 ± 0.6%) among epoxy carriers plus high absolute activity retained after 4 weeks of storage (47.5 ± 4.9% of initial activity), even though ECR8285 (butyl/epoxy) showed better *relative* storage stability (65.2 ± 12.9% after 4 weeks)."
+        },
+        "storage": {
+          "temperature": 4,
+          "temperature_unit": "°C",
+          "storage_start": null,
+          "additives": null,
+          "drying_method": null,
+          "notes": "Immobilized enzyme stored at 4°C after washing (Experimental Section, 'Enzyme immobilization procedure')."
+        },
+        "notes": null
+      },
+      "reaction_components": [
+        {
+          "identity": {
+            "name": "5-Hydroxymethylfurfural (HMF)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "substrate",
+          "amount": {
+            "value": 50,
+            "unit": "mM"
+          },
+          "provenance": {
+            "supplier": "Sigma-Aldrich (Germany) [inferred: 'all other chemicals' not individually listed were purchased from Sigma-Aldrich and used as received] — not individually named for HMF in the Materials list."
+          },
+          "solubility": {
+            "value": null,
+            "unit": null
+          },
+          "storage": null,
+          "notes": "Non-natural substrate for wild-type GalOx (Conclusions). Adsorbs to ECR8215F carrier: ~15% bound in NaPi buffer after 72 h; negligible adsorption in EtOAc (Figure 2)."
+        },
+        {
+          "identity": {
+            "name": "Sodium phosphate (NaPi) buffer",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "buffer",
+          "amount": {
+            "value": 0.1,
+            "unit": "M"
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "pH 7.4 throughout (Experimental Section)."
+        },
+        {
+          "identity": {
+            "name": "Ethyl acetate (EtOAc)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "liquid"
+          },
+          "role": "solvent",
+          "amount": {
+            "value": null,
+            "unit": null,
+            "note": "Variable v/v fraction depending on experiment (see reaction_conditions)."
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "Organic co-solvent/phase; log P < 2 (high water-stripping capacity, refs. [42-44])."
+        }
+      ],
+      "operation_mode": {
+        "mode": "fed_batch",
+        "reactor_type": "well_mixed",
+        "feeding": {
+          "feeding_type": "discrete",
+          "description": "Substrate (HMF) charged once at t=0; the SOLID BIOCATALYST (not a reagent) was discretely replaced with a fresh immobilized batch every 24 h. The schema's FeedingStrategy models reagent feeding, not catalyst replacement — see compliance notes."
+        },
+        "notes": "All oxidation reactions were run as closed-vial batch reactions (Experimental Section)."
+      },
+      "reaction_conditions": {
+        "reactor": {
+          "reactor_type": "well_mixed",
+          "flow": null,
+          "notes": null
+        },
+        "system": {
+          "system_type": "multiphasic",
+          "monoliquid": null,
+          "multiphasic": {
+            "phases_number": 2,
+            "notes": "50% v/v EtOAc:buffer."
+          },
+          "notes": null
+        },
+        "phases": [
+          {
+            "phase_type": "liquid",
+            "material_description": "0.1 M NaPi buffer, pH 7.4",
+            "amount": 1.5,
+            "amount_unit": "mL",
+            "notes": null
+          },
+          {
+            "phase_type": "liquid",
+            "material_description": "Ethyl acetate",
+            "amount": 1.5,
+            "amount_unit": "mL",
+            "notes": null
+          }
+        ],
+        "temperature": {
+          "profile_type": "constant",
+          "temperature_unit": "°C",
+          "constant_temperature": 25,
+          "profile_points": null,
+          "gradient": null,
+          "notes": null
+        },
+        "pH": {
+          "profile_type": "constant",
+          "constant_pH": 7.4,
+          "profile_points": null,
+          "gradient": null,
+          "detection": {
+            "detected_when": "Not specified (buffer prepared at pH 7.4; not stated whether monitored during reaction).",
+            "detected_how": null,
+            "temperature": null,
+            "temperature_unit": null,
+            "calibration_pH_electrode": null
+          },
+          "notes": "pH of the aqueous (NaPi buffer) phase only; pH of the biphasic/organic system as a whole not reported."
+        },
+        "notes": "50 mM HMF; 3 mL total liquid reaction volume (50% v/v EtOAc:buffer) in 30 mL reaction vials; 25°C, 150 rpm; total reaction time 72 h with catalyst replacement every 24 h (Figure 4 legend)."
+      },
+      "results": {
+        "kinetics": {
+          "michaelis_constant": null,
+          "maximum_reaction_rate": null,
+          "turnover_number": null,
+          "catalytic_efficiency": null,
+          "dissociation_constant": null,
+          "inhibition": null,
+          "hill_coefficient": null,
+          "enzyme_stability": "DFF formation increased roughly linearly with each 24 h catalyst replacement; amount of DFF in the EtOAc phase approximately doubled every 24 h over the first 72 h (qualitative, Figure 4).",
+          "notes": null
+        },
+        "yield_and_conversion": {
+          "product_yield": 11.3,
+          "space_time_yield": null,
+          "conversion": null,
+          "notes": "Combined (aqueous + organic phase) total DFF yield of 11.3 ± 1.1% after 72 h with catalyst replacement every 24 h, versus 2.9 ± 0.4% without replacement under otherwise identical conditions (main text, 'Biocatalyst stability')."
+        },
+        "activity": null,
+        "selectivity": null,
+        "thermodynamics": null,
+        "notes": "Individual per-phase (aqueous vs. organic) numeric yields at 24/48/72 h are shown only graphically in Figure 4 and are not given as exact numbers in the text; not extracted to avoid inventing precision not present in the source."
+      },
+      "sampling": {
+        "sampling_applied": true,
+        "strategy": {
+          "strategy_type": "default",
+          "mixing_during_sampling": "Not specified.",
+          "vessel_opened": true,
+          "vessel_opened_note": "Vials were opened to withdraw liquid aliquots for HPLC analysis (implicit; not explicitly described).",
+          "gas_phase": "Not specified.",
+          "notes": null
+        },
+        "samples": [
+          {
+            "time": 24,
+            "time_unit": "h",
+            "amount": null,
+            "amount_unit": null,
+            "phase": "liquid",
+            "biocatalyst_in_sample": null,
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "HPLC analysis, both aqueous and organic phase measured separately.",
+              "notes": null
+            },
+            "notes": null
+          },
+          {
+            "time": 48,
+            "time_unit": "h",
+            "amount": null,
+            "amount_unit": null,
+            "phase": "liquid",
+            "biocatalyst_in_sample": null,
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "HPLC analysis, both aqueous and organic phase measured separately.",
+              "notes": null
+            },
+            "notes": null
+          },
+          {
+            "time": 72,
+            "time_unit": "h",
+            "amount": null,
+            "amount_unit": null,
+            "phase": "liquid",
+            "biocatalyst_in_sample": null,
+            "preprocessing": {
+              "quenching_method": null,
+              "quenching_ratio": null,
+              "treatment_procedure": "HPLC analysis, both aqueous and organic phase measured separately.",
+              "notes": null
+            },
+            "notes": null
+          }
+        ],
+        "notes": "DFF yield determined separately in the organic and aqueous phases at each time point (Figure 4). HPLC analysis: Agilent Technologies 1260 Infinity II HPLC with diode-array detector (DAD); Rezex(TM) ROA Organic Acid H+ column (8%), 300x7.8 mm (Phenomenex); isocratic elution with 0.005 N H2SO4 in Milli-Q water, flow rate 0.75 mL/min, column temperature 50°C, total runtime 42 min; injection volume 10 µL; HMF and DFF detected at 280.4 nm (Experimental Section, 'HPLC analysis'; ref. [51])."
+      },
+      "vessels_and_mixing": {
+        "vessel": {
+          "vessel_type": "vial",
+          "material": "Glass (implied by 'reaction vials'; not explicitly stated).",
+          "size": 30,
+          "size_unit": "mL",
+          "geometry": "Headspace-to-liquid volume ratio kept at 9:1 for the 30 mL scale-up vessels (Table 2 legend); vessel shape for standard 30 mL vials not further described.",
+          "closure": {
+            "closure_type": null,
+            "sealing_material": null,
+            "notes": "Not specified in the publication."
+          },
+          "supplier": null,
+          "lot_number": null,
+          "reactor_specifics": null,
+          "notes": "Total liquid reaction volume 3 mL in a 30 mL reaction vial."
+        },
+        "mixing": {
+          "mixing_type": "shaking",
+          "shaking": {
+            "shaking_type": "orbital (implied; not explicitly stated)",
+            "deflection": null,
+            "speed": 150,
+            "vessel_position": null,
+            "notes": "170 rpm used for most oxidation reactions; 150 rpm used for the 5-batch recycling study (Figure 3) and the catalyst-replacement study (Figure 4)."
+          },
+          "mechanical": null,
+          "fluid": null,
+          "notes": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "name": "Free (non-immobilized) GalOx in neat ethyl acetate — negative control",
+      "description": "Control experiment using free (non-immobilized) galactose oxidase in neat ethyl acetate to test HMF oxidation activity without a solid support.",
+      "biocatalyst": {
+        "identity": {
+          "name": "Galactose oxidase (GalOx)",
+          "ec_number": null,
+          "ec_number_note": "Not stated in the publication. For reference only (NOT from this paper): galactose oxidase is classified as EC 1.1.3.9 per the ExPASy/IUBMB enzyme nomenclature database, https://enzyme.expasy.org/EC/1.1.3.9.",
+          "molecular_weight": null,
+          "molecular_weight_unit": null,
+          "catalyzed_reaction": "Oxygen-dependent oxidation of primary alcohols (e.g. D-galactose, 5-hydroxymethylfurfural/HMF) to the corresponding aldehydes (e.g. D-galacto-hexodialdose, 2,5-diformylfuran/DFF), with concomitant reduction of O2 to H2O2 (paper Introduction and Figure S3).",
+          "sequences": {
+            "sequence_amino_acid": null,
+            "sequence_dna": null
+          },
+          "origin_organism": null,
+          "origin_organism_note": "Not stated in the publication (source organism of the commercial GalOx preparation is not given).",
+          "production_organism": null,
+          "posttranslational_modification": null
+        },
+        "source_type": "purchased",
+        "source": {
+          "source_type": "purchased",
+          "supplier": null,
+          "supplier_note": "Not explicitly stated for GalOx itself in the Materials section. The Lifetech(TM) enzyme carriers were supplied by Purolite Ltd. (United Kingdom); GalOx is described only as 'a commercial preparation' without naming the vendor.",
+          "purchased_details": {
+            "reference": null,
+            "purity": null,
+            "purity_specification": null,
+            "formulation": "dissolved",
+            "formulation_note": "Used/handled as a liquid enzyme solution (2 mg/mL) during immobilization; exact commercial formulation not stated."
+          }
+        },
+        "application": {
+          "application_type": "purified",
+          "application_type_note": "See note in Record 1.",
+          "concentration": {
+            "value": null,
+            "unit": null,
+            "determination_method": null
+          },
+          "activity": null,
+          "workflow_details": null
+        },
+        "immobilization": {
+          "immobilized": false,
+          "biocatalyst_state": "Free enzyme in solution.",
+          "immobilisation_chemistry": null,
+          "carrier_material": null,
+          "linkers": null,
+          "immobilisation_method": null,
+          "purification_method": null,
+          "loading": null,
+          "notes": null
+        },
+        "storage": {
+          "temperature": 4,
+          "temperature_unit": "°C",
+          "storage_start": null,
+          "additives": null,
+          "drying_method": null,
+          "notes": "Immobilized enzyme stored at 4°C after washing (Experimental Section, 'Enzyme immobilization procedure')."
+        },
+        "notes": null
+      },
+      "reaction_components": [
+        {
+          "identity": {
+            "name": "5-Hydroxymethylfurfural (HMF)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "solution"
+          },
+          "role": "substrate",
+          "amount": {
+            "value": 50,
+            "unit": "mM"
+          },
+          "provenance": {
+            "supplier": "Sigma-Aldrich (Germany) [inferred: 'all other chemicals' not individually listed were purchased from Sigma-Aldrich and used as received] — not individually named for HMF in the Materials list."
+          },
+          "solubility": {
+            "value": null,
+            "unit": null
+          },
+          "storage": null,
+          "notes": "Non-natural substrate for wild-type GalOx (Conclusions). Adsorbs to ECR8215F carrier: ~15% bound in NaPi buffer after 72 h; negligible adsorption in EtOAc (Figure 2)."
+        },
+        {
+          "identity": {
+            "name": "Ethyl acetate (EtOAc)",
+            "smiles": null,
+            "identifiers": null,
+            "purity": null,
+            "formulation": "liquid"
+          },
+          "role": "solvent",
+          "amount": {
+            "value": null,
+            "unit": null,
+            "note": "Variable v/v fraction depending on experiment (see reaction_conditions)."
+          },
+          "provenance": {
+            "supplier": "Not individually specified; general chemicals from Sigma-Aldrich (Germany)."
+          },
+          "solubility": null,
+          "storage": null,
+          "notes": "Organic co-solvent/phase; log P < 2 (high water-stripping capacity, refs. [42-44])."
+        }
+      ],
+      "operation_mode": {
+        "mode": "batch",
+        "reactor_type": "well_mixed",
+        "feeding": {
+          "feeding_type": "none",
+          "description": "Single substrate charge at t=0; no feeding during the reaction."
+        },
+        "notes": "All oxidation reactions were run as closed-vial batch reactions (Experimental Section)."
+      },
+      "reaction_conditions": {
+        "reactor": {
+          "reactor_type": "well_mixed",
+          "flow": null,
+          "notes": null
+        },
+        "system": {
+          "system_type": "monoliquid",
+          "monoliquid": {
+            "solvent_description": "Neat (anhydrous) ethyl acetate",
+            "ionic_strength": null,
+            "further_additives": null,
+            "notes": null
+          },
+          "multiphasic": null,
+          "notes": null
+        },
+        "phases": null,
+        "temperature": {
+          "profile_type": "constant",
+          "temperature_unit": "°C",
+          "constant_temperature": 25,
+          "profile_points": null,
+          "gradient": null,
+          "notes": null
+        },
+        "pH": null,
+        "notes": "No conversion of HMF to DFF was detected with the free enzyme in neat EtOAc (main text, 'Oxidation of HMF to DFF...'). Attributed to enzyme aggregation in organic media (diffusion-limited heterogeneous system, ref. [41]) and high water-stripping capacity of EtOAc (log P < 2, refs. [42-44])."
+      },
+      "results": {
+        "kinetics": null,
+        "yield_and_conversion": {
+          "product_yield": 0,
+          "space_time_yield": null,
+          "conversion": 0,
+          "notes": "No conversion of HMF to DFF detected (qualitative statement in text; no numeric value given, 0 used to denote 'not detected')."
+        },
+        "activity": null,
+        "selectivity": null,
+        "thermodynamics": null,
+        "notes": null
+      },
+      "sampling": {
+        "sampling_applied": true,
+        "strategy": {
+          "strategy_type": "default",
+          "mixing_during_sampling": "Not specified.",
+          "vessel_opened": true,
+          "vessel_opened_note": "Vials were opened to withdraw liquid aliquots for HPLC analysis (implicit; not explicitly described).",
+          "gas_phase": "Not specified.",
+          "notes": null
+        },
+        "samples": null,
+        "notes": "HPLC analysis: Agilent Technologies 1260 Infinity II HPLC with diode-array detector (DAD); Rezex(TM) ROA Organic Acid H+ column (8%), 300x7.8 mm (Phenomenex); isocratic elution with 0.005 N H2SO4 in Milli-Q water, flow rate 0.75 mL/min, column temperature 50°C, total runtime 42 min; injection volume 10 µL; HMF and DFF detected at 280.4 nm (Experimental Section, 'HPLC analysis'; ref. [51])."
+      },
+      "vessels_and_mixing": {
+        "vessel": {
+          "vessel_type": "vial",
+          "material": null,
+          "size": null,
+          "size_unit": null,
+          "geometry": null,
+          "closure": null,
+          "supplier": null,
+          "lot_number": null,
+          "reactor_specifics": null,
+          "notes": null
+        },
+        "mixing": null,
+        "notes": "Specific vessel/mixing parameters for this control experiment not separately reported."
+      }
+    }
+  ],
+  "supplementary_data_tables": {
+    "table_1_carrier_screening": {
+      "source": "Table 1 (main text)",
+      "description": "Immobilization parameters for GalOx on 10 Purolite Lifetech carriers (amino- and epoxy-functionalized).",
+      "columns": [
+        "carrier",
+        "functional_group",
+        "spacer_length",
+        "particle_size_um",
+        "pore_diameter_A",
+        "protein_loading_mg_enzyme_per_g_carrier",
+        "protein_loading_sd",
+        "immobilization_yield_pct",
+        "immobilization_yield_sd",
+        "specific_activity_U_per_mg_enzyme",
+        "specific_activity_sd",
+        "activity_yield_pct",
+        "activity_yield_sd"
+      ],
+      "rows": [
+        [
+          "ECR8204F",
+          "epoxy",
+          null,
+          "150-300",
+          "300-600",
+          3.9,
+          0.8,
+          52.0,
+          8.3,
+          0.8,
+          0.1,
+          14.6,
+          0.7
+        ],
+        [
+          "ECR8209F",
+          "epoxy",
+          null,
+          "150-300",
+          "600-1200",
+          4.0,
+          1.2,
+          61.6,
+          8.4,
+          0.9,
+          0.1,
+          17.7,
+          2.9
+        ],
+        [
+          "ECR8215F",
+          "epoxy",
+          null,
+          "150-300",
+          "1200-1800",
+          3.8,
+          0.5,
+          60.5,
+          9.1,
+          1.0,
+          0.1,
+          28.3,
+          0.6
+        ],
+        [
+          "ECR8285",
+          "butyl/epoxy",
+          null,
+          "250-1000",
+          "450-650",
+          2.2,
+          0.1,
+          70.0,
+          1.0,
+          1.3,
+          0.1,
+          19.3,
+          0.2
+        ],
+        [
+          "ECR8304F",
+          "amino",
+          "short (C2)",
+          "150-300",
+          "300-600",
+          3.9,
+          1.5,
+          81.9,
+          2.0,
+          0.3,
+          0.2,
+          8.2,
+          1.4
+        ],
+        [
+          "ECR8309F",
+          "amino",
+          "short (C2)",
+          "150-300",
+          "600-1200",
+          4.6,
+          2.6,
+          69.4,
+          21.4,
+          0.3,
+          0.2,
+          6.4,
+          1.7
+        ],
+        [
+          "ECR8315F",
+          "amino",
+          "short (C2)",
+          "150-300",
+          "1200-1800",
+          1.9,
+          0.8,
+          65.6,
+          4.4,
+          0.4,
+          0.1,
+          4.7,
+          0.7
+        ],
+        [
+          "ECR8404F",
+          "amino",
+          "long (C6)",
+          "150-300",
+          "300-600",
+          4.1,
+          1.8,
+          68.8,
+          22.1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ECR8409F",
+          "amino",
+          "long (C6)",
+          "150-300",
+          "600-1200",
+          3.8,
+          1.8,
+          57.3,
+          15.4,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ECR8415F",
+          "amino",
+          "long (C6)",
+          "150-300",
+          "1200-1800",
+          3.7,
+          1.9,
+          58.0,
+          14.0,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "notes": "ECR8404F/8409F/8415F (long-spacer amino carriers) showed no measurable activity despite relatively high immobilization yields (main text). Immobilization yield (%) = (offered enzyme (g) - total enzyme in supernatants (g)) / offered enzyme (g). Activity yield (%) = [Activity_immobilized (U/g_wet_carrier) x mass_wet_carrier (g)] / [Activity_free_enzyme (U/mg_enzyme) x offered_enzyme (g)] (formulas in Table 1 footnote)."
+    },
+    "table_2_semipreparative_scale": {
+      "source": "Table 2 (main text)",
+      "description": "Oxidation of 50 mM HMF to DFF in 50% v/v H2O-EtOAc using GalOx-ECR8215F at 25°C, 170 rpm, 72 h, with a fixed 9:1 headspace:liquid volume ratio. Biological triplicates, HPLC analysis.",
+      "columns": [
+        "total_reaction_volume_mL",
+        "total_reactor_volume_mL",
+        "biocatalyst_amount_g",
+        "DFF_yield_pct",
+        "DFF_yield_sd"
+      ],
+      "rows": [
+        [
+          10,
+          100,
+          0.833,
+          4.6,
+          0.1
+        ],
+        [
+          25,
+          250,
+          2.083,
+          4.8,
+          0.3
+        ],
+        [
+          50,
+          500,
+          4.167,
+          4.8,
+          0.1
+        ]
+      ]
+    },
+    "figure_1_storage_stability": {
+      "source": "Figure 1 (main text)",
+      "description": "Relative residual activity (%) of GalOx immobilized on 4 epoxy-functionalized carriers over 28 days storage at 4°C, relative to day-1 activity. Reaction conditions: 1 mM ABTS, 100 mM D-galactose, 2 U/mL HRP, 0.1 M NaPi buffer pH 7.4, 10 mL reaction volume, 5 mg immobilized enzyme, 25°C. Biological duplicates.",
+      "time_points_days": [
+        1,
+        3,
+        10,
+        17,
+        28
+      ],
+      "carriers": {
+        "ECR8204F": "Values read from graph only (no exact numbers given in text besides day-28 comparisons); day-1 normalized to 100%.",
+        "ECR8209F": "47.3 ± 6.4% activity retained after 4 weeks (day 28), per main text.",
+        "ECR8215F": "47.5 ± 4.9% activity retained after 4 weeks (day 28), per main text.",
+        "ECR8285": "65.2 ± 12.9% activity retained after 4 weeks (day 28) — best RELATIVE stability of the 4 carriers tested, per main text."
+      },
+      "notes": "Only the day-28 percentages for ECR8209F, ECR8215F and ECR8285 are given as exact numbers in the main text; all other time points are visual/graphical only (Figure 1) and were NOT digitized/estimated here to avoid inventing precision not present in the source."
+    },
+    "figure_2_adsorption": {
+      "source": "Figure 2 (main text)",
+      "description": "Adsorption of HMF and DFF onto Purolite Lifetech ECR8215F (epoxy) carrier in 0.1 M NaPi buffer pH 7.4 and in neat ethyl acetate. Reaction conditions: 0.250 g ECR8215F, 50 mM HMF or DFF, 3 mL total liquid volume in 30 mL vials, 25°C, 170 rpm, 72 h. Biological triplicates; residual HMF/DFF quantified by HPLC.",
+      "findings": [
+        "EtOAc: negligible adsorption detected for both HMF and DFF (qualitative; exact % not given in text).",
+        "Buffer: ~15% of HMF adsorbed to the carrier after 72 h.",
+        "Buffer: ~40% of DFF adsorbed to the carrier within the first 24 h (near-plateau thereafter, likely due to reaching a critical/saturating concentration on the carrier)."
+      ],
+      "notes": "Exact time-resolved percentage values are shown only graphically in Figure 2; only the summary percentages stated explicitly in the main text are reproduced above."
+    },
+    "figure_S1_water_content_screening": {
+      "source": "Figure S1 (Supporting Information)",
+      "description": "DFF yield (%) vs. time for GalOx-ECR8215F catalyzed HMF oxidation across a range of EtOAc:0.1 M NaPi-buffer(pH 7.4) biphasic compositions. Conditions: 0.250 g GalOx-ECR8215F, 50 mM HMF, 3 mL total liquid volume in 30 mL vials, 25°C, 170 rpm. Biocatalyst replaced with a fresh batch at 72 h and the reaction continued for a further 72 h (total 144 h). Biological triplicates.",
+      "conditions_tested": [
+        "EtOAc neat",
+        "EtOAc water-saturated (WS)",
+        "1% v/v H2O",
+        "5% v/v H2O",
+        "10% v/v H2O",
+        "20% v/v H2O",
+        "50% v/v H2O",
+        "buffer (100% aqueous)"
+      ],
+      "time_points_h": [
+        24,
+        48,
+        72,
+        96,
+        120,
+        144
+      ],
+      "notes": "Individual numeric yield values at each time point/condition are presented only graphically in Figure S1 and were not digitized here (to avoid fabricating precision absent from the source). Text-stated summary values: highest overall yield achieved at 50:50 v/v EtOAc:buffer, reaching 2.9 ± 0.4% after the first 72 h and 9.0 ± 0.8% after the second 72 h with a fresh catalyst batch (matches the ~9% cluster visible for the 50% v/v H2O series at 120-144 h in the figure). Reaction reached a plateau around 48 h in most conditions."
+    },
+    "figure_3_batch_recycling": {
+      "source": "Figure 3 (main text)",
+      "description": "Yield of DFF (%) over 5 consecutive 72 h reaction cycles using the SAME immobilized GalOx-ECR8215F batch (washed and reintroduced to fresh substrate after each cycle), compared across 3 media. Conditions: 0.250 g GalOx-ECR8215F, 50 mM HMF, 3 mL total liquid volume in 30 mL vials, 25°C, 150 rpm. Biological triplicates, HPLC analysis.",
+      "media_tested": [
+        "buffer (100% aqueous)",
+        "50% v/v H2O-EtOAc",
+        "neat EtOAc"
+      ],
+      "batch_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "summary_findings": [
+        "In all three media, the yield in batch 2 was <=50% of the yield in batch 1.",
+        "Cumulative product-formation loss after 5 batches (4 recycles), relative to batch 1: 44% loss in neat EtOAc, 80% loss in 50% v/v H2O-EtOAc, 89% loss in buffer.",
+        "Smaller batch-to-batch (2->5) differences were observed as the EtOAc fraction of the medium increased."
+      ],
+      "notes": "Individual per-batch yield values for each medium are shown only graphically (Figure 3) and are not stated as exact numbers in the text; only the qualitative/aggregate statements above are given explicitly in the source and were extracted."
+    },
+    "figure_S2_agglomerates": {
+      "source": "Figure S2 (Supporting Information) and main text",
+      "description": "Photograph showing formation of spherical agglomerates of GalOx-ECR8215F in water-saturated/neat EtOAc. Conditions: 0.250 g GalOx-ECR8215F, 50 mM HMF, 3 mL total liquid volume in 30 mL vials, 25°C, 72 h, 170 rpm.",
+      "interpretation": "Immobilized enzyme particles cluster around scarce water molecules under low-water conditions, occluding enzyme immobilized at the centre of the agglomerate from substrate access and lowering apparent yields (main text)."
+    },
+    "carrier_physicochemical_reference_table": {
+      "source": "Table 1 + main text (carrier descriptions)",
+      "description": "Manufacturer/paper-reported physicochemical descriptors of the 10 Lifetech(TM) carriers screened.",
+      "manufacturer": "Purolite Ltd. (United Kingdom); LifetechTM ECR series",
+      "functionalization_families": {
+        "epoxy": "ECR8204F, ECR8209F, ECR8215F, ECR8285 (butyl/epoxy) — no activation step required; multipoint covalent attachment via nucleophilic ring-opening.",
+        "amino_short_spacer_C2": "ECR8304F, ECR8309F, ECR8315F — require glutaraldehyde activation.",
+        "amino_long_spacer_C6": "ECR8404F, ECR8409F, ECR8415F — require glutaraldehyde activation; all showed no measurable GalOx activity after immobilization."
+      }
+    },
+    "materials_and_suppliers": {
+      "source": "Experimental Section, 'Materials'",
+      "items": [
+        {
+          "material": "Lifetech(TM) enzyme carriers (10 variants)",
+          "supplier": "Purolite Ltd. (United Kingdom)",
+          "note": "Generously provided (not purchased)."
+        },
+        {
+          "material": "Horseradish peroxidase (HRP)",
+          "supplier": "PanReac AppliChem ITW Reagents (Germany)"
+        },
+        {
+          "material": "Bradford assay solution",
+          "supplier": "PanReac AppliChem ITW Reagents (Germany)"
+        },
+        {
+          "material": "Albumin bovine fraction V (BSA, Bradford standard)",
+          "supplier": "Serva (Germany)"
+        },
+        {
+          "material": "ABTS (2,2'-azino-bis(3-ethylbenzothiazoline-6-sulfonic acid))",
+          "supplier": "Roche (Germany)"
+        },
+        {
+          "material": "D-galactose (>=98%)",
+          "supplier": "Alfa Aesar (United States)"
+        },
+        {
+          "material": "2,5-Diformylfuran (DFF)",
+          "supplier": "TCI Chemicals (Japan)"
+        },
+        {
+          "material": "All other chemicals (incl. HMF, EtOAc, NaPi buffer salts)",
+          "supplier": "Sigma-Aldrich (Germany)",
+          "note": "Used as received; not individually itemized."
+        },
+        {
+          "material": "Galactose oxidase (GalOx)",
+          "supplier": null,
+          "note": "Supplier NOT explicitly named in the Materials list — described only as 'a commercial preparation of galactose oxidase'."
+        }
+      ]
+    },
+    "analytical_methods": {
+      "hplc": "HPLC analysis: Agilent Technologies 1260 Infinity II HPLC with diode-array detector (DAD); Rezex(TM) ROA Organic Acid H+ column (8%), 300x7.8 mm (Phenomenex); isocratic elution with 0.005 N H2SO4 in Milli-Q water, flow rate 0.75 mL/min, column temperature 50°C, total runtime 42 min; injection volume 10 µL; HMF and DFF detected at 280.4 nm (Experimental Section, 'HPLC analysis'; ref. [51]).",
+      "abts_hrp_activity_assay": "Activity measured with a modified ABTS-HRP coupled spectrophotometric assay (ref. [49]): 1 mM ABTS, 100 mM D-galactose, 2 U/mL horseradish peroxidase (HRP) in 100 mM NaPi buffer pH 7.4; H2O2 generated by GalOx oxidation of D-galactose is used by HRP to oxidize ABTS to its coloured cation radical, monitored at 405 nm and 25°C (molar extinction coefficient epsilon = 30.9 L min mmol^-1). Free-enzyme/supernatant activity: 10 µL sample + 990 µL assay mix, continuous monitoring for 1 min. Immobilized-enzyme activity: 5 mg catalyst in 10 mL assay solution under stirring, single-point absorbance on five 1 mL samples taken at 20 s intervals. All activity measurements in triplicate. 1 U = amount of enzyme consuming 1 µmol O2/min, or oxidizing 2 µmol ABTS/min.",
+      "bradford_protein_assay": "Protein quantification via Bradford assay (ref. [50]), microplate-adapted for low protein concentrations (1-25 µg/mL): 150 µL sample + 150 µL Bradford reagent per well, shaken 30 s, incubated 10 min, absorbance read at 595 nm (Tecan Infinite M200 PRO plate reader). Standard curve constructed with Albumin bovine fraction V (Serva), pH 7.0.",
+      "instrumentation": [
+        "Agilent Technologies 1260 Infinity II HPLC system with DAD detector (Germany)",
+        "Rezex(TM) ROA Organic Acid H+ (8%) column, 300 x 7.8 mm (Phenomenex, Germany)",
+        "Tecan Infinite(R) M200 PRO microplate reader (Austria)"
+      ]
+    },
+    "funding_and_provenance": {
+      "funding": "European Union's Horizon 2020 research and innovation programme, Marie Skłodowska-Curie grant agreement No. 860414.",
+      "carriers_provided_by": "Dr. Alessandra Basso and Dr. Simona Serban, Purolite Ltd.",
+      "hplc_assistance": "Assoc. Prof. Thomas Tørring and Thomas Dyekjær, Dept. of Biological and Chemical Engineering, Aarhus University.",
+      "conflict_of_interest": "None declared.",
+      "data_availability_statement": "The data that support the findings of this study are available from the corresponding author upon reasonable request (paper does not provide a public repository/DOI for the raw data).",
+      "affiliations": [
+        "Biocatalysis and Bioprocessing Group, Dept. of Biological and Chemical Engineering, Aarhus University, Gustav Wieds Vej 10, 8000 Aarhus C, Denmark",
+        "SpinChem AB, Tvistevägen 48 C, SE-90736 Umeå, Sweden",
+        "Sustainable Momentum S L, Av. Ansite 3, 4-6, 35011 Las Palmas de Gran Canaria, Spain",
+        "Institute of Technical Chemistry, Leibniz University Hannover, Callinstr. 5, 30167 Hannover, Germany"
+      ],
+      "corresponding_author": "Prof. Dr.-Ing. Selin Kara (selin.kara@bce.au.dk / selin.kara@iftc.uni-hannover.de)"
+    }
+  },
+  "strenda_biocat_compliance_summary": {
+    "well_covered_by_paper": [
+      "Biocatalyst.immobilization (chemistry, carrier material, method, loading) — extensively detailed for all 10 carriers.",
+      "ReactionConditions.temperature (constant 25°C), reaction system (biphasic, 2 phases), operation mode (batch).",
+      "Results.yield_and_conversion.product_yield — reported with SD for most conditions (Table 2, main text, Figure 3/4 aggregate values).",
+      "VesselAndMixing — vessel volumes, headspace:liquid ratio, shaking speed (170/150 rpm) given.",
+      "Sampling — HPLC method fully described (column, eluent, flow, detection wavelength)."
+    ],
+    "gaps_or_under_specification_in_paper": [
+      "BiocatalystIdentity.ec_number, molecular_weight, origin_organism, production_organism, sequences — none reported (commercial GalOx not further characterized).",
+      "BiocatalystSource.supplier — not explicitly named for the GalOx enzyme itself (only carrier supplier, Purolite, is named).",
+      "PurchasedDetails.purity / purity_specification — not reported for GalOx.",
+      "KineticResults (Km, Vmax, kcat, kcat/Km, Ki) — no Michaelis-Menten or inhibition kinetics reported; only yields and specific activities.",
+      "SelectivityResults and ThermodynamicResults — entirely unaddressed (reaction is not stereoselective; no ΔG/ΔH/ΔS data).",
+      "PHDetection (how/when pH was measured) and ReactionConditions.pH profile beyond the fixed buffer pH — not described.",
+      "Sample-level metadata (exact sample volume, quenching method) — not explicitly stated; inferred as 'not specified'.",
+      "ComponentIdentity.smiles/identifiers (CAS, PubChem, InChI) — not given for any reagent in the paper (chemical names/structures only)."
+    ],
+    "optional_fields_paper_could_add": [
+      "SMILES/CAS numbers for HMF, DFF, D-galactose, ABTS to improve machine interoperability.",
+      "Explicit GalOx supplier/catalog number and stated purity.",
+      "pH monitoring method/electrode calibration details.",
+      "Exact sample aliquot volume for HPLC injections beyond the 10 µL injection volume already reported."
+    ],
+    "model_extension_ideas_not_yet_proposed": [
+      "ComponentRole enum has no 'product' value (only substrate/cosubstrate/buffer/salt/solvent/ion/cofactor/coenzyme/other) — DFF had to be tagged 'other'.",
+      "No structured field for time-resolved adsorption/partitioning of a component onto a solid support (relevant for Figure 2 data) — captured only as free-text notes here.",
+      "No structured field for biocatalyst recycling/reuse across sequential batches (batch number, yield per batch) — relevant for Figure 3/Table 1 storage-stability-style data; captured only as free text.",
+      "OperationMode / FeedingStrategy models feeding of REAGENTS, not periodic REPLACEMENT of the solid catalyst itself (Figure 4) — had to be shoehorned into 'fed_batch' + notes."
+    ]
+  }
+}
