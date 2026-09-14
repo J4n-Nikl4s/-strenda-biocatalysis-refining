@@ -1,7 +1,0 @@
-{
-  "cell_disruption_process": "For lysate catalysis, 50 g/L whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr, followed by extraction of soluble enzyme-containing supernatant. For whole cell catalysis, harvested cells were used directly without disruption.",
-  "concentration": 50,
-  "concentration_determination_method": "Wet cell weight was used for whole cell catalyst concentration. Enzyme activity was evaluated by monitoring product (HBC) formation via gas chromatography (GC).",
-  "concentration_unit": "g/L (wet cell)",
-  "special_treatment": "Screening was performed in 96-well plates with 50 g/L wet cell, 10 mM cyclohexene oxide, 20 mM NaOCN in 200 μL PB buffer (50 mM, pH 7.0) at 35°C for 16 hrs. For scale-up, reactions used 200 mM cyclohexene oxide, 400 mM NaOCN, 35% (v/v) ethyl acetate, 50 g/L wet cell at 25°C. Pilot scale: 1.2 kg wet cell in 22.3 L total volume (50 L reactor), 29 hrs at 25°C. No additional buffer required due to self-regulated pH by ethyl acetate hydrolysis. Product yield up to 95%, isolated yield 87%, ee = 53%. For lysate, lysozyme pre-treatment was used to remove cell membrane influence. No further purification of enzyme reported; whole cells or crude lysate used directly."
-}

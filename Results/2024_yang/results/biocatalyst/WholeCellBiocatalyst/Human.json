@@ -1,8 +1,0 @@
-{
-  "concentration": 50,
-  "concentration_determination_method": "Wet cell weight (g/L) determined gravimetrically after centrifugation; also used in screening and scale-up experiments.",
-  "concentration_unit": "g/L wet cell",
-  "formulation": "Wet cells harvested by centrifugation at 6000 rpm and stored at -20°C. Used directly as whole cells for biocatalysis. For some experiments, cells were lysed with lysozyme to obtain cell lysate (soluble enzyme fraction).",
-  "harvesting_method": "Centrifugation at 6000 rpm after cultivation in LB medium with kanamycin and lactose induction.",
-  "special_treatment": "For lysate catalysis, 50 g/L whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr. For scale-up, reactions were performed in two-phase systems with 35% (v/v) ethyl acetate as co-solvent to enhance substrate solubility and prevent enzyme inactivation. Pilot-scale: 1.2 kg wet cells in 10 L reaction (120 g/L)."
-}

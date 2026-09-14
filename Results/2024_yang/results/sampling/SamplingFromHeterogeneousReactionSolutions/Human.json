@@ -1,9 +1,0 @@
-{
-  "items": [
-    {
-      "biocatalyst_in_phase": "Whole cells (50 g/L wet cell) or soluble enzyme from cell lysate prepared by lysozyme treatment.",
-      "phase": "Organic phase obtained after extraction of the reaction mixture with ethyl acetate for GC analysis.",
-      "special_treatment": "For lysate catalysis, whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr before extraction. After reaction, the mixture was centrifuged at 1000 rpm to remove insoluble protein and salts, and the organic phase was separated after sitting for 3 hrs. The organic phase was concentrated and crystallized by adding 4× heptane, followed by rinsing three times with heptane."
-    }
-  ]
-}

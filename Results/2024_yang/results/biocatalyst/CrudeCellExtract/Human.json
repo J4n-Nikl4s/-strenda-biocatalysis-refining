@@ -1,7 +1,0 @@
-{
-  "cell_disruption_process": "For lysate catalysis, 50 g/L whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr, followed by extraction of soluble enzyme-containing supernatant. For whole cell catalysis, harvested cells were used directly without disruption.",
-  "concentration": 50,
-  "concentration_determination_method": "Wet cell weight was used for whole cell catalyst concentration. Enzyme activity was evaluated by monitoring product (HBC) formation via gas chromatography (GC).",
-  "concentration_unit": "g/L (wet cell)",
-  "special_treatment": 
-}

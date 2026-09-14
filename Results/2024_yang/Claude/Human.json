@@ -5,7 +5,7 @@
     {
       "identity": {
         "name": "Halohydrin dehalogenase G (IcHheG)",
-        "ec_number": ["3.8.1.2"], # Not in paper or supporting info
+        "ec_number": ["not in the publication"], 
         "catalyzed_reaction": ["SN2 ring-opening of cyclohexene oxide with NaOCN to form trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)"],
         "origin_organism": "Ilumatobacter coccineus",
         "production_organism": "Escherichia coli BL21",
@@ -23,7 +23,7 @@
       },
       "application": {
         "application_type": "whole_cell",
-        "concentration": [{"value": 50.0, "unit": "g/L wet cell"}], # Should this maybe be a part of reaction conditions? 
+        "concentration": [{"value": 50.0, "unit": "g/L"}],
         "workflow_details": {
           "harvesting_method": "Centrifugation at 6000 rpm"
         }
@@ -36,24 +36,24 @@
   ],
   "reaction_components": [
     {
-      "identity": {"name": "Cyclohexene oxide", "identifiers": ["CAS:286-20-4"]}, # CAS number correct, but not in paper
+      "identity": {"name": "Cyclohexene oxide", "identifiers": ["not in the publication"]}, 
       "role": "substrate",
       "amount": {"value": 200.0, "unit": "mM"},
       "notes": "Screening: 20 mM; scale-up target: 200 mM (10x increase). Pilot scale: 0.48 kg in 50 L reactor."
     },
     {
-      "identity": {"name": "Sodium cyanate", "identifiers": ["CAS:917-61-3"]}, # CAS number correct, but not in paper
+      "identity": {"name": "Sodium cyanate", "identifiers": ["not in the publication"]}, 
       "role": "cosubstrate",
       "amount": {"value": 400.0, "unit": "mM"},
       "notes": "2 equivalents relative to cyclohexene oxide. Non-natural nucleophile for ring-opening."
     },
     {
-      "identity": {"name": "trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)", "identifiers": ["CAS:17539-96-7"]}, # CAS number correct, but not in paper
+      "identity": {"name": "trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)", "identifiers": ["not in the publication"]}, 
       "role": "other",
       "notes": "Main product. Isolated as white crystals after extraction with ethyl acetate and crystallization with heptane."
     },
     {
-      "identity": {"name": "Ethyl acetate", "identifiers": ["CAS:141-78-6"]}, # CAS number correct, but not in paper
+      "identity": {"name": "Ethyl acetate", "identifiers": ["not in the publication"]}, 
       "role": "solvent",
       "amount": {"value": 35.0, "unit": "% v/v"},
       "notes": "Co-solvent for two-phase reaction. Hydrolyzes in presence of NaOH, providing self-pH control at ~10.5. Also used for product extraction."

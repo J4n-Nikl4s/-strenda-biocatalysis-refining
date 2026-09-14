@@ -1,7 +1,0 @@
-{
-  "concentration": 50,
-  "concentration_determination_method": "Wet cell weight was used for concentration; enzyme activity was evaluated by monitoring product formation via gas chromatography (GC).",
-  "concentration_unit": "g/L (wet cell)",
-  "separation_method": "Centrifugation at 6000 rpm for harvesting cells; for lysate catalysis, cells were pre-treated with lysozyme and only the soluble enzyme-containing supernatant was used.",
-  "special_treatment": "For lysate catalysis, 50 g/L whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr, followed by substrate and co-solvent addition. For pilot-scale, 1.2 kg wet cell biocatalyst was used in a 50 L reactor. Two-phase reactions with 35% (v/v) ethyl acetate were used to enhance substrate solubility and avoid direct contact with the enzyme. The process was run at 25°C for 16–29 hrs depending on scale. Product was extracted with ethyl acetate, concentrated, and crystallized with heptane. The process included self-regulated pH control via ethyl acetate hydrolysis, eliminating the need for additional buffering agents."
-}
