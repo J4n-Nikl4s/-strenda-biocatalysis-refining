@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "distance_between_stirrers": "Not in paper",
+      "distance_between_stirrers_unit": "Not in paper",
+      "height_of_stirrer_above_vessel_base": "Not in paper",
+      "height_of_stirrer_above_vessel_base_unit": "Not in paper",
+      "number_of_stirrer_blades": "Not in paper",
+      "number_of_stirrers": "Not in paper",
+      "power_per_volume": "200 rpm in 10 L - could be calculated",
+      "power_per_volume_unit": "",
+      "special_treatment": "Pilot-scale manufacturing was performed in a 50 L reactor with temperature controller. The temperature was controlled by recycling cold water to maintain 25°C. Stirring was at 200 rpm. No further details on impeller geometry, blade number, or spacing are provided.",
+      "speed_unit": "rpm",
+      "stir_bar_shape": "Not in paper",
+      "stir_bar_size": "Not in paper",
+      "stir_bar_size_unit": "Not in paper",
+      "stirrer_blade_pitch_angle": "Not in paper",
+      "stirrer_blade_size": "Not in paper",
+      "stirrer_blade_size_unit": "Not in paper",
+      "stirrer_geometry": "Not in paper",
+      "stirrer_material": "Not in paper",
+      "stirrer_speed": 200,
+      "stirring_type": "mechanical stirring (overhead, reactor)",
+      "supplier": "Dongsen EXDS/JGRL (pilot-scale reactors)"
+    }
+  ]
+}

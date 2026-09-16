@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH was measured using pH test (method not specified, but likely pH meter or indicator paper).",
+      "detected_when": "pH was measured during the reaction, specifically after hydrolysis of ethyl acetate in the presence of NaOH and NaOCN.",
+      "pH_value": 10.5,
+      "special_treatment": "Self-pH control was achieved by hydrolysis of ethyl acetate, which keeps the pH of NaOCN solution at 10.5, eliminating the need for additional buffering agents or active pH control equipment.",
+      "temperature": 25,
+      "temperature_unit": "°C"
+    }
+  ]
+}

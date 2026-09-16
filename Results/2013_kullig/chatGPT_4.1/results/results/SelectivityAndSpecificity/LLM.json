@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "chemoselectivity": "RADH shows a clear preference for the reduction of aromatic and cyclic aliphatic compounds over aliphatic substrates. It reduces bulky, sterically demanding substrates with high activity, distinguishing it from other ADHs that prefer smaller or aliphatic substrates.",
+      "diastereomeric_excess": 99,
+      "diasteriomeric_excess_unit": "%",
+      "enantiomeric_excess": 99,
+      "enantiomeric_excess_unit": "%",
+      "enantioselectivity": 0,
+      "isomeric_content": 0,
+      "isomeric_content_unit": "%",
+      "regioselectivity": "Not specifically discussed in the paper; the focus is on substrate class preference (aromatic/cyclic vs. aliphatic) rather than regioisomer formation.",
+      "special_treatment": "For alpha-hydroxy ketones (e.g., 2-hydroxypropiophenone and derivatives), RADH catalyzes reductions with extremely high stereoselectivity: enantiomeric excess (ee) >99% and diastereomeric excess (de) >99%. Kinetic parameters (Vmax, KM, Ki) are provided for selected substrates (see Table V). Substrate inhibition is observed for (R)-2-HPP (Ki = 16.4 mmol/L).",
+      "stereoselectivity": "Extremely high: reductions of alpha-hydroxy ketones and derivatives are catalyzed with >99% enantio- and diastereomeric excess. For example, (R)-2-hydroxypropiophenone: ee >99%, de >99% (syn); (S)-2-hydroxy-1-phenylpropan-1-one: de >99% (anti)."
+    }
+  ]
+}

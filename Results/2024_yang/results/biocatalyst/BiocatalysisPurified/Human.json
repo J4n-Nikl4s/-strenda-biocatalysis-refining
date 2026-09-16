@@ -1,0 +1,10 @@
+{
+  "activity": 95,
+  "activity_determination_method": "Enzyme activity was evaluated by monitoring the HBC formation via gas chromatography (GC). Yields were calculated by measuring the mol of product over the mol of cyclohexene oxide loaded.",
+  "activity_unit": "% yield (conversion)",
+  "concentration": 50,
+  "concentration_determination_method": "Wet cell weight was used for whole cell concentration. For lysate, 50 g/L whole cells were pre-treated with lysozyme to obtain soluble enzyme.",
+  "concentration_unit": "g/L (wet cell)",
+  "formulation": "Whole cell biocatalyst (E. coli BL21 expressing HheG from Ilumatobacter coccineus), also tested as soluble enzyme (cell lysate after lysozyme treatment).",
+  "special_treatment": "Whole cells were harvested by centrifugation and stored at -20°C. For lysate catalysis, cells were pre-treated with lysozyme at 37°C for 1 hr. Reactions were performed in two-phase systems with 35% (v/v) ethyl acetate as co-solvent to enhance substrate solubility and avoid direct contact with pure substrate. Pilot-scale reactions used 1.2 kg wet cell in 10 L total volume. Optimal pH was maintained by hydrolysis of ethyl acetate, eliminating the need for buffer. Reaction temperature was controlled at 25°C. The process was scaled from 96-well plate (200 μL) to 50 mL, 1 L, and 10 L reactors. Isolated yield at pilot scale was 87% with ee=53%."
+}

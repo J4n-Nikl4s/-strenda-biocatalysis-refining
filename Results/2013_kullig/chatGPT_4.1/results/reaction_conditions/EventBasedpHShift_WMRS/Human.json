@@ -1,0 +1,14 @@
+{
+      "calibration_pH_electrode": "",
+      "detected_how": "",
+      "detected_when": "",
+      "event_description": "",
+      "pH_after_event": 0,
+      "pH_at_XY": 0,
+      "pH_beginning": 0,
+      "special_treatment": "",
+      "temperature": 0,
+      "temperature_unit": "",
+      "time_at_XY": 0,
+      "time_unit": ""
+}

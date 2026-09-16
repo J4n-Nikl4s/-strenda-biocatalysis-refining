@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "special_treatment": "Screening and reactions were performed in 96-well plates at 25°C for 16 hours for initial activity screening. For whole cell catalysis, reactions were performed for 16 hours. For lysate catalysis, reactions were performed for 16 hours at 37°C for lysozyme pre-treatment. Pilot-scale manufacturing was performed in a 50 L reactor with temperature controller, maintaining temperature at 25°C for 29 hours. Temperature was controlled due to exothermic reaction (>35°C observed).",
+      "temperature": 25,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "For lysate catalysis, lysozyme pre-treatment was performed at 37°C for 1 hour before reaction.",
+      "temperature": 37,
+      "temperature_unit": "°C"
+    }
+  ]
+}

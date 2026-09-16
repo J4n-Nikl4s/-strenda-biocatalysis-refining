@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "closure_type": "Not specified. Standard 96-well plate seals are implied but not described.",
+      "special_treatment": "None described beyond standard screening setup.",
+      "vial_material": "Plastic (implied for 96-well plates, not explicitly stated)",
+      "vial_size": "Not in paper",
+      "vial_size_unit": ""
+    },
+    {
+      "closure_type": "Not specified for 5 mL reactions.",
+      "special_treatment": "None described beyond standard reaction setup.",
+      "vial_material": "Glass",
+      "vial_size": 10,
+      "vial_size_unit": "mL"
+    }
+    {
+      "closure_type": "Not specified for 1 L reactions.",
+      "special_treatment": "No details, other than: The HheG activity was verified in 1 L scale reactions, applying the 50 mL reaction conditions and reaching the same conversion level of 95%.A workup protocol was also developed by using the 1 L reaction mixture.",
+      "vial_material": "Not in paper",
+      "vial_size": "Not in paper",
+      "vial_size_unit": "L"
+    }
+    {
+      "closure_type": "Not specified for 10 L reactions.",
+      "special_treatment": "None described beyond standard reaction setup.",
+      "vial_material": "Not specified",
+      "vial_size": 50,
+      "vial_size_unit": "L"
+    }
+  ]
+}

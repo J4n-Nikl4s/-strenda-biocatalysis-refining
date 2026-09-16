@@ -1,0 +1,8 @@
+{
+  "items": [
+    {
+      "phases_number": 1,
+      "special_treatment": "Standard reduction assay: 10 mmol/L benzaldehyde, 0.2 mmol/L NADPH, 50 mmol/L TEA–HCl buffer pH 7.5, 0.8 mmol/L CaCl2, 30°C, 1 mL total volume, semi-micro cuvettes, spectrophotometric measurement at 340 nm for 1 min. Enzyme concentration: 0.05 mg/mL RADH. All activity measurements performed in triplicate. For substrate range studies, 10 mmol/L of each substrate (aldehydes, ketones) unless otherwise stated. For kinetic studies, substrate and cofactor concentrations varied as specified in Table V. Buffers for pH studies: citrate–phosphate (pH 4.0–7.0), TEA–HCl (pH 7.0–8.0), TRIS–HCl (pH 7.0–8.5), glycine–NaOH (pH 8.5–12.0), all at 50 mmol/L and supplemented with 0.8 mmol/L CaCl2. For temperature studies: 15–60°C, substrate solution preheated, temperature controlled externally. For stability studies: enzyme incubated in reduction buffer [TEA–HCl (50 mmol/L) + CaCl2 (0.8 mmol/L), pH 7.5] at 0–40°C. For oxidation assay: 100 mmol/L cyclohexanol, 0.5 mmol/L NADP+, 50 mmol/L glycine–NaOH buffer pH 10.5, 0.8 mmol/L CaCl2, 30°C, 1 mL total volume, semi-micro cuvettes, spectrophotometric measurement at 340 nm for 1 min. For substrate range in oxidation: 10 or 100 mmol/L alcohols, 0.5 mmol/L NADP+, 0.05 mg/mL RADH, glycine–NaOH buffer (50 mmol/L, pH 10.5), 0.8 mmol/L CaCl2, 30°C. For kinetic studies, see Table V for specific substrate and cofactor concentrations and buffer details. All buffers and solutions were supplemented with CaCl2 as indicated. No gas or organic phase mentioned; all reactions appear to be single aqueous phase."
+    }
+  ]
+}

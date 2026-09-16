@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "initial_reaction_rate": 2.4,
+      "initial_reaction_rate_unit": "U/mg (for reduction of benzaldehyde at pH 7.5, 25°C)",
+      "special_treatment": "Initial rate activities were measured spectrophotometrically at 340 nm by following the consumption of NADPH at 30°C in semi-micro cuvettes (total volume 1 mL) for 1 min. One unit (U) of enzyme is defined as the amount of enzyme that catalyzes the consumption of 1 μmol of NADPH per min at 30°C for the respective substrate. Standard reduction assay: 10 mmol/L benzaldehyde, 0.2 mmol/L NADPH, 50 mmol/L TEA–HCl buffer pH 7.5, 0.8 mmol/L CaCl2. Specific activities and kinetic parameters for various substrates are provided in Tables II–V.",
+      "specific_activity": 362.6,
+      "specific_activity_unit": "U/mg (for (R)-2-hydroxypropiophenone, 10 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 18.8,
+      "initial_reaction_rate_unit": "U/mg (Vmax for cyclohexanone reduction, Table V)",
+      "special_treatment": "Kinetic parameters for cyclohexanone reduction: Vmax = 18.8 ± 0.6 U/mg, Km = 10.8 ± 1.2 mmol/L, measured in TEA–HCl buffer (50 mmol/L + 0.8 mmol/L CaCl2), pH 7.5, at 30°C, with 0.2 mmol/L NADPH.",
+      "specific_activity": 9.78,
+      "specific_activity_unit": "U/mg (for cyclohexanone, 10 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 486.8,
+      "initial_reaction_rate_unit": "U/mg (Vmax for (R)-2-hydroxypropiophenone reduction, Table V)",
+      "special_treatment": "Kinetic parameters for (R)-2-HPP: Vmax = 486.8 ± 53.2 U/mg, Km = 1.6 ± 0.4 mmol/L, Ki = 16.4 mmol/L (substrate inhibition), measured in TEA–HCl buffer (50 mmol/L + 0.8 mmol/L CaCl2), pH 7.5, at 30°C, with 0.2 mmol/L NADPH.",
+      "specific_activity": 362.6,
+      "specific_activity_unit": "U/mg (for (R)-2-hydroxypropiophenone, 10 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 7.7,
+      "initial_reaction_rate_unit": "U/mg (Vmax for cyclohexanol oxidation, Table V)",
+      "special_treatment": "Kinetic parameters for cyclohexanol oxidation: Vmax = 7.7 ± 0.2 U/mg, Km = 5.2 ± 0.6 mmol/L, measured in TRIS–HCl buffer (50 mmol/L + 0.8 mmol/L CaCl2), pH 9.0, at 30°C, with 0.8 mmol/L NADP+.",
+      "specific_activity": 11.46,
+      "specific_activity_unit": "U/mg (for cyclohexanol, 100 mmol/L substrate, pH 10.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 12.6,
+      "initial_reaction_rate_unit": "U/mg (Vmax for benzaldehyde reduction, Table V)",
+      "special_treatment": "Kinetic parameters for benzaldehyde reduction: Vmax = 12.6 ± 0.3 U/mg, Km = 15.6 ± 0.9 mmol/L, measured in TEA–HCl buffer (50 mmol/L + 0.8 mmol/L CaCl2), pH 7.5, at 30°C, with 0.2 mmol/L NADPH.",
+      "specific_activity": 4.89,
+      "specific_activity_unit": "U/mg (for benzaldehyde, 10 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 23.3,
+      "initial_reaction_rate_unit": "U/mg (for 2-bromobenzaldehyde, 5 mmol/L substrate, pH 7.5, 30°C)",
+      "special_treatment": "Highest specific activity for aldehyde reduction was observed for 2-bromobenzaldehyde (5 mmol/L substrate).",
+      "specific_activity": 23.31,
+      "specific_activity_unit": "U/mg (for 2-bromobenzaldehyde, 5 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 12.62,
+      "initial_reaction_rate_unit": "U/mg (for 3-methylcyclohexanone, 10 mmol/L substrate, pH 7.5, 30°C)",
+      "special_treatment": "High specific activity for 3-methylcyclohexanone reduction.",
+      "specific_activity": 12.62,
+      "specific_activity_unit": "U/mg (for 3-methylcyclohexanone, 10 mmol/L substrate, pH 7.5, 30°C)"
+    },
+    {
+      "initial_reaction_rate": 0.04,
+      "initial_reaction_rate_unit": "U/mg (for ethanol, 1.7 mol/L, pH 10.5, 30°C)",
+      "special_treatment": "Very low activity for ethanol oxidation, only detectable at high substrate concentration (1.7 mol/L).",
+      "specific_activity": 0.04,
+      "specific_activity_unit": "U/mg (for ethanol, 1.7 mol/L, pH 10.5, 30°C)"
+    }
+  ]
+}

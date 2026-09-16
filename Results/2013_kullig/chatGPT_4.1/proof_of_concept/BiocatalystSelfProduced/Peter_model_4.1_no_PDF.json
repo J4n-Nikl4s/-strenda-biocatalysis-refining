@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": []
+    },
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": []
+    },
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": [
+        {
+          "Conditions": null,
+          "ExpectedReactions": null,
+          "InitialRate": null,
+          "ProgressData": [],
+          "SampleVolume": null,
+          "WhatIsMeasured": []
+        }
+      ]
+    },
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": []
+    },
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": []
+    }
+  ]
+}

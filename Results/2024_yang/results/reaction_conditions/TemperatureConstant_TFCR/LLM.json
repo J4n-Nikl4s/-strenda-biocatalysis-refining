@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "special_treatment": "Temperature control was necessary at pilot scale due to exothermic reaction (>35°C); a temperature controller was used to maintain the reaction at 25°C. No other special temperature procedures described.",
+      "temperature": 25,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "Initial screening in 96-well plates was performed at 35°C for 16 hours. No other special temperature procedures described for screening.",
+      "temperature": 35,
+      "temperature_unit": "°C"
+    }
+  ]
+}

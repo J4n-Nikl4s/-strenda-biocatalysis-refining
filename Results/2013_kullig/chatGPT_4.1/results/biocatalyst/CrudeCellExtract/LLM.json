@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "cell_disruption_process": "RADH cloned into the vector pET-22b(+) was expressed in E. coli BL21(DE3). Cultivation and cell disruption procedures were described elsewhere (Kulig et al., 2012).",
+      "concentration": 0.05,
+      "concentration_determination_method": "Protein concentration was determined by the Bradford method (Bradford, 1976) using bovine serum albumin as a standard.",
+      "concentration_unit": "mg/mL",
+      "special_treatment": "Three purification protocols were applied: (1) without Ca2+ ions, (2) with 0.2 mmol/L CaCl2, (3) with 0.8 mmol/L CaCl2 added to all buffers. Purification steps included size exclusion chromatography (SEC) for desalting, anion exchange chromatography, and a second SEC for buffer exchange and Ca2+ adjustment. All purification steps were performed in TEA–HCl buffer (50 mmol/L, pH 7.5) at room temperature (20–25°C). For storage, enzyme was kept in TEA–HCl buffer (10 mmol/L, pH 7.5) at -20°C, or lyophilized and stored at -20°C, or in 50% (v/v) glycerol at -20°C. Addition of CaCl2 (0.2–0.8 mmol/L) during or after purification significantly increased enzyme stability. The enzyme is a trimer (native MW ~75 kDa, subunit MW 26.7 kDa). For activity and stability studies, 0.8 mmol/L CaCl2 was added to all buffers. Lyophilized enzyme requires equilibration in buffer for several hours before use to regain maximal activity."
+    }
+  ]
+}

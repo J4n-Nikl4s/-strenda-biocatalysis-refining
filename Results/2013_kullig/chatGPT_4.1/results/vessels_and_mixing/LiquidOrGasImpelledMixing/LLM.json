@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "active_T_or_Y_mixer": "",
+      "passive_mixing": "No explicit mention of active or passive mixing devices (e.g., stirrers, shakers, or mixers) is provided in the text. The assays and incubations are described as being performed in semi-micro cuvettes (for spectrophotometric assays, total volume 1 mL) or in buffer solutions in tubes (for stability studies), but no details on mixing method (e.g., shaking, stirring, vortexing) are given. For temperature stability studies, a Thermomixer comfort (Eppendorf) is mentioned, which implies some form of mixing (typically orbital shaking), but the speed or mode is not specified.",
+      "pulsing": "",
+      "residence_time": 1,
+      "residence_time_unit": "min",
+      "reynolds_number": "",
+      "special_treatment": "For temperature stability studies, enzyme solutions were incubated in a Thermomixer comfort (Eppendorf), which typically provides controlled temperature and mixing, but the mixing speed or agitation details are not specified. For spectrophotometric assays, semi-micro cuvettes were used, but no mixing details are given. For storage, enzyme was kept in buffer at specified temperatures, sometimes with glycerol or lyophilized, but again, no mixing details are provided.",
+      "volume_of_liquid_solid_phase": "Spectrophotometric assays: 1 mL total volume in semi-micro cuvettes. For stability studies: 200 μL enzyme solution in buffer (tube, presumably microcentrifuge tube). No solid phase is mentioned; all reactions appear to be in homogeneous aqueous solution."
+    }
+  ]
+}

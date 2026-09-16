@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "Reduction of aldehydes and ketones; oxidation of alcohols.",
+      "ec_number": "",
+      "formulation": "",
+      "molecular_weight": 26.7,
+      "molecular_weight_unit": "kDa",
+      "name": "Alcohol Dehydrogenase from Ralstonia sp. (RADH)",
+      "origin_organism": "Ralstonia sp.",
+      "plasmid_specifications": "",
+      "posttranslational_modification": "",
+      "production_organism": "E. coli BL21(DE3)",
+      "purification_method": "Size exclusion chromatography (SEC) and anion exchange chromatography in TEA–HCl buffer, pH 7.5.",
+      "purity": 90,
+      "purity_specification": "SDS–PAGE",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "sequence_plasmid": "pET-22b(+)",
+      "special_treatment": "Stability increased with CaCl2 addition (0.2 and 0.8 mmol L-1)."
+    }
+  ]
+}

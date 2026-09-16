@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "concentration": 200,
+      "concentration_unit": "mM",
+      "formulation": "liquid, added to aqueous phase or two-phase system",
+      "name": "Cyclohexene oxide",
+      "persistent_identifier_PID": "",
+      "purity": 0,
+      "smiles": "C1CC=CC(C1)O",
+      "solubility_limit": 1,
+      "solubility_limit_unit": "g/100 g (in water)",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 400,
+      "concentration_unit": "mM",
+      "formulation": "solid, dissolved in water",
+      "name": "Sodium cyanate (NaOCN)",
+      "persistent_identifier_PID": "CAS: 917-61-3",
+      "purity": 0,
+      "smiles": "[Na+].[O-]C#N",
+      "solubility_limit": 11,
+      "solubility_limit_unit": "g/100 g (in water)",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 50,
+      "concentration_unit": "g/L (wet cell)",
+      "formulation": "whole cell biocatalyst (E. coli BL21 expressing HheG from Ilumatobacter coccineus)",
+      "name": "HHDH whole cells (HheG from Ilumatobacter coccineus)",
+      "persistent_identifier_PID": "UniProt: A0A1Y1ZLJ2 (for HheG)",
+      "purity": 0,
+      "smiles": "",
+      "solubility_limit": 0,
+      "solubility_limit_unit": "",
+      "supplier": "Produced in-house (Enzymaster, Ningbo, China)"
+    },
+    {
+      "concentration": 35,
+      "concentration_unit": "% (v/v)",
+      "formulation": "liquid, used as co-solvent in two-phase system",
+      "name": "Ethyl acetate",
+      "persistent_identifier_PID": "CAS: 141-78-6",
+      "purity": 0,
+      "smiles": "CCOC(=O)C",
+      "solubility_limit": 8.3,
+      "solubility_limit_unit": "g/100 mL (in water)",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 50,
+      "concentration_unit": "mM",
+      "formulation": "liquid, buffer solution (PB buffer, pH 7.0)",
+      "name": "Phosphate buffer (PB buffer)",
+      "persistent_identifier_PID": "",
+      "purity": 0,
+      "smiles": "",
+      "solubility_limit": 0,
+      "solubility_limit_unit": "",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 1,
+      "concentration_unit": "g/L",
+      "formulation": "lysozyme solution, used for cell lysis",
+      "name": "Lysozyme",
+      "persistent_identifier_PID": "CAS: 12650-88-3",
+      "purity": 0,
+      "smiles": "",
+      "solubility_limit": 0,
+      "solubility_limit_unit": "",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 0,
+      "concentration_unit": "",
+      "formulation": "liquid, used for crystallization and washing",
+      "name": "Heptane",
+      "persistent_identifier_PID": "CAS: 142-82-5",
+      "purity": 0,
+      "smiles": "CCCCCCC",
+      "solubility_limit": 0,
+      "solubility_limit_unit": "",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 0,
+      "concentration_unit": "",
+      "formulation": "liquid, used for extraction and analysis",
+      "name": "Ethyl acetate (for extraction)",
+      "persistent_identifier_PID": "CAS: 141-78-6",
+      "purity": 0,
+      "smiles": "CCOC(=O)C",
+      "solubility_limit": 8.3,
+      "solubility_limit_unit": "g/100 mL (in water)",
+      "supplier": "Thermo Fisher Scientific (Geel, Belgium)"
+    },
+    {
+      "concentration": 0,
+      "concentration_unit": "",
+      "formulation": "liquid, used for GC analysis",
+      "name": "Hydrogen (carrier gas for GC)",
+      "persistent_identifier_PID": "CAS: 1333-74-0",
+      "purity": 0,
+      "smiles": "[H][H]",
+      "solubility_limit": 0,
+      "solubility_limit_unit": "",
+      "supplier": ""
+    }
+  ]
+}

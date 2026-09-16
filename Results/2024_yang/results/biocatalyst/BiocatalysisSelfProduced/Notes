@@ -1,0 +1,180 @@
+04022026: Fits schema. For the BiocatalysisPurchased the MW was included (eventhough not in paper)
+
+Halohydrin dehalogenases (HHDHs)
+is_a biocatalyst
+catalyze synthesis of industrial heterocyclic compounds
+catalyze synthesis of chiral alkanolamines from aromatic substrates with NaOCN
+enable reactions not feasible through chemosynthesis
+
+HHDH panel 
+screened for: ability to convert aliphatic cyclohexene oxide
+
+Best HHDH variant (whole cell)
+used in: novel chemical process for pilot-scale ring-opening reactions
+
+Best HHDH hit (whole cell)
+provides: viable bio-catalytic approach for synthesis of fine chemicals
+
+HHDHs
+catalyze: reversible dehalogenation of vicinal haloalcohols
+reverse reaction: non-natural nucleophiles (NaOCN, NaSCN) facilitate enzymatic SN2 ring-opening
+produce: oxazolidines via ring-opening and ring-closing
+accept: various non-natural nucleophiles for ring-opening
+
+Most HHDH reactions
+triggered by: nucleophiles attacking terminal position (beta-attack)
+
+Beta-attack
+results in: secondary alcohols as final products
+
+Some HHDHs
+exhibit: alpha-regioselectivity in ring-opening of styrene oxide
+
+Alpha-regioselectivity
+produces: new series of heterocyclic products
+
+Chen et al.
+reported: synthesis of 4-phenyl-2-oxazolidinone via alpha type HHDH
+
+G-type HHDHs
+catalyze: non-native ring-opening reactions of cyclohexene oxide
+achieve: enantiomeric excess of 52% at 20 mM substrate concentration
+
+HheG (from Ilumatobacter coccineus)
+used for: synthesis of trans-hexahydro-2(3H)-benzoxazolone (trans-HBC)
+achieves: >90% conversion and 53% ee at 10× cyclohexene oxide loading
+
+HHDH whole cell libraries
+screened for: activity towards cyclohexene oxide using NaOCN
+screened: 8 diverse HHDHs active towards cyclohexene oxide
+
+Screening
+identified: 8 HHDH hits with observable reactivities
+
+HHDHs attacking terminal carbon of styrene oxide
+have no activity towards: cyclohexene oxide
+
+HHDH from Ilumatobacter coccineus (IcHheG)
+most active: among 8 HHDH hits (42% yield)
+selected as: best candidate for process engineering
+
+HheG
+favors: SN2 attack on tertiary carbons in styrene oxide reactions
+exhibits: tertiary carbon specificity
+maintains activity: from pH 7–11
+
+HheG (whole cell)
+used as: biocatalyst for process development
+tested at: 200 mM cyclohexene oxide loading
+
+Direct contact of HHDHs and epoxides
+causes: enzyme inactivation
+
+Two-phase reactions with organic solvents
+screened to: enhance substrate solubility and avoid enzyme inactivation
+
+Ethyl acetate
+determined as: most suitable solvent for enzymatic reactions (yield up to 95%)
+enhances: solubility of cyclohexene oxide in water
+controls: pH at 10.5 by converting NaOH to ethanol and sodium acetate
+
+HHDH containing cell lysate
+results in: 93% product yield (similar to whole cell biocatalysts)
+
+Two-phase reaction conditions
+permit: self-pH control, eliminating need for additional buffering agents
+
+Pilot-scale manufacturing (1 L and 10 L)
+applied: same reaction conditions as 50 mL scale
+
+Pilot-scale manufacturing
+achieved: 95% conversion, 87% isolated yield, 53% ee
+performed in: 50 L reactor with temperature controller
+
+Best HHDH candidate
+scaled up: from analytical to pilot-scale manufacturing
+
+New process
+improved: reactivity performance by 10 fold
+eliminated: obstacles such as low epoxide loading, pH control, and solubility issues
+avoids: use of toxic chemicals
+
+First case
+successful upscaling of: HHDH cyanate reactions to industrial scale
+
+HHDH catalysis
+enables: enantioselective synthesis of building blocks for asymmetric molecular targets
+
+Most HHDHs
+rely on: toxic substances (e.g., sodium azide, NaBH4) for alkanolamine synthesis
+
+New self-regulated process
+uses: non-natural enzyme catalysis with OCN nucleophilic ring-opening
+
+HHDH catalysis and chemo-hydrolysis
+enables: exploration of more oxazolidinones and alkanolamines
+
+HBC (trans-hexahydro-2(3H)-benzoxazolone)
+considered as: precursor for pesticides (e.g., fenoxaprop-P-ethyl, metamifop)
+
+HHDH route
+offers: affordable approach to synthesizing heterocyclic compounds and chiral alkanolamines
+
+HHDH genes
+codon optimized for: E. coli BL21 expression system
+subcloned into: pET28a in HHDH libraries
+
+HheG expression strain
+grown in: lysogeny broth-Miller culture with kanamycin
+
+HheG expression
+induced by: lactose at 30°C for 16 h
+
+Whole cells
+harvested by: centrifugation and stored at -20°C
+
+Stored HHDH whole cells
+used as: biocatalyst for all reactions
+
+Initial screening
+performed in: 96-well plates with 50 g/L wet cell, 10 mM cyclohexene oxide, 20 mM NaOCN, 200 μL PB buffer (pH 7.0) at 35°C
+
+Enzyme activity
+evaluated by: monitoring HBC formation via gas chromatography
+
+Best hit (whole cell)
+characterized in: 5 mL reactions with varying cyclohexene oxide, 2 eq NaOCN, 35% co-solvent, 16 hrs
+
+Lysate catalysis
+performed with: lysozyme pre-treatment, cyclohexene oxide, NaOCN, ethyl acetate, 16 hrs
+
+Analytical methods
+include: achiral and chiral GC analysis
+
+Pilot-scale reaction
+used: water, ethyl acetate, cyclohexene oxide, NaOCN, wet cell biocatalyst
+
+Reaction temperature
+maintained at: 25°C for 29 hrs
+
+Post-processing
+involves: ethyl acetate extraction, centrifugation, phase separation, concentration, heptane precipitation, filtration
+
+Final product (HBC)
+isolated yield: 87%
+enantiomeric excess: 53%
+
+Substrate docking
+conducted using: AutoDockVina module of Yasara
+
+HheG (PDB: 5O30)
+used as: receptor for docking
+
+Cyclohexene oxide and cyanate ion
+used as: ligands for docking
+
+Docking
+identified: binding modes and nucleophile binding site in HHDH
+
+Docking results
+support: proposed SN2 mechanism and tertiary carbon specificity
