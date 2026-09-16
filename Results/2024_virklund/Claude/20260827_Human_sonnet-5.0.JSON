@@ -251,7 +251,7 @@
         }
       },
       {
-        "label": "Changed: Experiment 1 (paper's own Table 2 label) - with ATPS-ISPR, first cell batch",
+        "label": "Changed: Experiment 1 (Table 2) - with ATPS-ISPR, first cell batch",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -283,7 +283,7 @@
         }
       },
       {
-        "label": "Changed: Control run paired with Experiment 2 - without ATPS (monophase), second cell batch, Figure 4B",
+        "label": "Changed: Control run paired with Experiment 2 - without ATPS (monophase)",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -310,7 +310,7 @@
         }
       },
       {
-        "label": "Changed: Experiment 2 (paper's own Table 2 label) - with ATPS-ISPR, second (higher-activity) cell batch",
+        "label": "Changed: Experiment 2 (Table 2) - with ATPS-ISPR, second (higher-activity) cell batch",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
