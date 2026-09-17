@@ -1,0 +1,16 @@
+the model tried to fill data.
+
+These data is not a plate, but glass vials. 
+  {
+      "lot_number": 0,
+      "number_of_wells": "",
+      "plate_material": "glass",
+      "plate_type": "glass vial",
+      "sealing_material": "",
+      "sealing_method": "",
+      "special_treatment": "",
+      "supplier": "",
+      "well_arrangement": "",
+      "well_shape": "",
+      "well_volume": "10 mL"
+    }

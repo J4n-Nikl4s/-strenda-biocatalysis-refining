@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "chemoselectivity": "Not discussed in paper",
+      "diastereomeric_excess": "Not in paper",
+      "diasteriomeric_excess_unit": "%",
+      "enantiomeric_excess": 53,
+      "enantiomeric_excess_unit": "%",
+      "enantioselectivity": "Not in paper",
+      "isomeric_content": "Not in paper",
+      "isomeric_content_unit": "%",
+      "regioselectivity": "low, nucleophilic attack possible at both C1 and C2",
+      "stereoselectivity": "The reaction is stereoselective, producing the trans isomer of hexahydrobenzo[d]oxazol-2(3H)-one (trans-HBC) via SN2 attack, resulting in inversion at one carbon center. The product has an enantiomeric excess (ee) of 53%."
+    }
+  ]
+}

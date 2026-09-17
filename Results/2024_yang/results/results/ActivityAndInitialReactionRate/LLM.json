@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Screening of 48 wild-type HHDHs for activity towards cyclohexene oxide using NaOCN identified 8 hits. The best hit, HHDH from Ilumatobacter coccineus (IcHheG), gave 42% yield under screening conditions (20 mM cyclohexene oxide, 50 g/L wet cell, 40 mM NaOCN, 50 mM PB buffer, 25°C, 16 hrs).",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "At 200 mM cyclohexene oxide, 400 mM NaOCN, 50 g/L wet cell, 35% (v/v) ethyl acetate, 25°C, 16 hrs, the yield reached up to 95% (ethyl acetate as co-solvent).",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Table 1: HheG-catalyzed two-phase reactions with different solvents (200 mM cyclohexene oxide, 400 mM NaOCN, 50 g/L wet cell, 35% v/v co-solvent, RT, 10 mL scale):\n- Ethyl acetate: 95% yield, pH 10.5\n- Heptane: 29% yield, pH 13.0\n- n-Butanol: 25% yield, pH 13.0\n- Toluene: 29% yield, pH 13.0\n- MTBE: 31% yield, pH 13.0\n- Dichloromethane: <1% yield, pH 10.5\n- None: <1% yield, pH 10.5",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Table 2: Solubility of substrates and products in different solvents (g/100 g):\n- HBC: Water <0.01, Ethyl acetate 5, Heptane <0.01\n- Cyclohexene oxide: Water <1, Ethyl acetate >100, Heptane >100\n- NaOCN: Water 11, Ethyl acetate <0.01, Heptane <0.01",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Pilot-scale (10 L) manufacturing: 13.2 kg water, 7.5 kg ethyl acetate, 0.48 kg cyclohexene oxide, 0.6 kg NaOCN, 1.2 kg wet cell, 25°C, 29 hrs, 95% conversion. Isolated yield: 0.6 kg (87%), ee = 53%.",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Screening conditions for initial activity: 50 g/L wet cell, 10 mM cyclohexene oxide, 20 mM NaOCN, 200 μL PB buffer (50 mM, pH 7.0), 35°C, 16 hrs. Activity monitored by GC for HBC formation.",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Whole cell catalysis characterization: 5 mL reactions, varying cyclohexene oxide, 2 eq NaOCN, 35% (v/v) co-solvent, 16 hrs. HBC extracted with 10 mL ethyl acetate, analyzed by GC.",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Lysate catalysis: 50 g/L whole cells pre-treated with 3.2 mL of 1 g/L lysozyme at 37°C for 1 hr, then cyclohexene oxide, NaOCN, ethyl acetate added, 16 hrs, analyzed by GC.",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    },
+    {
+      "initial_reaction_rate": 0,
+      "initial_reaction_rate_unit": "",
+      "special_treatment": "Analytical methods: Achiral GC (DB-1 column, 130–250°C in 2.67 min, hold 0.43 min); Chiral GC (CP7502 column, 90–200°C in 22 min, hold 13.3 min).",
+      "specific_activity": 0,
+      "specific_activity_unit": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "biocatalyst_in_phase": "The collected sample may be contaminated with the (bio)catalyst, as both whole cells and cell lysate were used as biocatalysts in the reaction mixtures. For whole cell catalysis, 50 g/L wet cell was present in the reaction. For lysate catalysis, the supernatant after lysozyme treatment was used.",
+      "phase": "Samples were taken from the organic phase after extraction with ethyl acetate. For screening, the reaction mixture was extracted with 600 μL ethyl acetate after 16 hrs. For whole cell and lysate catalysis, HBC was extracted by adding 10 mL of ethyl acetate, and the organic phase was diluted for GC analysis.",
+      "special_treatment": "For lysate catalysis, whole cells were pre-treated with 3.2 mL of 1 g/L lysozyme solution at 37°C for 1 hr before extraction. After reaction, the mixture was centrifuged at 1000 rpm to remove insoluble protein and salts, and the organic phase was separated after sitting for 3 hrs. The organic phase was concentrated and crystallized by adding 4× heptane, followed by rinsing three times with heptane."
+    }
+  ]
+}

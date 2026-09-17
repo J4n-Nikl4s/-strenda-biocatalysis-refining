@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "calibration_pH_electrode": "Not specified. However, pH measurements and control are discussed in the context of reaction conditions and buffer usage.",
+      "detected_how": "pH was tested (method not explicitly stated, but likely with a pH meter or probe, as pH values are given to one decimal place).",
+      "detected_when": "pH was measured during the reaction, particularly after the addition of reagents and during the course of the reaction (e.g., after hydrolysis of ethyl acetate, after reaction setup).",
+      "event_description": "Event-based pH shift occurs due to the hydrolysis of ethyl acetate in the presence of NaOH, which keeps the pH of the NaOCN solution at 10.5. This eliminates the need for additional buffering agents or active pH control equipment. In other solvents, endpoint pH is also reported after reaction completion.",
+      "pH_after_event": 10.5,
+      "pH_at_XY": 10.5,
+      "pH_beginning": 7,
+      "special_treatment": "Self-regulated pH control via the hydrolysis of ethyl acetate in the presence of NaOH. No additional buffer or active pH control required. Avoids toxic gas release from strong acid addition. pH maintained at 10.5 in 400 mM NaOCN solution. Screening of multiple organic solvents for two-phase reactions to avoid direct contact of biocatalyst with substrate phase.",
+      "temperature": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 16,
+      "time_unit": "hrs"
+    }
+  ]
+}

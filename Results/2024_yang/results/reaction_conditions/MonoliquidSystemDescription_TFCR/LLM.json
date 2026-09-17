@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "Flow_rate": 200,
+      "Flow_rate_unit": "rpm (stirring speed for pilot-scale reactor)",
+      "further_additives": "None explicitly mentioned, but lysozyme used for cell lysis in lysate experiments. Ethyl acetate used as co-solvent. Heptane used for crystallization. Kanamycin and lactose used in cell culture.",
+      "ionic_strength": 50,
+      "ionic_strength_unit": "mM (PB buffer in screening; 400 mM NaOCN in scale-up)",
+      "solvent_description": "Aqueous phase: PB buffer (50 mM, pH 7.0) for screening; water for scale-up. Organic phase: ethyl acetate (co-solvent, 35% v/v in reactions, also used for extraction and phase separation). Heptane used for crystallization. Other solvents tested: heptane, n-butanol, toluene, MTBE, dichloromethane.",
+      "special_treatment": "Two-phase system with ethyl acetate to enhance substrate solubility and avoid direct contact of enzyme with substrate. Self-regulated pH control via ethyl acetate hydrolysis. Temperature controlled at 25°C during pilot-scale reactions. Cell lysis with lysozyme for lysate experiments. Centrifugation and phase separation for post-processing. Crystallization with heptane. GC analysis for product quantification. Chiral GC for ee determination. Substrate docking performed with AutoDockVina/Yasara."
+    }
+  ]
+}

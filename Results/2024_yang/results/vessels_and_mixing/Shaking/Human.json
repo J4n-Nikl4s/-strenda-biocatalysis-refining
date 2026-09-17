@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "deflection": 0,
+      "deflection_unit": "",
+      "position": "",
+      "shaking_type": "shaking",
+      "special_treatment": "Shaking is mentioned for overnight culture growth and for reactions, but no special shaking treatments are described beyond standard shaking/incubation.",
+      "speed": 0,
+      "speed_unit": ""
+    },
+    {
+      "deflection": 0,
+      "deflection_unit": "",
+      "position": "",
+      "shaking_type": "mechanically impelled mixing (stirring)",
+      "special_treatment": "Pilot-scale manufacturing was performed in a 50 L reactor with temperature controller. 13.2 kg of water was added into the reactor and stirred at 200 rpm. All other materials were added into the reaction by following order: ethyl acetate 7.5 kg, cyclohexene oxide 0.48 kg, NaOCN 0.6 kg. The final 1.2 kg wet cell biocatalyst was added into the reactor while temperature maintains at 25°C. The temperature was controlled by recycling the cold water for 29 hrs until 95% conversion.",
+      "speed": 200,
+      "speed_unit": "rpm"
+    }
+  ]
+}

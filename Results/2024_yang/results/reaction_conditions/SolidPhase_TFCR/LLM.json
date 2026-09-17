@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "solid_amount": 50,
+      "solid_type": "wet cell (whole cell biocatalyst, HHDH from Ilumatobacter coccineus, IcHheG)",
+      "solid_unit": "g/L"
+    },
+    {
+      "solid_amount": 1.2,
+      "solid_type": "wet cell biocatalyst (HHDH, pilot-scale)",
+      "solid_unit": "kg"
+    },
+    {
+      "solid_amount": 0.6,
+      "solid_type": "final product (HBC, isolated yield)",
+      "solid_unit": "kg"
+    }
+  ]
+}

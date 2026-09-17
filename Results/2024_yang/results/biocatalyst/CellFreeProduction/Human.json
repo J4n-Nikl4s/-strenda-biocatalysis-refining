@@ -1,0 +1,7 @@
+{
+  "concentration": 50,
+  "concentration_determination_method": "not correct extracted." "Wet cell weight was used for whole cell concentration. For lysate, 50 g/L whole cells were pre-treated with lysozyme to obtain soluble enzyme.""",
+  "concentration_unit": "g/L (wet cell)",
+  "source_of_cellfree_extract": "Ilumatobacter coccineus (IcHheG) expressed in E. coli BL21; whole cells used as biocatalyst. Other HHDHs from Enzymaster database also screened.",
+  "special_treatment": "For lysate catalysis, whole cells were pre-treated with lysozyme (1 g/L, 37°C, 1 hr) to obtain soluble enzyme-containing supernatant. Reactions were performed in two-phase systems with 35% (v/v) ethyl acetate as co-solvent to enhance substrate solubility and prevent enzyme inactivation. Pilot-scale reactions used 1.2 kg wet cell in 10 L total volume. Reaction conditions: 200 mM cyclohexene oxide, 400 mM NaOCN, 35% ethyl acetate, 25°C, 16–29 hrs. Product yield up to 95% (analytical), 87% (isolated, pilot scale), ee = 53%. No cell-free extract (classic lysate) was used for scale-up; whole cells were preferred for process robustness."
+}

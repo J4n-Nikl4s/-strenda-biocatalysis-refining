@@ -1,0 +1,19 @@
+Not all component data was extracted. Only the substrate. However, when selecting "multiple outputs" I got the remaining compounds. 
+
+SMILE code not in paper, and the model found a wrong one. For cyclohex-2-en-1-ol instead of cyclohexene oxide.
+
+Only one concentration was extracted for Cyclohexene oxide, despite the concentration changed in reactions.
+Same for solubility data, only one data point extracted - same for enzyme concentration.
+- For one of the components (Ethyl acetate), the model did add it twice, but not for all components. 
+
+For purity for chemicals and the enzyme the extracted value is 0, but nothing is mentioned in the paper
+
+Added hydrogen as Hydrogen (carrier gas for GC), but this is a part of the autosampler, and not a component added. 
+Paper reads: "Chiral GC analysis was performed on a GC-6890N gas chromatograph
+(Agilent, Stevens Creek Blvd, Santa Clara, CA 95051)
+equipped with an CP7502 column (Agilent, Stevens Creek Blvd,
+Santa Clara, CA 95051) equipped with CTC Analytics HTC PAL
+Autosampler System and FID detection using hydrogen as carrier
+gas. The testing samples were prepared by diluting the ethyl
+acetate extracts to 0–7 mM. All samples were analyzed by the
+program as follow: 90°C–200°C in 22 min, hold 13.3 min."
