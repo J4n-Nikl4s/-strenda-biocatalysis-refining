@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "bottom_type": "",
+      "gas_consumption": "",
+      "gas_supply": "",
+      "gas_supply_rate": 0,
+      "gas_supply_rate_unit": "",
+      "geometry": "",
+      "material": "",
+      "special_treatment": "Enzyme stabilization with CaCl2 (0.2–0.8 mmol/L) is critical for reproducibility. Lyophilized enzyme requires reactivation by equilibration in buffer for several hours before use. All activity measurements performed in triplicate. Storage at -20°C in 10 mmol/L TEA–HCl, pH 7.5, with 50% glycerol is optimal for long-term stability.",
+      "temperature_control": "Temperature controlled using a spectrophotometer with a temperature-controlled slide and external thermocoupled thermometer. Stability studies performed at 0–40°C (Thermomixer comfort, Eppendorf).",
+      "type": "Batch stirred tank reactor (semi-micro cuvettes, 1 mL total volume) for spectrophotometric assays.",
+      "volume": 1,
+      "volume_unit": "mL"
+    }
+  ]
+}

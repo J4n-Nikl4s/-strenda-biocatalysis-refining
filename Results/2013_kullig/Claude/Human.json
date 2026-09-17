@@ -1,0 +1,253 @@
+{
+  "name": "Biochemical Characterization of an Alcohol Dehydrogenase From Ralstonia sp.",
+  "description": "Kulig et al. (2013), Biotechnology and Bioengineering 110(7):1838–1848. DOI: 10.1002/bit.24857. Biochemical characterization of the NADPH-dependent alcohol dehydrogenase from Ralstonia sp. DSM 6428 (RADH), including purification, stabilization by CaCl2, pH and temperature optima, substrate range (aldehydes, ketones, alcohols), and steady-state kinetics for selected substrates including 2-hydroxypropiophenone (2-HPP) enantiomers.",
+  "biocatalyst": [
+    {
+      "identity": {
+        "name": "Alcohol dehydrogenase from Ralstonia sp. (RADH)",
+        "ec_number": ["not in the publication"],
+        "molecular_weight": 75.0,
+        "molecular_weight_unit": "kDa",
+        "catalyzed_reaction": [
+          "Stereoselective reduction of ketones and aldehydes to alcohols (NADPH-dependent)",
+          "Oxidation of alcohols to ketones/aldehydes (NAD(P)+-dependent)",
+          "Reduction of alpha-hydroxy ketones with high enantio- and diastereoselectivity"
+        ],
+        "origin_organism": "Ralstonia sp. DSM 6428 (also known as Cupriavidus sp.)",
+        "production_organism": "Escherichia coli BL21(DE3)"
+      },
+      "source_type": "self_produced",
+      "source": {
+        "source_type": "self_produced",
+        "self_produced_details": {
+          "plasmid_specifications": ["pET-22b(+)"],
+          "purification_method": [
+            "Size exclusion chromatography (SEC) for desalting",
+            "Anion exchange chromatography",
+            "Size exclusion chromatography (second step) to remove NaCl and adjust CaCl2 concentration"
+          ],
+          "purity": 90.0,
+          "purity_specification": "SDS-PAGE",
+          "formulation": "solution"
+        }
+      },
+      "application": {
+        "application_type": "purified",
+        "concentration": [
+          {"value": 0.05, "unit": "mg/mL", "determination_method": "Bradford assay (BSA standard)"},
+          {"value": 0.2,  "unit": "mg/mL", "determination_method": "Bradford assay (BSA standard)"},
+          {"value": 0.5,  "unit": "mg/mL", "determination_method": "Bradford assay (BSA standard)"}
+        ],
+        "activity": [
+          {"value": 1.0,   "unit": "U/mg", "determination_method": "1 U = amount of enzyme catalyzing 1 μmol NADPH production or consumption per min at 30°C"},
+          {"value": 300.0, "unit": "U/mg", "determination_method": "Specific activity toward (R)-2-HPP at 10 mmol/L"}
+        ],
+        "workflow_details": {
+          "cell_disruption_process": "Cell disruption as described previously (Kulig et al., 2012)",
+          "harvesting_method": "Centrifugation (details in Kulig et al., 2012)",
+          "separation_method": "",
+          "source_of_cellfree_extract": ""
+        }
+      },
+      "immobilization": {"immobilized": false},
+      "storage": {
+        "temperature": -20.0,
+        "temperature_unit": "°C",
+        "additives": [
+          "TEA-HCl buffer 10 mmol/L pH 7.5",
+          "50% (v/v) glycerol (best option, retains 120% activity after 80 days)",
+          "CaCl2 0.8 mmol/L"
+        ],
+        "drying_method": ["Lyophilization (alternative, stable 20 days at -20°C)"],
+        "notes": "Frozen in TEA-HCl buffer 10 mmol/L pH 7.5 at -20°C guarantees full stability ≥80 days. Glycerol 50% v/v leads to increased activity (+40%) during first 4 days. Lyophilized enzyme requires hours of reactivation in buffer before use."
+      },
+      "notes": "RADH is the first case where Ca2+ ions were found to drastically enhance stability of an NADPH-dependent ADH. Native molecular weight by SEC: ~75 kDa suggesting trimeric structure (single subunit: 26.7 kDa). TRIS-HCl buffer inhibits activity compared to TEA-HCl and glycine-NaOH. ZnCl2 reduces activity to 39%; CuCl2 and MnCl2 to 75%; CoCl2 and NiCl2 to 85-86%. Half-life without Ca2+: ~6 h at RT; with 0.8 mmol/L CaCl2 during purification: 163 h at 8°C."
+    }
+  ],
+  "reaction_components": [
+    {
+      "identity": {"name": "Benzaldehyde", "identifiers": ["not in the publication"], "formulation": "solution"},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Standard substrate for reduction assay; specific activity 4.89 U/mg"
+    },
+    {
+      "identity": {"name": "Cyclohexanol", "identifiers": ["not in the publication"], "formulation": "solution"},
+      "role": "substrate",
+      "amount": {"value": 100.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Standard substrate for oxidation assay; specific activity at 10 mmol/L: 8.36 U/mg; at 100 mmol/L: 11.46 U/mg"
+    },
+    {
+      "identity": {"name": "Cyclohexanone", "identifiers": ["not in the publication"], "formulation": "solution"},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Specific activity 9.78 U/mg at 10 mmol/L"
+    },
+    {
+      "identity": {"name": "(R)-2-Hydroxypropiophenone ((R)-2-HPP)", "identifiers": ["not in the publication"], "smiles": "not in the publication"},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "notes": "Preferred substrate; specific activity 362.6 U/mg at 10 mmol/L; Km=1.6 mmol/L; Vmax=486.8 U/mg; substrate inhibition Ki=16.4 mmol/L; de >99% (syn product)"
+    },
+    {
+      "identity": {"name": "(S)-2-Hydroxypropiophenone ((S)-2-HPP)", "identifiers": ["not in the publication"], "smiles": "not in the publication"},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "notes": "Less preferred enantiomer; specific activity 17.1 U/mg at 10 mmol/L; Km=3.6 mmol/L; Vmax=23.1 U/mg; de >99% (anti product)"
+    },
+    {
+      "identity": {"name": "2-Bromobenzaldehyde", "identifiers": ["not in the publication"]},
+      "role": "substrate",
+      "amount": {"value": 5.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Highest reductase activity among tested aldehydes: 23.31 U/mg"
+    },
+    {
+      "identity": {"name": "3-Fluorobenzaldehyde", "identifiers": ["not in the publication and wrong CAS number"]},
+      "role": "substrate",
+      "amount": {"value": 5.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Specific activity 11.70 U/mg"
+    },
+    {
+      "identity": {"name": "3-Methylcyclohexanone", "identifiers": ["not in the publication and wrong CAS number"]},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Highest specific activity among ketones: 12.62 U/mg"
+    },
+    {
+      "identity": {"name": "2-Cyclohexenol", "identifiers": ["not in the publication"]},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Sigma-Aldrich, Steinheim, Germany"},
+      "notes": "Highest specific activity among alcohols (oxidation): 18.83 U/mg"
+    },
+    {
+      "identity": {"name": "Acetophenone", "identifiers": ["not in the publication"]},
+      "role": "substrate",
+      "amount": {"value": 10.0, "unit": "mmol/L"},
+      "provenance": {"supplier": "Merck, Darmstadt, Germany"},
+      "notes": "Aromatic ketone; specific activity 4.35 U/mg"
+    },
+    {
+      "identity": {"name": "NADPH", "identifiers": ["not in the publication"]},
+      "role": "cofactor",
+      "amount": {"value": 0.2, "unit": "mmol/L"},
+      "provenance": {"supplier": "Biomol, Hamburg, Germany"},
+      "notes": "Cofactor for reduction. Optimal range 0.05–0.2 mmol/L."
+    },
+    {
+      "identity": {"name": "NADP+", "identifiers": ["CAS 53-59-8"]},
+      "role": "cofactor",
+      "amount": {"value": 0.8, "unit": "mmol/L"},
+      "provenance": {"supplier": "Biomol, Hamburg, Germany"},
+      "notes": "Cofactor for oxidation. Optimal concentration 0.8 mmol/L."
+    },
+    {
+      "identity": {"name": "CaCl2", "identifiers": ["CAS 10043-52-4"]},
+      "role": "ion",
+      "amount": {"value": 0.8, "unit": "mmol/L"},
+      "notes": "Ca2+ ions significantly stabilize RADH. First reported case of Ca2+-dependent stabilization of an NADPH-dependent ADH. 0.2 mmol/L used during chromatography; 0.8 mmol/L in all activity and stability assays."
+    },
+    {
+      "identity": {"name": "TEA-HCl buffer (tris-(2-hydroxyethyl)amine hydrochloride)", "formulation": "solution"},
+      "role": "buffer",
+      "amount": {"value": 50.0, "unit": "mmol/L"},
+      "notes": "Standard buffer for reduction assay at pH 7.5; preferred over TRIS-HCl which reduces activity"
+    },
+    {
+      "identity": {"name": "Glycine-NaOH buffer", "formulation": "solution"},
+      "role": "buffer",
+      "amount": {"value": 50.0, "unit": "mmol/L"},
+      "notes": "Standard buffer for oxidation assay at pH 10.5"
+    }
+  ],
+  "operation_mode": [
+    {
+      "mode": "batch",
+      "reactor_type": "not mixed",
+      "feeding": {"feeding_type": "none"},
+      "notes": "Initial rate activity measurements in 1 mL cuvettes for 60 s at 30°C. Triplicate measurements throughout."
+    }
+  ],
+  "reaction_conditions": {
+    "reactor": {"reactor_type": "not mixed"},
+    "system": {
+      "system_type": "monoliquid",
+      "monoliquid": {
+        "solvent_description": "Aqueous buffer (TEA-HCl pH 7.5 for reduction; glycine-NaOH pH 10.5 for oxidation; TRIS-HCl pH 9.0 for oxidation kinetics)",
+        "further_additives": "CaCl2 0.8 mmol/L in all assay buffers"
+      }
+    },
+    "temperature": {
+      "profile_type": "constant",
+      "temperature_unit": "°C",
+      "constant_temperature": 30.0,
+      "notes": "Standard assay temperature. Activity increases ~linearly from 15 to 45°C by 400%. Stability optimum 8–15°C (half-life 130–138 h with 0.8 mmol/L CaCl2). Cold inactivation at 0°C (half-life 41 h). At 25°C half-life ~80 h. For bioorganic synthesis 15–30°C recommended."
+    },
+    "pH": {
+      "profile_type": "constant",
+      "constant_pH": 7.5,
+      "detection": {
+        "detected_when": "Initial rate measurements",
+        "detected_how": "Spectrophotometric assay following NADPH at 340 nm"
+      },
+      "notes": "Reduction pH optimum: broad, pH 6–9.5. Oxidation pH optimum: narrow, pH 10–11.5. pH stability optimum: pH 5.5–8.0 (half-lives 60–70 h at 25°C). Enzyme unstable above pH 9. TRIS-HCl reduces activity vs TEA-HCl."
+    }
+  },
+  "results": [
+    {
+      "activity": {
+        "specific_activity": 23.31,
+        "notes": "Highest for aldehyde reduction: 2-bromobenzaldehyde 23.31 U/mg; benzaldehyde 4.89 U/mg; 3-fluorobenzaldehyde 11.70 U/mg; acetaldehyde 0.05 U/mg; formaldehyde n.d. Highest for ketones: 3-methylcyclohexanone 12.62 U/mg; cyclohexanone 9.78 U/mg; acetone 0.01 U/mg. Highest for alcohol oxidation: 2-cyclohexenol 18.83 U/mg; cyclohexanol 11.46 U/mg (100 mmol/L). (R)-2-HPP 362.6 U/mg; (S)-2-HPP 17.1 U/mg."
+      },
+      "kinetics": {
+        "michaelis_constant": 1.6,
+        "maximum_reaction_rate": 486.8,
+        "inhibition": {"inhibition_type": "other", "inhibition_constant": 16.4},
+        "notes": "Full Table V: Benzaldehyde Km(NADPH)=0.005 mmol/L, Vmax=5.6 U/mg, n=1.6. Cyclohexanone Km(NADPH)=0.008 mmol/L, Vmax=17.6 U/mg, n=2.8. NADP+ Ki(cyclohexanol)=11.4 mmol/L. Cyclohexanol oxidation Vmax=7.7 U/mg, Km=5.2 mmol/L. Benzaldehyde reduction Vmax=12.6 U/mg, Km=15.6 mmol/L. Cyclohexanone reduction Vmax=18.8 U/mg, Km=10.8 mmol/L. (R)-2-HPP Vmax=486.8 U/mg, Km=1.6 mmol/L, Ki=16.4 mmol/L, Vopt=299.6 U/mg at 5.1 mmol/L. (S)-2-HPP Vmax=23.1 U/mg, Km=3.6 mmol/L."
+      },
+      "selectivity": {
+        "enantiomeric_excess": 99.0,
+        "diastereomeric_excess": 99.0,
+        "stereoselectivity": "R-selective for alpha-hydroxy ketone reductions; ee >99%, de >99% for most substrates.",
+        "notes": "Compound 43: de >99% syn (R); 44: de >99% anti (R); 45: de >99% anti (S); 46: ee >99% (R); 47: ee >99%, de 87% anti (R); 48: de >99% syn (R)."
+      }
+    }
+  ],
+  "sampling": [
+    {
+      "sampling_applied": false,
+      "strategy": {
+        "strategy_type": "default",
+        "notes": "Initial rate measurements by spectrophotometry at 340 nm, 60 s, triplicate. Stability: residual activity followed at defined intervals until 50% deactivation."
+      },
+      "samples": [
+        {
+          "time": 60.0,
+          "time_unit": "s",
+          "phase": "liquid",
+          "notes": "NADPH consumption or production followed at 340 nm in semi-micro cuvettes (1 mL)"
+        }
+      ]
+    }
+  ],
+  "vessels_and_mixing": [
+    {
+      "vessel": {
+        "vessel_type": "vial",
+        "size": 1.0,
+        "size_unit": "mL",
+        "notes": "Semi-micro cuvettes, total volume 1 mL, for spectrophotometric measurements"
+      },
+      "mixing": {
+        "mixing_type": "none",
+        "notes": "Spectrophotometric cuvette assay, no active mixing described"
+      }
+    }
+  ]
+}

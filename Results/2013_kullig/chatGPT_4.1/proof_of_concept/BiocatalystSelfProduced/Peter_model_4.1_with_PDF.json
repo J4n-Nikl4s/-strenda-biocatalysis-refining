@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": null,
+      "Reactions": []
+    },
+    {
+      "ModelFitting": [],
+      "OtherAnalysis": "Protein expression and purification details only; no biocatalytic reactions performed in this section. Please refer to later method sections for actual biotransformation data.",
+      "Reactions": []
+    }
+  ]
+}

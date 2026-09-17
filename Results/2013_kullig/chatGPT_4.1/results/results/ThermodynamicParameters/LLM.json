@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "enthalpy_change": "",
+      "gibbs_free_energy_change": "",
+      "special_treatment": "No explicit thermodynamic parameters (ΔH, ΔG, ΔS) are reported in the main text or tables. The paper focuses on kinetic and stability data, substrate specificity, and enzyme activity under various conditions, but does not provide calorimetric or equilibrium data from which thermodynamic parameters could be directly calculated. For a comprehensive report around the technical key data of the kinetic parameters, see literature for further information, e.g. Heintz6."
+    }
+  ]
+}

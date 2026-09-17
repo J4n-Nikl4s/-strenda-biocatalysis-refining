@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "further_additives": "CaCl2 (0.8 mmol/L) is used in all activity and stability assays for enzyme stabilization. In some purification steps, 0.2 mmol/L CaCl2 is used. Glycerol (50% v/v) is used for storage stability studies. No cosolvents like DMSO are mentioned for the activity assays.",
+      "ionic_strength": 0,
+      "ionic_strength_unit": "",
+      "solvent_description": "Aqueous buffered solutions are used. For reduction assays: TEA–HCl buffer (50 mmol/L, pH 7.5) with CaCl2 (0.8 mmol/L). For oxidation assays: glycine–NaOH buffer (50 mmol/L, pH 10.5) with CaCl2 (0.8 mmol/L). For pH studies, citrate–phosphate (50 mmol/L, pH 4–7), TEA–HCl (50 mmol/L, pH 7–8), TRIS–HCl (50 mmol/L, pH 7–8.5), and glycine–NaOH (50 mmol/L, pH 8.5–12), all with CaCl2 (0.8 mmol/L), are used.",
+      "special_treatment": "All activity measurements are performed at 30°C in semi-micro cuvettes (total volume 1 mL) for 1 min. For reduction assays: 10 mmol/L benzaldehyde and 0.2 mmol/L NADPH are used. For oxidation assays: 100 mmol/L cyclohexanol and 0.5 mmol/L NADP+ are used. Enzyme concentration is typically 0.05 mg/mL. For kinetic studies, substrate and cofactor concentrations are varied as specified in Table V. For stability studies, enzyme is incubated at various temperatures (0–40°C) and pH values, and residual activity is measured over time. Lyophilized enzyme is reactivated by equilibration in buffer before use. No organic cosolvents are used in the standard assays. All buffers are supplemented with CaCl2 (0.8 mmol/L) unless otherwise stated."
+    }
+  ]
+}

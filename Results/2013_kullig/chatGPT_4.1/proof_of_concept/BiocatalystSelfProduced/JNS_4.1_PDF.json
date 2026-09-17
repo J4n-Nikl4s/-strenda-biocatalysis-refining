@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "NADP(H)-dependent oxidation of alcohols and reduction of aldehydes/ketones.",
+      "ec_number": "1.1.1.-",
+      "formulation": "All purification steps performed in TEA–HCl buffer (50 mmol L-1, pH 7.5), supplemented with CaCl2 (0–0.8 mmol L-1) as needed. Storage tested in desalting buffer (TEA–HCl, 10 mmol L-1, pH 7.5) at 8°C or -20°C, or in 50% (v/v) glycerol/desalting buffer at -20°C, or as freeze-dried enzyme at -20°C.",
+      "molecular_weight": 26700,
+      "molecular_weight_unit": "Da",
+      "name": "RADH (alcohol dehydrogenase from Ralstonia sp.)",
+      "origin_organism": "Ralstonia sp.",
+      "plasmid_specifications": "Cloned into pET-22b(+) vector.",
+      "posttranslational_modification": "",
+      "production_organism": "E. coli BL21(DE3)",
+      "purification_method": "Size exclusion chromatography (SEC) for desalting (initial), anion exchange chromatography, followed by a second SEC for salt exchange/storage buffer adjustment.",
+      "purity": 90,
+      "purity_specification": "SDS–PAGE (4–12% NuPAGE Novex Bis–Tris gel), stained with SimplyBlue SafeStain or SilverXpress Silver Stain; estimation by SDS–PAGE.",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "sequence_plasmid": "",
+      "special_treatment": "For storage stability tests: compared four methods—storage in desalting buffer at 8°C, at -20°C, with 50% glycerol at -20°C, or freeze-dried at -20°C; activity measurements conducted over time using a standard reduction assay. CaCl2 added to buffers for improved stability (0.2–0.8 mmol L-1 depending on step)."
+    }
+  ]
+}

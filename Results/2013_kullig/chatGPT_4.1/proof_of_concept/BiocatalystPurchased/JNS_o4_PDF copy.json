@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "Reduction of alpha-hydroxy ketones and oxidation of alcohols.",
+      "ec_number": "",
+      "formulation": "The enzyme was used in both liquid form (dissolved in buffer) and lyophilized.",
+      "molecular_weight": 75,
+      "molecular_weight_unit": "kDa",
+      "name": "Alcohol dehydrogenase from Ralstonia sp. (RADH)",
+      "origin_organism": "Ralstonia sp.",
+      "posttranslational_modification": "",
+      "production_organism": "E. coli BL21(DE3)",
+      "purity": 90,
+      "purity_specification": "Purity assessed by SDS-PAGE, showing 90% purity. Size exclusion chromatography was used for determination of the native molecular weight.",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "supplier": "Novagen (Madison, WI)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "NADP(H)-dependent oxidation of alcohols and reduction of aldehydes/ketones.",
+      "ec_number": "1.1.1.-",
+      "formulation": "All purification steps performed in TEA–HCl buffer (50 mmol L-1, pH 7.5), supplemented with CaCl2 (0–0.8 mmol L-1) as needed. Storage tested in desalting buffer (TEA–HCl, 10 mmol L-1, pH 7.5) at 8°C or -20°C, or in 50% (v/v) glycerol/desalting buffer at -20°C, or as freeze-dried enzyme at -20°C.",
+      "molecular_weight": 26700,
+      "molecular_weight_unit": "Da",
+      "name": "RADH (alcohol dehydrogenase from Ralstonia sp.)",
+      "origin_organism": "Ralstonia sp.",
+      "plasmid_specifications": "Cloned into pET-22b(+) vector.",
+      "posttranslational_modification": "",
+      "production_organism": "E. coli BL21(DE3) (Novagen)",
+      "purification_method": "Three protocols, using TEA–HCl buffer (50 mmol/L, pH 7.5), with or without 0.2–0.8 mmol/L CaCl2. Protocol includes size exclusion chromatography (SEC) for desalting, anion exchange chromatography, and a second SEC for removal of NaCl and adjustment of Ca2+ concentration.",
+      "purity": 90,
+      "purity_specification": "Estimated by SDS–PAGE (Laemmli, 1970), stained with SimplyBlue SafeStain or SilverXpress Silver Staining Kit.",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "sequence_plasmid": "",
+      "special_treatment": "SDS–PAGE performed on 4–12% NuPAGE Novex Bis–Tris gels. Protein concentrations determined by Bradford assay (Bradford, 1976) with bovine serum albumin standard. Molecular weight estimation via SEC (Superdex 200, 26 mm x 63 cm, GE Healthcare), calibrated with protein standards. Purified and desalted enzyme stored in TEA–HCl buffer (10 mmol/L, pH 7.5) at 8°C, -20°C, with 50% glycerol at -20°C, or freeze-dried at -20°C."
+    }
+  ]
+}

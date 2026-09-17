@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "special_treatment": "For reduction assays, all buffers were supplemented with CaCl2 (0.8 mmol/L) for enzyme stabilization. The enzyme was purified and stored in TEA–HCl buffer (10 mmol/L, pH 7.5) at -20°C or with 50% (v/v) glycerol at -20°C for long-term storage. For stability studies, lyophilized enzyme was reactivated in buffer before use. For oxidation assays, glycine–NaOH buffer was used due to its broad pH range. All activity measurements were performed in triplicate. For temperature studies, substrate solutions were preheated and temperature was controlled with an external thermometer. pH shifts due to temperature changes were noted (from 15 to 60°C, a pH shift of 0.9 in TEA–HCl buffer).",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "For pH optimum studies, reduction reactions were performed in various buffers (citrate–phosphate, TEA–HCl, TRIS–HCl, glycine–NaOH), all at 50 mmol/L and supplemented with 0.8 mmol/L CaCl2. pH range for reduction: 6–9.5; for oxidation: 10–11.5. pH-dependent stability was studied at 25°C.",
+      "temperature": 25,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "For temperature optimum studies, reduction assays were performed between 15 and 60°C in TEA–HCl buffer (50 mmol/L, pH 7.5) with 0.8 mmol/L CaCl2. Substrate solution was preheated and temperature was controlled externally. Stability optimum was found between 8 and 15°C (half-life: 130 h at 0.8 mmol/L CaCl2).",
+      "temperature": 15,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "For kinetic measurements, reduction reactions were performed in TEA–HCl buffer (50 mmol/L, pH 7.5) with 0.8 mmol/L CaCl2 at 30°C. Oxidation reactions were performed in TRIS–HCl buffer (50 mmol/L, pH 9.0) with 0.8 mmol/L CaCl2 at 30°C. Substrate and cofactor concentrations varied as specified in Table V.",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    },
+    {
+      "special_treatment": "For substrate range studies, reduction assays were performed in TEA–HCl buffer (50 mmol/L, pH 7.5) with 0.8 mmol/L CaCl2 at 30°C, following NADPH consumption at 340 nm. Oxidation assays were performed in glycine–NaOH buffer (50 mmol/L, pH 10.5) with 0.8 mmol/L CaCl2 at 30°C, following NADPH formation at 340 nm. Each reaction contained 0.05 mg/mL RADH and 0.2 mmol/L NADPH (reduction) or 0.5 mmol/L NADP+ (oxidation).",
+      "temperature": 30,
+      "temperature_unit": "°C"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "activity": 362.6,
+      "activity_determination_method": "Spectrophotometric assay at 340 nm, following the consumption (oxidation) of NADPH or formation (reduction) of NADPH at 30°C in semi-micro cuvettes (total volume 1 mL) for 1 min. One unit (U) of enzyme is defined as the amount of enzyme that catalyzes the consumption or production of 1 μmol NADPH per min at 30°C for the respective substrate. Standard reduction assay: 10 mmol/L substrate (e.g., benzaldehyde or 2-hydroxypropiophenone), 0.2 mmol/L NADPH, 50 mmol/L TEA–HCl buffer pH 7.5, 0.8 mmol/L CaCl2. Standard oxidation assay: 100 mmol/L cyclohexanol, 0.5 mmol/L NADP+, 50 mmol/L glycine–NaOH buffer pH 10.5, 0.8 mmol/L CaCl2. All activity measurements performed in triplicate.",
+      "activity_unit": "U/mg",
+      "concentration": 0.05,
+      "concentration_determination_method": "Bradford method (Bradford, 1976) using bovine serum albumin as standard.",
+      "concentration_unit": "mg/mL",
+      "formulation": "Purified, soluble enzyme in buffer. For storage: (I) in desalting buffer (TEA–HCl, 10 mmol/L, pH 7.5) at 8°C, (II) same as (I) but at 20°C, (III) in 50% (v/v) glycerol and desalting buffer at 20°C, (IV) freeze-dried and stored at 20°C. For experiments, typically dissolved in TEA–HCl buffer (50 mmol/L, pH 7.5) with 0.8 mmol/L CaCl2.",
+      "special_treatment": "Enzyme is stabilized by addition of CaCl2 (0.2–0.8 mmol/L) during purification and storage. For long-term storage, best results with 50% (v/v) glycerol at -20°C. Lyophilized enzyme requires reactivation (equilibration in buffer for several hours) before use. Purity after anion exchange chromatography and desalting is about 90% (SDS–PAGE). Enzyme is a trimer (native MW ~75 kDa, subunit MW 26.7 kDa). Highest stability at pH 5.5–8 and 8–15°C; half-life at 25°C is 80 h. Enzyme is unstable without CaCl2 (half-life ~6 h). No activating metal ion required for activity, but Ca2+ is essential for stability. Enzyme is NADPH-dependent alcohol dehydrogenase from Ralstonia sp. (RADH), expressed recombinantly in E. coli BL21(DE3), purified by size exclusion and anion exchange chromatography."
+    }
+  ]
+}

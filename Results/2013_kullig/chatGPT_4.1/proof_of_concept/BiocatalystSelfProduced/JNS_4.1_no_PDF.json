@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "catalyzed_reaction": "",
+      "ec_number": "",
+      "formulation": "Purified enzyme stored in: (I) desalting buffer (TEA–HCl, 10 mmol L-1, pH 7.5) at 8°C; (II) as above but at -20°C; (III) 50% (v/v) glycerol and desalting buffer at -20°C; (IV) freeze-dried and stored at -20°C. Purification buffers: TEA–HCl, 50 mmol L-1, pH 7.5 with 0, 0.2 or 0.8 mmol L-1 CaCl2 as needed.",
+      "molecular_weight": 0,
+      "molecular_weight_unit": "",
+      "name": "RADH",
+      "origin_organism": "",
+      "plasmid_specifications": "",
+      "posttranslational_modification": "",
+      "production_organism": "Escherichia coli BL21(DE3)",
+      "purification_method": "Three-step protocol: initial size exclusion chromatography (SEC) for desalting, anion exchange chromatography, followed by a second SEC to remove NaCl and adjust Ca2+ content. All steps at room temperature (20-25°C).",
+      "purity": 0,
+      "purity_specification": "SDS–PAGE on 4–12% Bis–Tris gels, stained with SimplyBlue SafeStain or SilverXpress Silver Staining Kit.",
+      "sequence_DNA": "",
+      "sequence_amino_acid": "",
+      "sequence_plasmid": "pET-22b(+)",
+      "special_treatment": "Protein concentrations determined by Bradford assay (BSA standard). Native MW determined by SEC on Superdex 200 column, calibration with standard proteins."
+    }
+  ]
+}

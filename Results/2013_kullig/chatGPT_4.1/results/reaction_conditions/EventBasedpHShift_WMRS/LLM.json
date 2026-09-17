@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH measured using buffer systems and specified for each assay; not explicitly stated if pH meter or other method used.",
+      "detected_when": "All components of the reaction solution were present at the time of pH measurement.",
+      "event_description": "No event-based pH shift described; pH is set at the beginning and maintained during the assay.",
+      "pH_after_event": 7.5,
+      "pH_at_XY": 7.5,
+      "pH_beginning": 7.5,
+      "special_treatment": "All buffers for reduction assays were supplemented with CaCl2 (0.8 mmol/L). For stability studies, enzyme was sometimes lyophilized and reactivated in buffer before use. For purification, 0.2 mmol/L CaCl2 was used in all buffers during chromatography at room temperature (20–25°C).",
+      "temperature": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "min"
+    },
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH measured using buffer systems and specified for each assay; not explicitly stated if pH meter or other method used.",
+      "detected_when": "All components of the reaction solution were present at the time of pH measurement.",
+      "event_description": "No event-based pH shift described; pH is set at the beginning and maintained during the assay.",
+      "pH_after_event": 10.5,
+      "pH_at_XY": 10.5,
+      "pH_beginning": 10.5,
+      "special_treatment": "All buffers for oxidation assays were supplemented with CaCl2 (0.8 mmol/L).",
+      "temperature": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "min"
+    },
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH measured using buffer systems and specified for each assay; not explicitly stated if pH meter or other method used.",
+      "detected_when": "All components of the reaction solution were present at the time of pH measurement.",
+      "event_description": "No event-based pH shift described; pH is set at the beginning and maintained during the assay.",
+      "pH_after_event": 9,
+      "pH_at_XY": 9,
+      "pH_beginning": 9,
+      "special_treatment": "Kinetic measurements for oxidation were performed in TRIS–HCl buffer (50 mmol/L + CaCl2 0.8 mmol/L) at pH 9.0. For reduction, TEA–HCl buffer (50 mmol/L + CaCl2 0.8 mmol/L) at pH 7.5 was used. Substrate and cofactor concentrations varied depending on the kinetic experiment (see Table V).",
+      "temperature": 30,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "min"
+    },
+    {
+      "calibration_pH_electrode": "",
+      "detected_how": "pH measured using buffer systems and specified for each assay; not explicitly stated if pH meter or other method used.",
+      "detected_when": "All components of the reaction solution were present at the time of pH measurement.",
+      "event_description": "No event-based pH shift described; pH is set at the beginning and maintained during the assay.",
+      "pH_after_event": 7.5,
+      "pH_at_XY": 7.5,
+      "pH_beginning": 7.5,
+      "special_treatment": "For stability studies, enzyme was incubated in TEA–HCl buffer (50 mmol/L + CaCl2 0.8 mmol/L) at pH 7.5 at various temperatures (0–40°C).",
+      "temperature": 25,
+      "temperature_unit": "°C",
+      "time_at_XY": 0,
+      "time_unit": "min"
+    }
+  ]
+}

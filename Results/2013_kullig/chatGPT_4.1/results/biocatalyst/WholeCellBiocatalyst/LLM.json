@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "concentration": 0.05,
+      "concentration_determination_method": "Bradford method (Bradford, 1976) using bovine serum albumin as a standard.",
+      "concentration_unit": "mg/mL",
+      "formulation": "Purified enzyme, stored in TEA–HCl buffer (10 mmol/L, pH 7.5) at -20°C, or lyophilized and stored at -20°C. For activity assays, enzyme was dissolved in buffer. For stability studies, enzyme was also stored with 50% (v/v) glycerol or as lyophilized powder.",
+      "harvesting_method": "Expression in E. coli BL21(DE3), cell disruption as described previously (Kulig et al., 2012), followed by purification using size exclusion chromatography (SEC) for desalting, anion exchange chromatography, and a second SEC for buffer exchange and CaCl2 adjustment.",
+      "special_treatment": "Addition of CaCl2 (0.2–0.8 mmol/L) during purification and storage for stabilization. For activity and stability studies, 0.8 mmol/L CaCl2 was added to all buffers. Lyophilized enzyme required reactivation by equilibration in buffer for several hours before use. Enzyme purity was about 90% by SDS–PAGE. Native molecular weight determined by SEC (trimeric, ~75 kDa)."
+    }
+  ]
+}
