@@ -46,10 +46,10 @@
           "determination_method": "Cell loading reported as wet cell mass (see immobilization.loading), not as a molar/mass enzyme concentration."
         },
         "activity": {
-          "value": ["Changed: 74, 60, 45, 30, 60, 45, 35. Missing activity"],
+          "value": 74,
           "unit": "U/g (µmol pCA min^-1 g^-1 TAL)",
           "determination_method": "Specific activity of purified FjTAL in standard 50 mM CAPS buffer pH 10, 30°C, 2 mM tyrosine, UV-vis (325 nm); see characterization_data.activity_vs_salt for the full salt-dependence dataset (Figure 2)."
-          },
+        },
         "workflow_details": {
           "cell_disruption_process": "None for the RBR biocatalyst (permeabilized, intact whole cells per abstract); cells were disrupted/purified only for the enzyme used in the activity assay (method not detailed in main text, see ref. [6]).",
           "harvesting_method": "Fed-batch fermentation of a tyrosine-overproducing/FjTAL-expressing E. coli strain, harvested as described in Supporting Information 7 (not detailed in main text).",
@@ -87,7 +87,7 @@
       {
         "identity": { "name": "L-Tyrosine", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "substrate",
-        "amount": { "value": [50, 2], "unit": "g per RBR batch (~980-970 mL total working volume); 2 mM in the activity assay" },
+        "amount": { "value": 50, "unit": "g per RBR batch (~980-970 mL total working volume); 2 mM in the activity assay" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Described qualitatively as having 'low solubility... even at moderately alkaline pH'; no numeric solubility limit given."
@@ -103,7 +103,7 @@
       {
         "identity": { "name": "Potassium phosphate (K3PO4 / K2HPO4 mixture)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": [10, 15, 20], "unit": "w/w" },
+        "amount": { "value": null, "unit": "5% w/w in final ATPS ISPR formulation; 10-20% w/w tested for FjTAL activity impact (Figure 2); 30 g K2HPO4 + ~10 g K3PO4 used in the ATPS RBR run; ~10 g K3PO4 used for pH control in the non-ATPS RBR run" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Also used as the pH-stat titrant (50% w/V K3PO4 solution) to hold pH at setpoint automatically during the RBR reactions."
@@ -111,7 +111,7 @@
       {
         "identity": { "name": "Potassium carbonate (K2CO3 / KHCO3 mixture)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": [10, 15, 20], "unit": "w/w" },
+        "amount": { "value": null, "unit": "10-20% w/w tested for activity impact; cloud point 5-5.7% w/w (Table 1)" },
         "provenance": { "supplier": null },
         "solubility": { "value": null, "unit": null },
         "notes": "Alternative alkaline salt screened; not used in the final selected ATPS (phosphate system chosen instead)."
@@ -119,7 +119,7 @@
       {
         "identity": { "name": "Poly(ethylene glycol-ran-propylene glycol) (PEGRPG), Mw ~2500", "smiles": null, "identifiers": null, "purity": null, "formulation": "liquid" },
         "role": "other",
-        "amount": { "value": [12.5, 120], "unit": "w/w, mL"},
+        "amount": { "value": null, "unit": "12.5% w/w in the final selected ATPS; 120 mL used in the ATPS RBR run" },
         "provenance": { "supplier": "Sigma-Aldrich" },
         "solubility": { "value": null, "unit": null },
         "notes": "ATPS phase-forming polymer selected for the final ISPR system (liquid at RT, lower cloud point than PEG 8000). Average molecular mass separately reported in the Discussion as '127.5 kDa' (as stated in the text; inconsistent with the Mw~2500 label used elsewhere in the paper - reproduced here as written, not corrected)."
@@ -127,7 +127,7 @@
       {
         "identity": { "name": "Poly(ethylene glycol) (PEG), Mw ~8000", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": ["Changed: 9.5, 15, 20"], "unit": "% w/w" },
+        "amount": { "value": null, "unit": "9.5% w/w cloud point (Table 1); tested at 15-20% w/w in screening" },
         "provenance": { "supplier": null },
         "notes": "Comparator polymer; performed similarly to PEGRPG 2500 but rejected in favor of PEGRPG 2500 for practical (solid powder vs liquid) reasons."
       },
@@ -146,30 +146,30 @@
       {
         "identity": { "name": "Dextran (high Mw)", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "other",
-        "amount": { "value": 15, "unit": "% w/w" },
+        "amount": { "value": 15, "unit": "% w/w (initial PEG 8000:Dextran ATPS screen)" },
         "notes": "Used only in the initial ATPS screen (PEG 8000:Dextran, partition coefficient ~20); rejected for downstream use due to high cost and incompatibility with hydrogel immobilization."
       },
       {
         "identity": { "name": "kappa-Carrageenan", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": 1.33, "unit": "% w/v" },
+        "amount": { "value": 1.33, "unit": "% w/v (in immobilization hydrogel mix)" },
         "notes": "Primary hydrogel-forming carrier for whole-cell immobilization; see biocatalyst.immobilization."
       },
       {
         "identity": { "name": "Locust bean gum (LBG)", "smiles": null, "identifiers": null, "purity": null, "formulation": "powder" },
         "role": "other",
-        "amount": { "value": 0.66, "unit": "% w/v" },
+        "amount": { "value": 0.66, "unit": "% w/v (in immobilization hydrogel mix)" },
         "provenance": { "supplier": "Sigma-Aldrich" },
         "notes": "Co-gelling agent with kappa-carrageenan, improves mechanical strength."
       },
       {
         "identity": { "name": "Potassium chloride (KCl)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "salt",
-        "amount": { "value": 2, "unit": "% w/V" },
+        "amount": { "value": 2, "unit": "% w/V (cross-linking bath)" },
         "notes": "Cross-linking bath for bead formation."
       },
       {
-        "identity": { "name": "Calcium alginate beads", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
+        "identity": { "name": "Calcium alginate", "smiles": null, "identifiers": null, "purity": null, "formulation": null },
         "role": "other",
         "amount": { "value": null, "unit": null },
         "notes": "Comparator immobilization hydrogel; found unstable in the salt phase (Ca2+/K+ ion exchange, precipitation of insoluble Ca-phosphate/carbonate). Not used in the final process."
@@ -177,20 +177,20 @@
       {
         "identity": { "name": "CAPS buffer", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "buffer",
-        "amount": { "value": 50, "unit": "mM" },
-        "notes": "(standard activity-assay buffer, pH adjusted to 10 with NaOH)"
+        "amount": { "value": 50, "unit": "mM (standard activity-assay buffer, pH adjusted to 10 with NaOH)" },
+        "notes": null
       },
       {
         "identity": { "name": "Sodium hydroxide (NaOH)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "other",
-        "amount": { "value": 1, "unit": "M" },
-        "notes": "(used 1:1 v/v to quench reaction samples); also used to pH-adjust CAPS buffer"
+        "amount": { "value": 1, "unit": "M (used 1:1 v/v to quench reaction samples); also used to pH-adjust CAPS buffer" },
+        "notes": null
       },
       {
         "identity": { "name": "Sodium chloride (NaCl)", "smiles": null, "identifiers": null, "purity": null, "formulation": "solution" },
         "role": "other",
-        "amount": { "value": 0.9, "unit": "%" },
-        "notes": "(saline used to resuspend cells; also 0.9% component of hydrogel mix)"
+        "amount": { "value": 0.9, "unit": "% (saline used to resuspend cells; also 0.9% component of hydrogel mix)" },
+        "notes": null
       }
     ],
   
@@ -224,34 +224,35 @@
   
     "experiments": [
       {
-        "label": "Changed: Control run paired with Experiment 1 - without ATPS (monophase), first cell batch, Figure 4A",
+        "label": "Experiment 1 - without ATPS (control, monophase)",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
-          "feeding": { "feeding_type": "variable", "description": "Automatic pH-stat addition of 50% w/V K3PO4 solution to hold pH at setpoint." }
+          "feeding": { "feeding_type": "variable", "description": "Automatic pH-stat addition of 50% w/V K3PO4 solution to hold pH at setpoint; no substrate feeding (single charge of tyrosine at t=0)." },
+          "notes": null
         },
         "reaction_conditions": {
           "reactor": { "reactor_type": "other", "notes": "1 L RBR" },
-          "system": { "system_type": "monoliquid", "monoliquid": { "solvent_description": "Aqueous slurry: 850 mL deionized water + 50 g tyrosine + ~10 g K3PO4" } },
+          "system": { "system_type": "monoliquid", "monoliquid": { "solvent_description": "Aqueous slurry: 850 mL deionized water + 50 g tyrosine", "ionic_strength": null, "further_additives": "K3PO4 (~10 g) for pH adjustment" } },
           "phases": [
-            { "phase_type": "liquid", "material_description": "Aqueous tyrosine slurry", "amount": 850, "amount_unit": "mL" },
-            { "phase_type": "solid", "material_description": "~100 g immobilized FjTAL whole-cell beads (higher-activity cell batch, ~17 g wet cells)", "amount": 100, "amount_unit": "g" }
+            { "phase_type": "liquid", "material_description": "Aqueous tyrosine slurry (850 mL DI water, 50 g tyrosine, ~10 g K3PO4)", "amount": 850, "amount_unit": "mL" },
+            { "phase_type": "solid", "material_description": "~100 g immobilized FjTAL whole-cell kappa-carrageenan/LBG beads", "amount": 100, "amount_unit": "g" }
           ],
           "temperature": { "profile_type": "constant", "temperature_unit": "°C", "constant_temperature": 40 },
-          "pH": { "profile_type": "constant", "constant_pH": 9.9, "notes": "pH 9.9 +/- 0.05" }
+          "pH": { "profile_type": "constant", "constant_pH": 9.9, "detection": { "detected_how": "Automatic pH control/titration with K3PO4" }, "notes": "pH 9.9 +/- 0.05" }
         },
         "sampling": {
           "sampling_applied": true,
           "strategy": { "strategy_type": "default", "vessel_opened": true },
-          "samples": [{ "time": null, "time_unit": "h", "phase": "liquid", "preprocessing": { "quenching_method": "1:1 v/v with 1 M NaOH" }, "notes": "Hourly + 21 h + final (~23 h) sampling." }]
+          "samples": [{ "time": null, "time_unit": "h", "phase": "liquid", "preprocessing": { "quenching_method": "1:1 v/v with 1 M NaOH", "quenching_ratio": 1 }, "notes": "Sampled hourly initially, then again at ~21 h; reactor terminated at ~22 h. pCA quantified via absorbance at 385 nm (or 325 nm depending on assay) against a pCA standard curve, samples diluted 20-fold in 50 mM CAPS pH 10, 30°C." }]
         },
         "results": {
-          "yield_and_conversion": { "product_yield": null, "conversion": null, "notes": "Final pCA titer 17.7 g/L at ~23 h." },
-          "notes": "Same batch of immobilized cells (higher activity) as the paired ATPS run below (~17 g wet cells)."
+          "yield_and_conversion": { "product_yield": null, "conversion": null, "notes": "Final pCA titer 11.4 g/L at ~22 h (Table 2/partition-phase breakdown does not apply - single phase)." },
+          "notes": "Same batch of immobilized cells as the paired ATPS run below (~14 g wet cells)."
         }
       },
       {
-        "label": "Changed: Experiment 1 (Table 2) - with ATPS-ISPR, first cell batch",
+        "label": "Experiment 1 - with ATPS-ISPR",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -283,7 +284,7 @@
         }
       },
       {
-        "label": "Changed: Control run paired with Experiment 2 - without ATPS (monophase)",
+        "label": "Experiment 2 - without ATPS (control, monophase)",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -310,7 +311,7 @@
         }
       },
       {
-        "label": "Changed: Experiment 2 (Table 2) - with ATPS-ISPR, second (higher-activity) cell batch",
+        "label": "Experiment 2 - with ATPS-ISPR",
         "operation_mode": {
           "mode": "batch",
           "reactor_type": "other",
@@ -357,7 +358,7 @@
         "notes": "No Km, kcat, or Ki values are measured/reported in this paper; product inhibition of FjTAL by pCA is discussed qualitatively (competitive, via active-site occupancy, possibly reverse-reaction catalysis) and precise Ki determination is explicitly described as impractical for high-throughput screening (requires many replicates across substrate/product concentrations). Quantitative KM/Ki values for FjTAL are cited as being reported in ref. [6] (a separate publication), not this one."
       },
       "activity": {
-        "specific_activity": "Only added one data point",
+        "specific_activity": 74,
         "notes": "See characterization_data.activity_vs_salt below for the full Figure 2 dataset (activity vs. salt type/concentration)."
       },
       "yield_and_conversion": {
@@ -406,13 +407,32 @@
           ],
           "note": "Values read approximately from Figure 3 bar chart; paper states the final selected 5%/12.5% system's partition coefficient fell further to ~2 once tested in the actual bioreactor (Experiments 1 & 2, Table 2)."
         }
-     
+      },
+      "process_economics_discussion": {
+        "polymer_cost": "~2 $US/kg",
+        "polymer_use_per_L_reaction": "120 g/L",
+        "polymer_cost_per_L_reaction": "0.24 $US/L",
+        "pCA_target_value": "~20 $US/kg at 40 g/L target titer = 0.8 $US/L",
+        "tyrosine_value": "~10 $US/kg",
+        "conclusion": "Polymer cost estimated at ~30% of product value at target titers, indicating polymer recycle is required for economic feasibility. Authors discuss (but did not test) acid crystallization + heating above cloud point, or ultrafiltration, as possible recycle strategies.",
+        "literature_comparators": [
+          { "reference": "[1] Liu et al., Nat. Commun. 2019", "value": "12.5 g/L pCA via fermentation (lab scale)" },
+          { "reference": "[4] Sariaslani, Annu. Rev. Microbiol. 2007 (DuPont-type two-stage process)", "value": "~40 g/L pCA from 50 g/L tyrosine, 88% mol/mol yield" }
+        ]
       },
       "physicochemical_note": {
         "description": "Charges (z) of tyrosine and pCA at pH 10 calculated via Henderson-Hasselbalch equation.",
         "value": "Charge of pCA is 0.47 lower than tyrosine at pH 10 (exact z values not given in main text; full calculation in Supporting Information 1)."
       }
-    }
+    },
   
-    
+    "not_covered_by_this_paper": [
+      "Enzyme EC number, molecular weight, and full amino acid/DNA sequence (only referenced via Supporting Information, not present in main text).",
+      "Quantitative Km, kcat, kcat/Km, or Ki values for FjTAL (discussed conceptually; values are in a separate prior publication, ref [6]).",
+      "Thermodynamic parameters (ΔG, ΔH, ΔS) - not studied.",
+      "Selectivity/stereoselectivity parameters - not applicable/reported (TAL forms a single achiral product from tyrosine).",
+      "Vessel material, geometry, and closure details for the RBR.",
+      "Exact ionic strength values for reaction buffers.",
+      "Supplier/purity information for most raw chemicals (tyrosine, phosphate/carbonate salts, NaOH, NaCl) beyond the ATPS polymers and LBG (Sigma-Aldrich)."
+    ]
   }
